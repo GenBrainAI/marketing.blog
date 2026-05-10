@@ -1,0 +1,66 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GenBrain AI",
+  "alternateName": "agent.ceo",
+  "url": "https://agent.ceo",
+  "logo": "https://agent.ceo/logo.png",
+  "description": "GenBrain AI builds agent.ceo — the GenAI-first autonomous agent orchestration platform for engineering organizations. Available as SaaS or enterprise private installation.",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://www.genbrain.ai",
+    "https://www.linkedin.com/company/genbrain-ai",
+    "https://github.com/GenBrainAI"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "enterprise@agent.ceo",
+      "description": "Enterprise deployment inquiries"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "support@agent.ceo"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "general",
+      "email": "hello@agent.ceo"
+    }
+  ],
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "1.00",
+    "highPrice": "200.00",
+    "offerCount": "3",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Pay-as-you-go",
+        "price": "1.00",
+        "priceCurrency": "USD",
+        "unitText": "per agent-hour",
+        "description": "Pay only for what you use. $1 per agent-hour."
+      },
+      {
+        "@type": "Offer",
+        "name": "Standard",
+        "price": "200.00",
+        "priceCurrency": "USD",
+        "unitText": "per agent per month",
+        "description": "Dedicated agent capacity at $200/agent/month."
+      },
+      {
+        "@type": "Offer",
+        "name": "Volume",
+        "price": "160.00",
+        "priceCurrency": "USD",
+        "unitText": "per agent per month",
+        "description": "Volume pricing at $160/agent/month for larger deployments."
+      }
+    ]
+  }
+}

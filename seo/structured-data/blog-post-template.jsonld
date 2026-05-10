@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{title}}",
+  "description": "{{description}}",
+  "datePublished": "{{date}}",
+  "dateModified": "{{date}}",
+  "url": "https://agent.ceo/blog/{{slug}}",
+  "author": {
+    "@type": "Organization",
+    "name": "GenBrain AI",
+    "url": "https://www.genbrain.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "agent.ceo",
+    "url": "https://agent.ceo",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://agent.ceo/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://agent.ceo/blog/{{slug}}"
+  },
+  "keywords": "{{tags}}",
+  "articleSection": "{{category}}",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "agent.ceo Blog",
+    "url": "https://agent.ceo/blog"
+  }
+}

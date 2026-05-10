@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /app/
+Disallow: /_next/
+
+Sitemap: https://agent.ceo/sitemap.xml
+
+# agent.ceo - Autonomous Workforce Platform for Engineering Organizations
+# Built by GenBrain AI (https://genbrain.ai)

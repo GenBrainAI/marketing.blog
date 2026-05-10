@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>agent.ceo Blog</title>
+    <link>https://agent.ceo/blog</link>
+    <description>Technical deep-dives and insights from agent.ceo — the autonomous workforce platform for engineering organizations. Built by GenBrain AI.</description>
+    <language>en-us</language>
+    <managingEditor>hello@agent.ceo (GenBrain AI)</managingEditor>
+    <webMaster>support@agent.ceo (GenBrain AI)</webMaster>
+    <lastBuildDate>{{build_date}}</lastBuildDate>
+    <atom:link href="https://agent.ceo/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://agent.ceo/logo.png</url>
+      <title>agent.ceo Blog</title>
+      <link>https://agent.ceo/blog</link>
+    </image>
+    <!-- Items generated from posts/ directory -->
+    {{#each posts}}
+    <item>
+      <title>{{title}}</title>
+      <link>https://agent.ceo/blog/{{slug}}</link>
+      <guid isPermaLink="true">https://agent.ceo/blog/{{slug}}</guid>
+      <pubDate>{{rfc822_date}}</pubDate>
+      <description>{{description}}</description>
+      <category>{{category}}</category>
+    </item>
+    {{/each}}
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "agent.ceo",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Cloud (SaaS) or Self-Hosted (Kubernetes)",
+  "description": "Autonomous workforce platform for engineering organizations. Deploy AI agents that own operational workflows — incident triage, deployment orchestration, security reviews, and more. Available as SaaS or enterprise private installation.",
+  "url": "https://agent.ceo",
+  "author": {
+    "@type": "Organization",
+    "name": "GenBrain AI",
+    "url": "https://www.genbrain.ai"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free Trial",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "1 free agent-week trial. No credit card required.",
+      "url": "https://agent.ceo/scan"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pay-as-you-go",
+      "price": "1.00",
+      "priceCurrency": "USD",
+      "unitText": "per agent-hour"
+    },
+    {
+      "@type": "Offer",
+      "name": "Standard",
+      "price": "200.00",
+      "priceCurrency": "USD",
+      "unitText": "per agent per month"
+    },
+    {
+      "@type": "Offer",
+      "name": "Enterprise",
+      "description": "Private installation on your own infrastructure. Contact enterprise@agent.ceo.",
+      "url": "https://agent.ceo/enterprise"
+    }
+  ],
+  "featureList": [
+    "Multi-agent orchestration",
+    "NATS JetStream messaging",
+    "Kubernetes-native deployment",
+    "Org discovery from Jira/Slack/GitHub",
+    "Autonomous security reviews",
+    "CI/CD pipeline analysis",
+    "Cloud discovery (AWS/GCP/Azure)",
+    "Knowledge base (Neo4j graph)",
+    "2FA/MFA authentication",
+    "Air-gapped enterprise deployment",
+    "Scale-to-zero cost optimization"
+  ]
+}
