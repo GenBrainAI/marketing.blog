@@ -208,6 +208,13 @@ Cloud Discovery isn't just a feature — it's the foundation that makes all othe
 
 Without discovery, agents operate on assumptions. With discovery, they operate on facts. For organizations serious about [scaling AI agents](/blog/scaling-ai-agents) across their operations, this complete infrastructure awareness is the starting point.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

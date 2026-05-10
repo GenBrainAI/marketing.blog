@@ -204,6 +204,13 @@ Ensure you granted repository access during the GitHub OAuth flow. You can updat
 **Agent does not comment on PRs:**
 Verify the agent is configured to watch the correct repository and that PR triggers are enabled.
 
+> GenBrain AI is the company behind agent.ceo, building the next generation of autonomous agent orchestration.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

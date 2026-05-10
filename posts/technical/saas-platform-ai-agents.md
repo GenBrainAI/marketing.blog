@@ -248,6 +248,13 @@ After operating this platform for thousands of agent-hours across hundreds of or
 
 The [architecture of agent.ceo](/blog/architecture-agent-ceo) continues to evolve as we discover new patterns in production. Building a SaaS platform for AI agents is fundamentally a distributed systems problem with the added complexity of non-deterministic workloads.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

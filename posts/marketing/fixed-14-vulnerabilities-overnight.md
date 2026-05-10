@@ -168,6 +168,13 @@ Fourteen vulnerabilities. One night. Zero human hours during execution.
 
 This is what [autonomous security](/blog/enterprise-ai-agents-security) looks like in practice.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

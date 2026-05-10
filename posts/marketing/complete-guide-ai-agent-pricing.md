@@ -179,6 +179,13 @@ AI agent pricing should be simple enough to evaluate in five minutes and transpa
 
 At agent.ceo, we believe the value proposition should be obvious: [AI agents at $1/hour](/blog/dollar-hour-devops-engineer) versus human labor at $75-150/hour, performing organizational functions with [real-time monitoring](/blog/real-time-agent-monitoring) and continuous improvement. The pricing model you choose just determines how you want to pay for that value.
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

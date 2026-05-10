@@ -239,6 +239,13 @@ These principles produce a system that scales horizontally, recovers from failur
 
 For hands-on setup instructions, see [Getting Started with agent.ceo](/blog/getting-started-agent-ceo) or [Deploying AI Agents on Kubernetes](/blog/deploying-ai-agents-kubernetes).
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

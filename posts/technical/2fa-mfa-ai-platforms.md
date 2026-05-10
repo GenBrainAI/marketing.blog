@@ -500,6 +500,13 @@ Our MFA implementation maps directly to SOC 2 requirements:
 
 This is part of our broader SOC 2 preparation, alongside the [automated security auditing](/blog/automated-security-auditing) performed by our CSO agent and our [credential management](/blog/credential-management-multi-cloud) practices.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

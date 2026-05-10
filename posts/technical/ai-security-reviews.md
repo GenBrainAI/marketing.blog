@@ -282,6 +282,13 @@ After one month of continuous operation:
 
 Deploy the security agent alongside your existing infrastructure. It starts with read-only scanning and builds a baseline before suggesting fixes. Within a week, you'll have a comprehensive security posture assessment and automated remediation for common patterns. Learn more about the [agent lifecycle](/blog/agent-lifecycle-management) and how agents build context over time.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

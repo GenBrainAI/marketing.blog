@@ -369,6 +369,13 @@ Through building and operating multi-tenant agent infrastructure, we identified 
 
 Multi-tenant agent orchestration is where [platform engineering meets AI](/blog/what-are-ai-agents). Getting the isolation boundaries right early prevents costly re-architecture as you scale from your first customer to your hundredth.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

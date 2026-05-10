@@ -100,6 +100,13 @@ The [cost analysis](/blog/roi-ai-agent-teams) is almost always compelling. Not b
 
 Your next hire should be an AI agent. Not because agents are better than humans. Because for the specific work you are trying to fill, they are faster, cheaper, and available today.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

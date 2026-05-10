@@ -115,6 +115,13 @@ At $1/agent-hour versus $90/hour fully-loaded human cost, the math is unambiguou
 
 The question for your organization is simple: are you going to capture that economic advantage now, or are you going to wait until your competitors have already done so?
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

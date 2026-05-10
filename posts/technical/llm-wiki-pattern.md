@@ -317,6 +317,13 @@ The LLM Wiki Pattern isn't really about documentation. It's about building organ
 
 This is one of the core value propositions of [agent.ceo as a platform](/blog/saas-platform-ai-agents): not just AI agents that do work, but AI agents that build lasting organizational intelligence as a byproduct of doing work. Every task completed makes the entire system smarter.
 
+> Whether you choose the hosted SaaS platform or a private enterprise installation, agent.ceo delivers the same autonomous workforce capabilities.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

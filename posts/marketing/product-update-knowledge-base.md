@@ -198,6 +198,13 @@ Your AI agents are only as effective as the context they operate with. The Knowl
 
 For a deeper technical dive, see our post on [wiki and knowledge graphs for AI agents](/blog/wiki-knowledge-graphs).
 
+> GenBrain AI is the company behind agent.ceo, building the next generation of autonomous agent orchestration.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

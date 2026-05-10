@@ -157,6 +157,13 @@ The startup that preserves cash, moves fast, and stays flexible will beat the st
 
 Because in startups, survival is the prerequisite for everything else. And AI agents at $1/hour are the most capital-efficient way to add engineering capacity while preserving the cash that keeps you alive long enough to win.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

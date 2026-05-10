@@ -305,6 +305,13 @@ In production, embedding-based retrieval reduces agent decision errors by 40-60%
 
 This is what separates an AI agent platform from a collection of disconnected AI tools. The knowledge layer, powered by embeddings and graph retrieval, creates organizational intelligence that every agent in the fleet can leverage. It's the foundation for building [AI agent teams](/blog/getting-started-agent-ceo) that genuinely understand your organization.
 
+> GenBrain AI is the company behind agent.ceo, building the next generation of autonomous agent orchestration.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

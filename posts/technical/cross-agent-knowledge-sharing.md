@@ -366,6 +366,13 @@ This is the [multi-agent architecture](/blog/multi-agent-architecture-patterns) 
 
 The patterns described here, NATS pub/sub for real-time events, Neo4j for persistent knowledge, and direct messaging for targeted sharing, form the information backbone that makes agent.ceo's fleet operate as a coherent intelligence rather than isolated workers.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

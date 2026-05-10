@@ -231,6 +231,13 @@ NATS does not operate in isolation. It integrates tightly with other components:
 
 This makes NATS the connective tissue of agent.ceo. For the full system view, see [The Architecture of agent.ceo](/blog/architecture-agent-ceo). For Kubernetes-specific patterns, see [Kubernetes for AI Agents](/blog/kubernetes-ai-agents).
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

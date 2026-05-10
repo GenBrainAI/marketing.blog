@@ -564,6 +564,13 @@ For the infrastructure foundations that enable these resilience patterns, see [N
 
 For more on agent communication, see [NATS JetStream for AI agents](/blog/nats-jetstream-ai-agents) and [agent-to-agent messaging patterns](/blog/agent-to-agent-messaging).
 
+> Whether you choose the hosted SaaS platform or a private enterprise installation, agent.ceo delivers the same autonomous workforce capabilities.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

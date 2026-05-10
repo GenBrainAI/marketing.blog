@@ -284,6 +284,13 @@ This is the foundation for intelligent [AI-powered DevOps](/blog/ai-powered-devo
 
 The key insight is that repository ingestion isn't a one-time import. It's a continuous process where agents maintain living knowledge about organizational systems. As code evolves, so does the knowledge graph, ensuring agents always work with current context.
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

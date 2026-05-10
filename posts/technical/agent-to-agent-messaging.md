@@ -426,6 +426,13 @@ The messaging patterns described here form the foundation for higher-level coord
 
 The protocol design choices you make early will either enable or constrain your multi-agent system as it scales. Start with typed messages, explicit acknowledgment, correlation IDs, and depth-limited delegation. Add complexity only when observed communication failures demand it.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

@@ -408,6 +408,13 @@ The entire cycle takes under 2 minutes, compared to waiting hours or days for a 
 
 For organizations requiring multi-factor authentication on all accounts, including bots, see our guide on [2FA/MFA for AI platforms](/blog/2fa-mfa-ai-platforms) to properly configure agent authentication.
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

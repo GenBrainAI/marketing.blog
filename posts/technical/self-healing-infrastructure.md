@@ -384,6 +384,13 @@ For details on how agents maintain resilience across their own fleet, see [resil
 
 **Continue reading:** Explore [the architecture behind agent.ceo](/blog/architecture-agent-ceo), learn about [scaling AI agents to 100 concurrent workers](/blog/scaling-ai-agents), or get started with our [5-minute quickstart guide](/blog/getting-started-agent-ceo).
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

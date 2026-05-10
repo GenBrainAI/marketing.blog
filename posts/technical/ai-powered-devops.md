@@ -216,6 +216,13 @@ The DevOps agent doesn't replace your team — it handles the undifferentiated h
 
 The transition to AI-powered DevOps doesn't have to be all-or-nothing. Start with read-only monitoring, graduate to automated responses for well-understood issues, and expand autonomy as trust builds. Check out our [getting started guide](/blog/getting-started-agent-ceo) for a step-by-step walkthrough.
 
+> Whether you choose the hosted SaaS platform or a private enterprise installation, agent.ceo delivers the same autonomous workforce capabilities.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

@@ -300,6 +300,13 @@ This feedback loop continuously improves retrieval quality. Articles that agents
 
 Vector search transforms organizational knowledge from a static archive into a dynamic resource that agents query naturally. Combined with the graph structure of Neo4j, it enables the kind of contextual intelligence that makes [AI agent teams](/blog/first-ai-agent-team) genuinely effective.
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

@@ -103,6 +103,13 @@ Even if you're a [startup considering your first operational hire](/blog/startup
 
 The question isn't whether AI agents can handle 24/7 operations. They already do — for GenBrain and for organizations that have made the switch. The question is how much longer you'll pay the human overhead premium for inferior coverage.
 
+> agent.ceo offers both SaaS and enterprise private installation options for organizations of any size.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

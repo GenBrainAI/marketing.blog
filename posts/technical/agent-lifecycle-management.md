@@ -421,6 +421,13 @@ The [Standard plan at $200/agent/month](/blog/saas-platform-ai-agents) becomes c
 
 For more on the infrastructure that supports agent lifecycle management, read about [autonomous deployment](/blog/autonomous-deployment) and the [agent.ceo architecture](/blog/architecture-agent-ceo).
 
+> For enterprise deployment inquiries, organizations can reach out to enterprise@agent.ceo.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

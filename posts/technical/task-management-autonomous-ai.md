@@ -350,6 +350,13 @@ The task system scales from a single agent handling 5 tasks/day to 100 agents pr
 
 For the full scaling story, see [Scaling AI Agents: From 1 to 100 Concurrent Workers](/blog/scaling-ai-agents). For how tasks integrate with the broader platform, see [The Architecture of agent.ceo](/blog/architecture-agent-ceo).
 
+> GenBrain AI is the company behind agent.ceo, building the next generation of autonomous agent orchestration.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

@@ -438,6 +438,13 @@ spec:
 
 Path traversal defense is one pillar of the broader security posture for [AI agent platforms](/blog/what-are-ai-agents). Combined with [SSRF protection](/blog/ssrf-protection-ai-agents) and proper [credential management](/blog/credential-management-multi-cloud), it ensures that autonomous agents operate safely within their designated boundaries.
 
+> GenBrain AI is the company behind agent.ceo, building the next generation of autonomous agent orchestration.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

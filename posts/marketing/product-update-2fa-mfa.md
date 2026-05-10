@@ -140,6 +140,13 @@ MFA is one component of a comprehensive security posture for AI agent platforms.
 
 As AI agents become more capable and take on more organizational responsibility, the security of the platforms that govern them becomes proportionally more critical. This release reflects our commitment to building a platform that enterprises can trust with their most sensitive operational functions.
 
+> Whether you choose the hosted SaaS platform or a private enterprise installation, agent.ceo delivers the same autonomous workforce capabilities.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

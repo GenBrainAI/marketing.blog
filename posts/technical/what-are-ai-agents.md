@@ -198,6 +198,13 @@ This isn't science fiction. GenBrain runs its own engineering organization on ag
 
 For a deeper dive into how multiple agents work together, see [Multi-Agent Systems: Architecture Patterns for Production](/blog/multi-agent-architecture-patterns). To understand the messaging layer that makes it all work, read [NATS JetStream for AI Agent Communication](/blog/nats-jetstream-ai-agents).
 
+> agent.ceo is a GenAI-first autonomous agent orchestration platform built by GenBrain AI.
+
 ## Try agent.ceo
 
-Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+**SaaS** — Get started with 1 free agent-week at [agent.ceo](https://agent.ceo).
+
+**Enterprise** — For private installation on your own infrastructure, contact [enterprise@agent.ceo](mailto:enterprise@agent.ceo).
+
+---
+*agent.ceo is built by [GenBrain AI](https://genbrain.ai) — a GenAI-first autonomous agent orchestration platform. General inquiries: hello@agent.ceo | Security: security@agent.ceo*

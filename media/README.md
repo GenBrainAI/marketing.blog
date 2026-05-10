@@ -1,0 +1,1 @@
+# Media Assets\n\nThis directory contains all multimedia assets for the agent.ceo blog.\n\n## Structure\n- images/ — Blog post images, screenshots, thumbnails\n- diagrams/ — Architecture diagrams, flow charts\n- videos/ — Video thumbnails, storyboards\n\nAll assets are version-controlled here as the source of truth.
