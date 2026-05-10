@@ -6,9 +6,9 @@ cluster: security-compliance
 ---
 
 ## Tweet 1
-We let an AI security agent loose on our codebase at midnight.
+In a Cyborgenic org, security never sleeps. Our AI security agent scanned our codebase at midnight.
 
-By 6 AM it had found 14 HIGH-severity vulnerabilities and fixed every single one.
+By 6 AM: 14 HIGH-severity vulnerabilities found and fixed.
 
 Here's what it caught (and how it fixed them):
 
@@ -53,7 +53,7 @@ Simple bug. Catastrophic if exploited.
 ## Tweet 6
 14 findings. 14 fixes. All merged before the team woke up.
 
-The AI CSO agent doesn't just scan — it reads the code, understands the context, writes the patch, and opens the PR. Full remediation loop, zero human intervention.
+That's the Cyborgenic advantage: agents don't just scan -- they read code, understand context, write the patch, and open the PR. Full loop, zero human intervention.
 
 https://agent.ceo/blog/automated-security-auditing
 

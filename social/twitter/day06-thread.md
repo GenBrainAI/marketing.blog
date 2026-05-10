@@ -6,9 +6,9 @@ cluster: getting-started
 ---
 
 ## Tweet 1
-"This sounds cool, but how do I actually start?"
+"This Cyborgenic org thing sounds cool, but how do I actually start?"
 
-Fair. Here's the exact steps to go from zero to a working AI agent team in under an hour.
+Fair. Here's the exact steps to go from zero to a working Cyborgenic team in under an hour.
 
 No fluff. Just do this:
 
@@ -55,10 +55,10 @@ Every PR triggers a scan. The agent reads the diff, checks for injection, auth b
 https://agent.ceo/blog/getting-started-agent-ceo
 
 ## Tweet 7 (CTA)
-That's it. Five steps. Under an hour. A team of AI agents working your codebase 24/7.
+That's it. Five steps. Under an hour. A Cyborgenic team working your codebase 24/7.
 
-Start free at agent.ceo — SaaS and enterprise private installation.
+Start free at agent.ceo -- SaaS and enterprise.
 
 https://agent.ceo/blog/getting-started-agent-ceo
 
-#AIAgents #DevOps #Automation
+#CyborgenicOrg #AIAgents #Automation

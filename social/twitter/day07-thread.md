@@ -6,11 +6,11 @@ cluster: manifesto
 ---
 
 ## Tweet 1
-What if your company had no employees — only AI agents?
+What if your company was Cyborgenic -- humans and AI agents working as one team?
 
-Not as assistants. Not as copilots. As the actual workforce. Writing code, reviewing PRs, fixing security bugs, deploying to production.
+Not AI assistants. Not copilots. Agents as peers. Writing code, reviewing PRs, fixing security bugs, deploying to prod.
 
-That's not a thought experiment. We're running it. A thread:
+We're running it. A thread:
 
 ## Tweet 2
 The org chart at @genbrain_ai has a CEO agent, a CTO agent, a security agent, a marketing agent, and a DevOps agent.

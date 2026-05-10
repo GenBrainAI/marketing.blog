@@ -6,9 +6,9 @@ cluster: knowledge-management
 ---
 
 ## Tweet 1
-Your AI agents are useless if they don't understand your company.
+A Cyborgenic organization needs an organizational brain.
 
-We built an organizational brain that lets agents learn your repos, docs, architecture, and tribal knowledge — automatically.
+We built one that lets agents learn your repos, docs, architecture, and tribal knowledge -- automatically.
 
 Here's the stack:
 
@@ -43,7 +43,7 @@ The LLM Wiki pattern ties it together.
 
 Agent asks question. Vector search finds chunks. Graph adds structure. LLM synthesizes.
 
-Agents that know your org like your best engineer. 75 articles written with this system.
+Cyborgenic agents that know your org like your best engineer. 75 articles written with this system.
 
 https://agent.ceo/blog/building-ai-knowledge-base
 

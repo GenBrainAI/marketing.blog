@@ -6,11 +6,11 @@ cluster: ai-devops
 ---
 
 ## Tweet 1
-Our CI/CD pipeline has no humans in it.
+Inside our Cyborgenic org, the CI/CD pipeline has no humans in it.
 
-AI agents write the code, open the PR, run security reviews, fix the findings, and deploy to Kubernetes.
+AI agents write code, open PRs, run security reviews, fix findings, and deploy to K8s.
 
-Here's how autonomous DevOps actually works:
+Here's how Cyborgenic DevOps works:
 
 ## Tweet 2
 Step 1: An agent picks up a task from the backlog.
@@ -64,10 +64,10 @@ Real numbers from our pipeline:
 https://agent.ceo/blog/ai-powered-devops
 
 ## Tweet 7 (CTA)
-Stop babysitting your CI/CD pipeline. Let agents handle the undifferentiated heavy lifting.
+Stop babysitting your pipeline. Go Cyborgenic -- let AI agents handle the heavy lifting as peers on your team.
 
-Start free at agent.ceo — 1 agent-week trial, both SaaS and enterprise private installation.
+Start free at agent.ceo -- SaaS and enterprise.
 
 https://agent.ceo/blog/ai-powered-devops
 
-#AIAgents #DevOps #Automation
+#CyborgenicOrg #DevOps #Automation

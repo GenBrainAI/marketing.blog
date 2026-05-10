@@ -6,9 +6,9 @@ cluster: platform-engineering
 ---
 
 ## Tweet 1
-We built a SaaS platform where you pay $1/agent-hour for a full AI workforce.
+We built the platform for Cyborgenic organizations. $1/agent-hour for a full AI workforce.
 
-No ML team. No infrastructure. Just agents that do real work.
+No ML team. No infrastructure. Just agents that do real work as peers on your team.
 
 Here's what it took to build it:
 
@@ -47,12 +47,12 @@ $1/agent-hour vs $50+/human-hour for the same work.
 https://agent.ceo/blog/saas-platform-ai-agents
 
 ## Tweet 6 (CTA)
-Your AI agent team is one signup away.
+Your Cyborgenic organization is one signup away.
 
-$1/agent-hour. No infrastructure to manage. No ML team required.
+$1/agent-hour. No infrastructure. No ML team.
 
-Start free at agent.ceo — SaaS or enterprise private installation.
+Start free at agent.ceo -- SaaS or enterprise.
 
 https://agent.ceo/blog/saas-platform-ai-agents
 
-#AIAgents #SaaS #PlatformEngineering
+#CyborgenicOrg #AIAgents #SaaS

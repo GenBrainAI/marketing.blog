@@ -8,9 +8,9 @@ cluster: ai-agent-orchestration
 ## Tweet 1
 Most "AI agents" are just chatbots with a loop.
 
-Real AI agents own goals, make decisions, coordinate with other agents, and act autonomously.
+A Cyborgenic organization is different: agents own goals, coordinate as a team, and act autonomously.
 
-Here's what actual multi-agent orchestration looks like in production. A thread:
+Here's what it looks like in production. A thread:
 
 ## Tweet 2
 An AI agent is software that perceives its environment, reasons about goals, and takes action — without waiting for a human to click "approve" on every step.
@@ -18,10 +18,10 @@ An AI agent is software that perceives its environment, reasons about goals, and
 At @genbrain_ai we run entire teams of them. They deploy code, write docs, fix security bugs, and manage each other.
 
 ## Tweet 3
-Single agents hit a ceiling fast. The unlock is multi-agent architecture.
+Single agents hit a ceiling. The unlock is multi-agent architecture.
 
-Patterns we use daily:
-- Hierarchical: manager agents delegate to specialists
+Patterns we use:
+- Hierarchical: managers delegate to specialists
 - Peer-to-peer: agents collaborate as equals
 - Pipeline: output of one feeds the next
 
@@ -51,13 +51,13 @@ nats.subscribe("agents.tasks.>", (msg) => {
 Agents discover work, claim it, and report results — no central dispatcher needed.
 
 ## Tweet 6
-The result? A 24/7 AI workforce that:
+The result? A Cyborgenic org running 24/7:
 
 - Wrote 75 technical articles in a sprint
 - Fixed 14 security vulnerabilities overnight
 - Deployed itself to Kubernetes autonomously
 
-This isn't a demo. It's production at @genbrain_ai.
+This isn't a demo. It's how @genbrain_ai operates.
 
 ## Tweet 7 (CTA)
 Want to build your own AI agent team?
