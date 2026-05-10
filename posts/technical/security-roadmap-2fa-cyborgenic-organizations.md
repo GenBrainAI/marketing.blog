@@ -48,36 +48,11 @@ The first layer protects human access to the platform. We [implemented TOTP-base
 
 ### What We Ship Today
 
-Every human operator accessing agent.ceo must authenticate with two factors:
-
-1. **Password** (bcrypt-hashed, minimum 12 characters)
-2. **TOTP code** (RFC 6238, 6-digit, 30-second rotation)
-
-```
-Login Flow:
-  Email + Password ──► Verify bcrypt hash
-                         │
-                         ▼
-                       Valid? ──► Request TOTP code
-                                    │
-                                    ▼
-                                  Verify against stored secret
-                                    │
-                                    ▼
-                                  Issue session token (JWT, 24h expiry)
-```
-
-Backup codes are generated at 2FA setup -- ten single-use codes, bcrypt-hashed individually. We do not store them in plaintext, and we do not offer SMS fallback (SIM-swap attacks make SMS 2FA worse than useless for a platform that controls autonomous agents).
+Every human operator authenticates with two factors: bcrypt-hashed password plus TOTP (RFC 6238, 6-digit, 30-second rotation). Backup codes are bcrypt-hashed individually. We do not offer SMS fallback -- SIM-swap attacks make SMS 2FA worse than useless for a platform that controls autonomous agents.
 
 ### What Is Next: WebAuthn/Passkeys
 
-TOTP is good. Passkeys are better. Our roadmap includes WebAuthn support for:
-
-- **Phishing resistance** -- the browser verifies the origin, so a fake login page cannot capture the credential
-- **Biometric convenience** -- Touch ID, Face ID, Windows Hello as second factors
-- **Hardware key support** -- YubiKey and similar FIDO2 devices for high-security environments
-
-For enterprise customers running agent.ceo on private infrastructure, we are also building SAML/OIDC integration so they can use their existing identity provider and MFA policies.
+TOTP is good. Passkeys are better. Our roadmap includes WebAuthn for phishing resistance (browser verifies origin), biometric convenience (Touch ID, Face ID), and hardware key support (YubiKey/FIDO2). For enterprise customers, we are building SAML/OIDC integration so they can use their existing identity provider. See our [detailed 2FA implementation guide](/blog/2fa-mfa-ai-platforms) for the full technical breakdown.
 
 ## Layer 2: Agent Authentication -- Proving Identity Between Machines
 
@@ -87,66 +62,19 @@ In a Cyborgenic Organization, agents communicate constantly -- [via NATS message
 
 ### NATS Authentication: Per-Agent Credentials
 
-Every agent connects to NATS with unique credentials scoped to its role:
+Every agent connects to NATS with unique credentials scoped to its role. The CEO agent can publish to any agent's inbox and manage any task. The backend agent can only message its manager (CTO) and manage its own tasks. This permission asymmetry reflects the [organizational hierarchy](/blog/cyborgenic-organizations) -- agents get the communication permissions their role requires, nothing more.
 
 ```yaml
-# NATS authorization configuration
-authorization:
-  users:
-    - user: "agent-ceo"
-      permissions:
-        publish:
-          allow:
-            - "genbrain.agents.*.inbox"      # Can message any agent
-            - "genbrain.tasks.>"              # Can create/manage tasks
-            - "genbrain.events.>"             # Can publish org-wide events
-        subscribe:
-          allow:
-            - "genbrain.agents.ceo.>"         # Own inbox and channels
-            - "genbrain.events.>"             # Org-wide events
-
-    - user: "agent-backend"
-      permissions:
-        publish:
-          allow:
-            - "genbrain.agents.cto.inbox"     # Can message manager only
-            - "genbrain.agents.backend.>"     # Own channels
-            - "genbrain.tasks.backend.>"      # Own tasks only
-        subscribe:
-          allow:
-            - "genbrain.agents.backend.>"     # Own inbox
-            - "genbrain.events.engineering.>" # Department events only
+# Permission asymmetry example
+agent-ceo:
+  publish: ["genbrain.agents.*.inbox", "genbrain.tasks.>"]   # Fleet-wide
+agent-backend:
+  publish: ["genbrain.agents.cto.inbox", "genbrain.tasks.backend.>"]  # Scoped
 ```
-
-Notice the permission asymmetry. The CEO agent can message any agent and manage any task. The backend agent can only message its manager (CTO) and manage its own tasks. This reflects the [organizational hierarchy](/blog/cyborgenic-organizations) -- agents have the communication permissions their role requires, nothing more.
 
 ### MCP Tool Authorization
 
-Agents interact with tools through MCP servers. Each agent's MCP configuration specifies exactly which tools it can access:
-
-```json
-{
-  "agent": "backend",
-  "mcp_servers": {
-    "git": {
-      "allowed_tools": ["clone", "pull", "push", "commit", "branch"],
-      "restrictions": {
-        "push": { "branches": ["backend-*", "feat/*"] },
-        "branch": { "delete": false }
-      }
-    },
-    "database": {
-      "allowed_tools": ["query", "migrate"],
-      "restrictions": {
-        "query": { "databases": ["app_dev", "app_staging"] },
-        "migrate": { "environments": ["dev", "staging"] }
-      }
-    }
-  }
-}
-```
-
-The backend agent can push to feature branches but not to `main`. It can query dev and staging databases but not production. These restrictions are enforced at the MCP server level -- the agent cannot bypass them regardless of what instructions it receives.
+Each agent's MCP configuration specifies exactly which tools it can access and with what restrictions. The backend agent can push to feature branches but not to `main`. It can query dev and staging databases but not production. These restrictions are enforced at the MCP server level -- the agent cannot bypass them regardless of what instructions it receives, including [prompt injection](/blog/security-posture-ai-agents) attempts.
 
 ## Layer 3: Permission Boundaries -- What Agents Are Allowed to Do
 
@@ -154,28 +82,7 @@ Authentication answers "who are you?" Authorization answers "what can you do?" I
 
 ### The Autonomy Level Framework
 
-Every agent operates at a defined autonomy level that governs its decision scope:
-
-```yaml
-autonomy_levels:
-  level_1:  # Execute only
-    description: "Agent follows explicit instructions, no discretion"
-    example: "Run this specific test suite and report results"
-
-  level_2:  # Execute with judgment
-    description: "Agent chooses approach within defined boundaries"
-    example: "Fix this bug using your best judgment on implementation"
-
-  level_3:  # Plan and execute
-    description: "Agent decomposes problems, delegates subtasks"
-    example: "Improve API performance -- decide what to optimize"
-
-  level_4:  # Strategic autonomy
-    description: "Agent sets priorities within domain, manages resources"
-    example: "Own the security posture of the platform"
-```
-
-Crucially, autonomy levels are enforced by the [task management system](/blog/task-lifecycle-cyborgenic-organization), not by trusting agents to self-limit. A Level 2 agent literally cannot create tasks for other agents -- the MCP tool call will be rejected. A Level 3 agent can delegate but only to agents it manages in the org chart.
+Every agent operates at a defined autonomy level: Level 1 (execute explicit instructions), Level 2 (choose approach within boundaries), Level 3 (decompose problems and delegate), or Level 4 (set priorities within domain). These levels are enforced by the [task management system](/blog/task-lifecycle-cyborgenic-organization), not by trusting agents to self-limit. A Level 2 agent literally cannot create tasks for other agents -- the MCP tool call will be rejected.
 
 ## Real-World Test: The CSO Agent's Overnight Security Audit
 
@@ -208,37 +115,22 @@ This is what security looks like in a Cyborgenic Organization. Not quarterly aud
 
 ## Building Trust: The Incremental Approach
 
-Security in a Cyborgenic Organization is ultimately about trust. How much do you trust your agents to act correctly? Our framework for building that trust is incremental:
+Security in a Cyborgenic Organization is ultimately about trust. Our framework builds it incrementally across four phases:
 
-### Phase 1: Observe (Week 1-2)
-Deploy agents at Autonomy Level 1. They execute explicit instructions only. Humans review every output. This builds confidence in the agent's basic competence.
+1. **Observe (Week 1-2):** Agents at Level 1, executing explicit instructions only. Humans review every output.
+2. **Assist (Week 3-4):** Level 2. Agents choose implementation approaches within defined boundaries. Humans audit a sample of decisions.
+3. **Operate (Month 2-3):** Level 3. Agents decompose problems and delegate. Human override rate should be below 5%.
+4. **Own (Month 4+):** Level 4. Agents set priorities within their domain. This is where a CSO agent can run overnight audits and fix findings autonomously.
 
-### Phase 2: Assist (Week 3-4)
-Promote to Level 2. Agents make implementation decisions but cannot affect other agents or external systems. Humans audit a random sample of decisions.
+This phased approach is enforced by the platform. You cannot promote an agent to Level 4 on day one -- the system requires a minimum number of completed tasks with low override rates before the promotion is available.
 
-### Phase 3: Operate (Month 2-3)
-Promote to Level 3. Agents decompose problems and delegate. Full audit trail is active. Human override rate should be below 5% -- if it is higher, the permission boundaries need adjustment.
+## What Is Next
 
-### Phase 4: Own (Month 4+)
-Promote key agents to Level 4. They set priorities within their domain. This is where a CSO agent can run overnight audits and fix findings autonomously. The trust has been earned through months of observable behavior.
+Our roadmap includes mutual TLS for all agent communication (client certificates, not just passwords), cryptographic action signing on every task completion, ML-based anomaly detection for compromised agents, customer-managed encryption keys, and SOC 2 Type II certification.
 
-This phased approach is not optional -- it is built into the platform. You cannot promote an agent to Level 4 on day one. The system requires a minimum number of completed tasks with low override rates before the promotion is available.
+## Security Enables Autonomy
 
-## The Security Roadmap Ahead
-
-What we are building next:
-
-1. **Mutual TLS for all agent communication** -- every NATS connection authenticated with client certificates, not just passwords
-2. **Agent action signing** -- every task completion includes a cryptographic signature proving which agent performed the work
-3. **Anomaly detection** -- ML-based monitoring for agents that deviate from established behavior patterns (potential compromise indicator)
-4. **Customer-managed encryption keys** -- enterprise customers bring their own KMS for data-at-rest encryption
-5. **SOC 2 Type II certification** -- formal compliance validation of our security controls
-
-## Security Is a Feature, Not a Checkbox
-
-In a Cyborgenic Organization, security is not a compliance requirement you satisfy annually. It is a continuous property of the system that enables autonomy. The more robust your authentication, authorization, and audit trail, the more autonomy you can safely grant your agents. And the more autonomy your agents have, the more value your Cyborgenic Organization delivers.
-
-If you are building with autonomous agents and your security model has not evolved past "API keys in environment variables," your agents are a liability, not an asset.
+In a Cyborgenic Organization, security is not a compliance checkbox. It is the property that enables autonomy. The more robust your authentication, authorization, and audit trail, the more autonomy you can safely grant your agents. If your security model has not evolved past "API keys in environment variables," your agents are a liability, not an asset.
 
 > GenBrain AI is the company behind agent.ceo -- a Cyborgenic platform for autonomous AI agent orchestration, registered as Beeri B.V. in the Netherlands.
 

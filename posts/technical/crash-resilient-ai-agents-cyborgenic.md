@@ -89,200 +89,84 @@ The Model Context Protocol (MCP) is how our agents interact with tools -- git, d
 
 **The symptom:** MCP server processes occasionally died from memory pressure (a browser automation session consuming too much RAM, a long-running git operation). When the MCP wrapper went down, the agent's next tool call would hang until timeout, then the agent would report a cryptic error and stall.
 
-**The fix:** We wrapped MCP server management in a supervisor with automatic restart, connection health checks, and graceful fallback:
+**The fix:** We wrapped MCP server management in a supervisor with three key behaviors:
+
+1. **Health checks before every tool call** -- if the server is unhealthy, restart it before attempting the call
+2. **Circuit breaking** -- if a server restarts more than 5 times in 10 minutes, stop trying and report the failure upward
+3. **Per-call timeouts** -- if a tool call hangs for more than 60 seconds, kill the server, restart it, and return an error to the agent
 
 ```python
 class MCPSupervisor:
     """Manages MCP server lifecycle with crash resilience."""
 
-    def __init__(self, server_configs: list[MCPServerConfig]):
-        self.servers = {}
-        self.restart_counts = {}
-        self.max_restarts = 5
-        self.restart_window = timedelta(minutes=10)
-
     async def ensure_server(self, server_name: str) -> MCPConnection:
         """Get a healthy connection, restarting the server if needed."""
         conn = self.servers.get(server_name)
-
         if conn and await conn.health_check():
             return conn
 
-        # Server is down or unhealthy -- restart it
         log.warning(f"MCP server {server_name} unhealthy, restarting")
-        await self._restart_server(server_name)
-        return self.servers[server_name]
+        return await self._restart_with_circuit_breaker(server_name)
 
-    async def _restart_server(self, server_name: str):
-        """Restart with backoff and circuit breaking."""
-        restarts = self.restart_counts.get(server_name, [])
-
-        # Clear old restarts outside the window
-        cutoff = datetime.now() - self.restart_window
-        restarts = [t for t in restarts if t > cutoff]
-
-        if len(restarts) >= self.max_restarts:
-            raise MCPServerCircuitOpen(
-                f"{server_name} restarted {self.max_restarts} times "
-                f"in {self.restart_window}. Circuit open."
-            )
-
-        # Kill existing process if still running
-        if server_name in self.servers:
-            await self.servers[server_name].terminate(timeout=5)
-
-        # Start fresh
-        config = self.get_config(server_name)
-        conn = await MCPConnection.start(config)
-        self.servers[server_name] = conn
-        restarts.append(datetime.now())
-        self.restart_counts[server_name] = restarts
+    async def call_tool(self, server: str, tool: str, params: dict,
+                        timeout: float = 60.0) -> ToolResult:
+        conn = await self.ensure_server(server)
+        try:
+            return await asyncio.wait_for(conn.call(tool, params), timeout=timeout)
+        except asyncio.TimeoutError:
+            await self._restart_with_circuit_breaker(server)
+            raise ToolTimeoutError(f"{tool} timed out after {timeout}s")
 ```
 
-We also added per-tool-call timeouts with cleanup. If a browser session hangs, we kill it after 60 seconds and return an error to the agent rather than letting it block forever:
-
-```python
-async def call_tool(self, server: str, tool: str, params: dict,
-                    timeout: float = 60.0) -> ToolResult:
-    """Call an MCP tool with timeout and automatic server recovery."""
-    conn = await self.ensure_server(server)
-
-    try:
-        result = await asyncio.wait_for(
-            conn.call(tool, params),
-            timeout=timeout
-        )
-        return result
-    except asyncio.TimeoutError:
-        log.error(f"Tool call timed out: {server}/{tool}")
-        # Force-restart the server to clear hung state
-        await self._restart_server(server)
-        raise ToolTimeoutError(f"{tool} timed out after {timeout}s")
-```
+The key insight: MCP servers are expendable processes. Let them crash. Your agent should survive them.
 
 ## Lesson 3: PVC Deployments -- RollingUpdate to Recreate
 
 This one cost us a full day of debugging.
 
-**The symptom:** Kubernetes deployments for agents using Persistent Volume Claims (PVCs) would hang indefinitely during rollouts. The new pod could not start because the PVC was still mounted to the old pod. The old pod could not terminate because Kubernetes was waiting for the new pod to be healthy first (RollingUpdate strategy).
-
-**The root cause:** `RollingUpdate` strategy with `maxUnavailable: 0` (the default) requires the new pod to be ready before the old pod terminates. But with `ReadWriteOnce` PVCs, only one pod can mount the volume at a time. Classic deadlock.
+**The symptom:** Kubernetes deployments for agents using Persistent Volume Claims (PVCs) would hang indefinitely. `RollingUpdate` with `maxUnavailable: 0` requires the new pod to be ready before the old pod terminates -- but with `ReadWriteOnce` PVCs, only one pod can mount the volume at a time. Classic deadlock.
 
 **The fix:** Switch agents with PVCs to `Recreate` deployment strategy:
 
 ```yaml
-# Before: deadlock with RollingUpdate + PVC
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend-agent
+# Before: deadlock
 spec:
   strategy:
     type: RollingUpdate      # DEADLOCK with ReadWriteOnce PVC
-  template:
-    spec:
-      volumes:
-        - name: workspace
-          persistentVolumeClaim:
-            claimName: backend-workspace
 
-# After: Recreate avoids PVC mount conflicts
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: backend-agent
+# After: old pod terminates fully before new pod starts
 spec:
   strategy:
-    type: Recreate           # Old pod fully terminates before new pod starts
-  template:
-    spec:
-      volumes:
-        - name: workspace
-          persistentVolumeClaim:
-            claimName: backend-workspace
+    type: Recreate           # 30-second gap, tasks queued in NATS
 ```
 
-Yes, `Recreate` means a brief period of downtime during deployments. For a traditional web service, that would be unacceptable. For an AI agent in a Cyborgenic Organization, it is fine -- the agent's tasks are queued in [NATS JetStream](/blog/nats-jetstream-agent-communication) and will be processed when the agent comes back. A 30-second deployment gap is invisible compared to the agent's typical task duration of 10-60 minutes.
+Yes, `Recreate` means brief downtime during deployments. For AI agents in a Cyborgenic Organization, this is fine -- tasks are queued in [NATS JetStream](/blog/nats-jetstream-agent-communication) and will be processed when the agent returns. A 30-second gap is invisible compared to a typical 10-60 minute task.
 
 ## Lesson 4: State Persistence Across Crashes
 
 When an agent crashes mid-task, we need to recover as much state as possible. Our approach has three layers:
 
-### Layer 1: Task Progress Checkpoints
-
-Every progress update the agent reports is persisted to Firestore. When an agent restarts and checks its inbox, it finds its in-progress task with the last known checkpoint:
+**Layer 1: Task progress checkpoints.** Every progress update is persisted to Firestore. When an agent restarts, it finds its in-progress task with the last known checkpoint and resumes from there:
 
 ```javascript
 // On restart, agent checks for in-progress tasks
 const activeTasks = await mcpCall("agent-hub", "list_assigned_tasks", {
   status: "in_progress"
 });
-
 if (activeTasks.length > 0) {
-  const task = activeTasks[0];
-  const lastProgress = task.progress[task.progress.length - 1];
-
-  log.info(`Resuming task ${task.id} from ${lastProgress.percent}%: ` +
-           `${lastProgress.message}`);
-
-  // Agent has enough context to continue from the last checkpoint
-  await resumeTask(task);
+  const lastProgress = activeTasks[0].progress.at(-1);
+  log.info(`Resuming from ${lastProgress.percent}%: ${lastProgress.message}`);
+  await resumeTask(activeTasks[0]);
 }
 ```
 
-### Layer 2: Git as Crash-Safe Storage
+**Layer 2: Git as crash-safe storage.** Agents commit work-in-progress every 15 minutes with a `wip:` prefix. If the agent crashes, the next instance has code changes up to 15 minutes old. Git is the most reliable state persistence layer you already have -- use it.
 
-Agents commit work-in-progress to git frequently -- not just on task completion. A backend agent writing code commits every 15 minutes with a `wip:` prefix. If the agent crashes, the next instance has all code changes up to 15 minutes ago.
+**Layer 3: Agent memory snapshots.** The agent's working memory -- decisions made, approaches tried, context gathered -- is periodically serialized to persistent storage. On restart, the agent loads this snapshot to avoid re-discovering information it already found.
 
-```bash
-# Periodic auto-commit (runs in agent's background loop)
-if git diff --quiet HEAD; then
-  echo "No changes to checkpoint"
-else
-  git add -A
-  git commit -m "wip: checkpoint during task ${TASK_ID} (auto-save)"
-  git push origin ${BRANCH} --quiet
-fi
-```
+## Lesson 5: Idempotent Startup
 
-### Layer 3: Agent Memory Snapshots
-
-The agent's working memory -- decisions made, approaches tried, context gathered -- is periodically serialized to persistent storage. On restart, the agent loads this snapshot to avoid re-discovering information it already found:
-
-```python
-class AgentMemory:
-    def save_snapshot(self, task_id: str):
-        """Persist current working memory for crash recovery."""
-        snapshot = {
-            "task_id": task_id,
-            "decisions": self.decisions,
-            "tried_approaches": self.tried_approaches,
-            "gathered_context": self.gathered_context,
-            "timestamp": datetime.now().isoformat()
-        }
-        self.storage.put(f"snapshots/{task_id}/latest.json", snapshot)
-
-    def load_snapshot(self, task_id: str) -> dict | None:
-        """Load working memory from last snapshot."""
-        return self.storage.get(f"snapshots/{task_id}/latest.json")
-```
-
-## Lesson 5: The Crash Recovery Startup Sequence
-
-When an agent starts (whether fresh deployment or crash recovery), it runs a deterministic startup sequence:
-
-```
-1. Connect to NATS (with exponential backoff reconnection)
-2. Initialize MCP servers (with supervisor)
-3. Check for in-progress tasks
-   ├─ Found: load snapshot, resume from last checkpoint
-   └─ Not found: pull inbox, accept highest-priority task
-4. Start heartbeat loop
-5. Start periodic git checkpoint loop
-6. Begin task execution
-```
-
-This sequence is idempotent. Whether the agent is starting for the first time or recovering from its fifth crash today, it follows the same path and arrives at productive work within 30 seconds.
+Every agent -- whether starting fresh or recovering from its fifth crash -- runs the same deterministic startup: connect to NATS, initialize MCP servers, check for in-progress tasks (resume if found, pull inbox if not), start heartbeat and git checkpoint loops, begin work. Idempotent startup means crash recovery is just... startup.
 
 ## Measuring Resilience: Our Numbers
 
@@ -298,17 +182,11 @@ After implementing these patterns, our fleet resilience metrics improved dramati
 
 The single biggest improvement came from NATS timeout tuning. The second biggest came from the MCP supervisor. Together, they eliminated the two most common crash-cascade patterns.
 
-## Applying This to Your Agent Fleet
+## Start Here
 
-If you are building a Cyborgenic Organization or any system with long-running AI agents, start with these priorities:
+If you are building a Cyborgenic Organization, prioritize: (1) tune message broker timeouts for AI workloads, (2) wrap your tool layer in a supervisor, (3) commit work-in-progress frequently, (4) implement heartbeats to distinguish "thinking" from "dead," and (5) make startup idempotent.
 
-1. **Tune your message broker timeouts for AI workloads** -- default timeouts assume millisecond response times. LLM reasoning takes minutes.
-2. **Wrap your tool layer in a supervisor** -- MCP servers, API connections, and browser sessions all crash independently. Your agent should survive them.
-3. **Commit work-in-progress frequently** -- git is your crash-safe state store. Use it.
-4. **Implement heartbeats** -- distinguish between "thinking" and "dead" so your monitoring system does not create false alarms.
-5. **Make startup idempotent** -- an agent should be able to start, crash, and restart at any point and converge on productive work.
-
-For more on the infrastructure that supports these patterns, see [Kubernetes AI Agent Deployment](/blog/kubernetes-ai-agent-deployment) and [Monitoring AI Agent Health](/blog/monitoring-ai-agent-health). For the broader resilience architecture, read [Building Resilient AI Agent Fleets](/blog/resilient-ai-agent-fleets).
+For more on these patterns, see [Kubernetes AI Agent Deployment](/blog/kubernetes-ai-agent-deployment), [Monitoring AI Agent Health](/blog/monitoring-ai-agent-health), and [Building Resilient AI Agent Fleets](/blog/resilient-ai-agent-fleets).
 
 > GenBrain AI is the company behind agent.ceo -- a Cyborgenic platform for autonomous AI agent orchestration.
 
