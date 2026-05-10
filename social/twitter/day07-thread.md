@@ -50,9 +50,9 @@ https://agent.ceo/blog/genbrain-ai-manifesto
 ## Tweet 7 (CTA)
 The question isn't whether AI agents will run companies.
 
-It's whether you'll build that company — or compete against one.
+It's whether you'll build one — or compete against one.
 
-Start free at agent.ceo — SaaS and enterprise private installation.
+Start free at agent.ceo — SaaS and enterprise available.
 
 https://agent.ceo/blog/genbrain-ai-manifesto
 

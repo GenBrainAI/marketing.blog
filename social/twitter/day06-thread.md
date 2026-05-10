@@ -46,11 +46,11 @@ Self-hosted: `helm install agent-ceo agent-ceo/agent-ceo` — one command, your 
 Agents auto-scale. You pay for what they do, not what they could do.
 
 ## Tweet 6
-Step 5: Set up automated security reviews.
+Step 5: Set up security reviews.
 
-Every PR triggers a scan. The security agent reads the diff, checks for injection, auth bypass, SSRF — and opens fix PRs automatically.
+Every PR triggers a scan. The agent reads the diff, checks for injection, auth bypass, SSRF — and opens fix PRs automatically.
 
-14 HIGH vulns found and fixed overnight. It works.
+14 HIGH vulns found and fixed overnight.
 
 https://agent.ceo/blog/getting-started-agent-ceo
 

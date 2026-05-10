@@ -39,11 +39,11 @@ Every doc chunk gets embedded. When an agent needs context, it queries by meanin
 "How do we handle auth?" returns the right answer even if no doc says "auth" in the title. Semantic search makes agents actually smart.
 
 ## Tweet 5
-The LLM Wiki pattern ties it all together.
+The LLM Wiki pattern ties it together.
 
-Agent asks a question. Vector search finds chunks. Knowledge graph adds structure. LLM synthesizes the answer.
+Agent asks question. Vector search finds chunks. Graph adds structure. LLM synthesizes.
 
-Result: agents that know your org like your best engineer. 75 articles written with this system.
+Agents that know your org like your best engineer. 75 articles written with this system.
 
 https://agent.ceo/blog/building-ai-knowledge-base
 
