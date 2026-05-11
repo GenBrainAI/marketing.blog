@@ -1,0 +1,28 @@
+graph LR
+    subgraph "NATS Subject Hierarchy"
+        R[genbrain] --> E[events]
+        R --> A[agents]
+        R --> T[tasks]
+
+        E --> ED[deploy]
+        E --> ES[security]
+        E --> EC[content]
+
+        ED --> EDC[complete]
+        ED --> EDF[failed]
+        ES --> ESA[alert]
+        ES --> ESS[scan.complete]
+        EC --> ECP[published]
+
+        A --> ACEO[ceo.inbox]
+        A --> ACTO[cto.inbox]
+        A --> ACSO[cso.inbox]
+        A --> ABE[backend.inbox]
+        A --> AFE[frontend.inbox]
+        A --> AMKT[marketing.inbox]
+        A --> ADEV[devops.inbox]
+
+        T --> TA[assigned]
+        T --> TP[progress]
+        T --> TC[completed]
+    end

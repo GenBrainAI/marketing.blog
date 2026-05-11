@@ -11,7 +11,7 @@ relatedPosts: [agent-lifecycle-management, nats-jetstream-ai-agents, agent-to-ag
 
 # Building Resilient AI Agent Fleets
 
-A single AI agent crashing is an inconvenience. Your entire agent fleet going down because of a cascading failure is a catastrophe. When agents own real workflows — deploying code, managing infrastructure, handling security incidents — resilience is not optional. It is a core architectural requirement.
+A single AI agent crashing is an inconvenience. Your entire agent fleet going down because of a cascading failure is a catastrophe. When agents own real workflows — deploying code, managing infrastructure, handling security incidents — resilience is not optional. It is a core architectural requirement. This is especially true in a [Cyborgenic Organization](/blog/cyborgenic-organizations), where agents and humans operate as peers and the organization depends on agents maintaining continuity just as it would with any critical team member.
 
 This guide covers the patterns, practices, and tooling required to build agent fleets that self-heal, degrade gracefully, and maintain organizational continuity even when individual agents fail.
 

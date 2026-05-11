@@ -11,7 +11,7 @@ relatedPosts: [wiki-knowledge-graphs, vector-search-organizational-knowledge, em
 
 # Building an AI Knowledge Base with Neo4j
 
-Every AI agent system faces the same fundamental challenge: where does organizational knowledge live, and how do agents access it? Traditional databases store data in rows and columns, but organizational knowledge is inherently relational. A deployment pattern connects to a service, which belongs to a team, which owns a repository, which contains architecture decisions. These relationships matter as much as the entities themselves.
+Every [Cyborgenic Organization](/blog/cyborgenic-organizations) faces the same fundamental challenge: where does organizational knowledge live, and how do agents access it? Traditional databases store data in rows and columns, but organizational knowledge is inherently relational. A deployment pattern connects to a service, which belongs to a team, which owns a repository, which contains architecture decisions. These relationships matter as much as the entities themselves.
 
 At agent.ceo, we chose Neo4j as the foundation of our organizational memory system. Graph databases represent knowledge the way humans think about it: as interconnected concepts with meaningful relationships. When an AI agent needs context about a production incident, it doesn't just need the incident record. It needs the service topology, the team responsible, the recent deployments, and the historical patterns. Neo4j delivers all of this through relationship traversal.
 

@@ -11,7 +11,7 @@ relatedPosts: [ai-powered-devops, kubernetes-ai-agents, self-healing-infrastruct
 
 # Cloud Discovery: AI Agents Mapping Your Infrastructure
 
-Every engineering organization has shadow infrastructure — resources created for a demo six months ago, load balancers pointing to decommissioned services, storage buckets from a departed engineer's experiment. These orphaned resources silently drain your cloud budget. AI agents solve this by continuously scanning your cloud accounts, building a living map of your infrastructure, and identifying resources that no longer serve a purpose.
+Every engineering organization has shadow infrastructure — resources created for a demo six months ago, load balancers pointing to decommissioned services, storage buckets from a departed engineer's experiment. These orphaned resources silently drain your cloud budget. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), infrastructure awareness is not a quarterly audit — it is a continuous function owned by AI agents that scan your cloud accounts, build a living map of your infrastructure, and identify resources that no longer serve a purpose.
 
 ## The Shadow Infrastructure Problem
 

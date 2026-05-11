@@ -13,7 +13,7 @@ relatedPosts: [saas-vs-enterprise-deployment, tco-saas-vs-self-hosted, private-i
 
 The fastest way to experience AI agent orchestration is to deploy your first agent on agent.ceo SaaS. No infrastructure provisioning, no Kubernetes clusters, no container registries. You sign up, connect your tools, and watch your first agent execute a task — all within five minutes.
 
-GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform. The SaaS deployment at [agent.ceo](https://agent.ceo) is our fully managed offering, designed to eliminate every barrier between you and your first working agent.
+GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that lets any team run as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents and humans operate as peers, with agents owning workflows end-to-end. The SaaS deployment at [agent.ceo](https://agent.ceo) is our fully managed offering, designed to eliminate every barrier between you and your first working agent.
 
 ## What You Get with the Free Trial
 

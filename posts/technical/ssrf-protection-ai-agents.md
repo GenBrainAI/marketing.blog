@@ -13,7 +13,7 @@ relatedPosts: [automated-security-auditing, path-traversal-defense, nats-auth-ha
 
 Server-Side Request Forgery (SSRF) is uniquely dangerous in AI agent platforms. Agents frequently need to fetch external resources -- pulling data from APIs, downloading files, checking URLs provided in tasks -- but each outbound request is a potential vector for attacking internal infrastructure. When our AI CSO agent ran its first [automated security audit](/blog/automated-security-auditing), it identified four HIGH-severity SSRF vulnerabilities: unrestricted URL fetching in agent tools, accessible cloud metadata endpoints, internal service enumeration through error messages, and DNS rebinding susceptibility.
 
-This post details the SSRF attack surface specific to AI agents, demonstrates the vulnerabilities found, and provides the defense implementation that blocks these attacks while maintaining agent functionality.
+In a [Cyborgenic Organization](/blog/cyborgenic-organizations) where agents autonomously fetch data, integrate with APIs, and execute workflows as peers alongside humans, SSRF protection is not optional -- it is a prerequisite for trustworthy agent operations. This post details the SSRF attack surface specific to AI agents, demonstrates the vulnerabilities found, and provides the defense implementation that blocks these attacks while maintaining agent functionality.
 
 ## Why SSRF Is Amplified in AI Agent Platforms
 

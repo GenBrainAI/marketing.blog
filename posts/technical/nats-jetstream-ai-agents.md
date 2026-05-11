@@ -11,7 +11,7 @@ relatedPosts: [agent-to-agent-messaging, multi-agent-architecture-patterns, resi
 
 # NATS JetStream for AI Agent Communication
 
-When you orchestrate a fleet of AI agents, the communication layer is everything. HTTP request-response falls apart when agents work asynchronously, tasks take minutes to complete, and messages must survive agent restarts. NATS JetStream solves these problems with persistent, subject-based messaging that was designed for exactly this kind of distributed coordination.
+When you orchestrate a fleet of AI agents, the communication layer is everything. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents coordinate work just as human teams do — through reliable, asynchronous messaging. HTTP request-response falls apart when agents work asynchronously, tasks take minutes to complete, and messages must survive agent restarts. NATS JetStream solves these problems with persistent, subject-based messaging that was designed for exactly this kind of distributed coordination.
 
 This post explains why we chose NATS JetStream as the messaging backbone for agent.ceo, and how to configure it for AI agent orchestration.
 

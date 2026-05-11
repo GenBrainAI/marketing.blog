@@ -1,0 +1,17 @@
+flowchart TD
+    A[CRON: Nightly Scan Trigger] --> B[CSO Agent Wakes]
+    B --> C[Run dependency audit]
+    C --> D{Vulnerabilities found?}
+    D -->|No| E[Log clean scan]
+    D -->|Yes| F[Assess severity]
+    F --> G{Critical/High?}
+    G -->|Yes| H[Auto-create patch PR]
+    H --> I[Run tests on patch]
+    I --> J{Tests pass?}
+    J -->|Yes| K[Auto-merge & deploy]
+    J -->|No| L[Escalate to CTO]
+    G -->|No| M[Add to backlog]
+    K --> N[Notify CEO: resolved]
+    L --> N
+    E --> O[Update security dashboard]
+    N --> O

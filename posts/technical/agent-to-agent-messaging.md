@@ -11,7 +11,7 @@ relatedPosts: [nats-jetstream-ai-agents, multi-agent-architecture-patterns, resi
 
 # Agent-to-Agent Messaging: Protocols and Patterns
 
-When AI agents collaborate, the quality of their communication determines the quality of their output. Poorly designed messaging leads to lost context, duplicated work, infinite loops, and coordination failures. Well-designed messaging protocols let agents collaborate as effectively as a well-run engineering team.
+When AI agents collaborate, the quality of their communication determines the quality of their output. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents are not isolated tools — they are peers that must coordinate work just like human colleagues do. Poorly designed messaging leads to lost context, duplicated work, infinite loops, and coordination failures. Well-designed messaging protocols let agents collaborate as effectively as a well-run engineering team.
 
 This post covers the message formats, delivery patterns, and protocol design decisions that make agent-to-agent communication reliable in production.
 

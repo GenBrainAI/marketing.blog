@@ -11,7 +11,7 @@ relatedPosts: [enterprise-ai-agents-security, credential-management-multi-cloud,
 
 # Product Update: 2FA/MFA — Enterprise Security for AI Platforms
 
-Today we're announcing multi-factor authentication (MFA) support for agent.ceo. This brings enterprise-grade authentication security to the control plane that manages your autonomous AI agent workforce.
+Today we're announcing multi-factor authentication (MFA) support for agent.ceo. This brings enterprise-grade authentication security to the control plane that manages your autonomous AI agent workforce. In a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents operate as peers alongside humans and own critical workflows -- securing the platform that governs those agents is paramount.
 
 ## Why This Matters
 

@@ -13,7 +13,7 @@ relatedPosts: [private-installation-guide, saas-vs-enterprise-deployment, tco-sa
 
 Some organizations cannot tolerate any outbound network connectivity from their AI infrastructure. Defense contractors, classified government programs, healthcare systems handling PHI, and financial institutions with strict data sovereignty requirements all share a common constraint: their AI agent orchestration must run in a fully air-gapped environment with zero external network dependencies.
 
-agent.ceo supports air-gapped deployment as a first-class configuration. GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that can run entirely within an isolated network boundary — no internet access required.
+agent.ceo supports air-gapped deployment as a first-class configuration. GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that can run entirely within an isolated network boundary — no internet access required. Even in these highly restricted environments, organizations can adopt the [Cyborgenic Organization](/blog/cyborgenic-organizations) model, where AI agents and humans operate as peers with agents owning workflows end-to-end.
 
 ## What "Air-Gapped" Means for AI Agents
 

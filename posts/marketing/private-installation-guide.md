@@ -13,7 +13,7 @@ relatedPosts: [enterprise-air-gapped-deployments, saas-vs-enterprise-deployment,
 
 For organizations that require full control over their AI agent infrastructure, agent.ceo offers private installation on your own cloud or on-premises hardware. This guide covers the architecture, prerequisites, deployment process, and ongoing operational considerations for running agent.ceo inside your network boundary.
 
-GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform. The Enterprise deployment provides the same orchestration capabilities as our SaaS offering while giving you complete authority over data residency, network topology, and access controls.
+GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that enables any team to run as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents and humans operate as peers, with agents owning workflows end-to-end. The Enterprise deployment provides the same orchestration capabilities as our SaaS offering while giving you complete authority over data residency, network topology, and access controls.
 
 ## Architecture Overview
 

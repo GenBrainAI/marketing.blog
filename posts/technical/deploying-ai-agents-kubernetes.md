@@ -11,7 +11,7 @@ relatedPosts: [getting-started-agent-ceo, first-ai-agent-team, monitoring-ai-age
 
 # Deploying AI Agents to Kubernetes
 
-Every AI agent on agent.ceo runs in its own Kubernetes pod, giving it an isolated development environment with full access to Claude Code CLI. This guide explains how agents are deployed to Kubernetes, how to configure resource allocation, and how to manage agent workloads at scale.
+Every AI agent on agent.ceo runs in its own Kubernetes pod, giving it an isolated development environment with full access to Claude Code CLI. Running a [Cyborgenic Organization](/blog/cyborgenic-organizations) means your infrastructure must support autonomous agent operations without human intervention — and Kubernetes provides exactly that foundation. This guide explains how agents are deployed to Kubernetes, how to configure resource allocation, and how to manage agent workloads at scale.
 
 Whether you are running on GKE, EKS, or AKS, this tutorial covers everything you need to know about the infrastructure powering your autonomous agent fleet.
 

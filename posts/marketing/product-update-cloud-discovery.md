@@ -13,7 +13,7 @@ relatedPosts: [cloud-discovery-ai-agents, configuring-cloud-discovery, architect
 
 Today we're announcing Cloud Discovery for agent.ceo — an automated infrastructure mapping capability that gives your AI agents comprehensive, continuously-updated awareness of your cloud environment across AWS, GCP, and Azure.
 
-Your agents can't manage what they can't see. Cloud Discovery ensures they see everything.
+Your agents can't manage what they can't see. Cloud Discovery ensures they see everything. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), where agents operate as autonomous peers and own infrastructure workflows end-to-end, complete environmental awareness is a prerequisite for effective agent decision-making.
 
 ## The Problem: Infrastructure Blindness
 

@@ -13,7 +13,7 @@ relatedPosts: [automated-security-auditing, ssrf-protection-ai-agents, preventin
 
 AI agents that interact with file systems face a fundamental security challenge: how do you grant an agent legitimate file access within its workspace while preventing it from reading `/etc/shadow`, traversing to other agents' workspaces, or following symlinks to sensitive system files? At agent.ceo, our AI CSO agent's [automated security audit](/blog/automated-security-auditing) uncovered three HIGH-severity path traversal vulnerabilities -- workspace escape via `../` sequences, symlink following to host filesystem, and unrestricted glob patterns that could enumerate directory structures outside the sandbox.
 
-This post details the attack vectors, our defense architecture, and the implementation patterns that provide chroot-like isolation for autonomous AI agents.
+In a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents operate as autonomous peers alongside humans -- securing agent file access is not a theoretical concern but a daily operational reality. This post details the attack vectors, our defense architecture, and the implementation patterns that provide chroot-like isolation for autonomous AI agents.
 
 ## The Attack Surface
 

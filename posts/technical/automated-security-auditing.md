@@ -11,7 +11,7 @@ relatedPosts: [nats-auth-hardening, preventing-cypher-injection, ssrf-protection
 
 # Automated Security Auditing with AI CSO Agents
 
-Traditional security audits are expensive, infrequent, and inevitably miss vulnerabilities that emerge between review cycles. At agent.ceo, we took a different approach: we deployed a dedicated Chief Security Officer (CSO) AI agent that performs continuous, automated security auditing across our entire multi-agent platform. In its first overnight run, it identified 14 HIGH-severity vulnerabilities that had evaded manual review.
+Traditional security audits are expensive, infrequent, and inevitably miss vulnerabilities that emerge between review cycles. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), security is not a periodic checkpoint — it is a continuous function owned by a dedicated AI agent. At agent.ceo, we took this approach to its logical conclusion: we deployed a dedicated Chief Security Officer (CSO) AI agent that performs continuous, automated security auditing across our entire multi-agent platform. In its first overnight run, it identified 14 HIGH-severity vulnerabilities that had evaded manual review.
 
 This post details the architecture, methodology, and real findings from our AI-driven security auditing system.
 

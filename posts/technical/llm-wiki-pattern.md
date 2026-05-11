@@ -13,7 +13,7 @@ relatedPosts: [wiki-knowledge-graphs, building-ai-knowledge-base, embedding-retr
 
 Documentation rots. Every engineering team knows this. You write architecture docs during the design phase, and within months they drift from reality. Runbooks describe procedures for systems that no longer exist. Onboarding guides reference deprecated services. The knowledge is there, but it's wrong, and wrong knowledge is worse than no knowledge.
 
-The LLM Wiki Pattern solves documentation rot by making AI agents responsible for maintaining organizational knowledge. As agents work, they observe systems, make decisions, and resolve incidents. Each of these activities generates knowledge. Instead of discarding that knowledge when the task completes, agents write it back to a shared wiki as structured, interconnected articles.
+The LLM Wiki Pattern solves documentation rot by making AI agents responsible for maintaining organizational knowledge — a natural fit for a [Cyborgenic Organization](/blog/cyborgenic-organizations), where agents own workflows end-to-end and continuously improve the systems they operate within. As agents work, they observe systems, make decisions, and resolve incidents. Each of these activities generates knowledge. Instead of discarding that knowledge when the task completes, agents write it back to a shared wiki as structured, interconnected articles.
 
 This isn't AI-generated documentation in the traditional sense. It's not a one-time content generation pass. It's a continuous maintenance loop where [AI agents](/blog/what-are-ai-agents) update knowledge articles every time they learn something new about the organization.
 

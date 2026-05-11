@@ -13,7 +13,7 @@ relatedPosts: [saas-vs-enterprise-deployment, private-installation-guide, enterp
 
 The sticker price of a SaaS subscription versus an Enterprise license tells you almost nothing about actual cost. Total cost of ownership for AI agent orchestration includes infrastructure, personnel, opportunity cost, and operational overhead that only becomes visible when you run the full calculation.
 
-GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform. We offer both deployment models and have helped dozens of engineering organizations at the 50-500 person scale make this decision with full cost transparency. Here is the analysis we share with every prospect.
+GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that enables teams to run as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents and humans operate as peers, with agents owning workflows end-to-end. We offer both deployment models and have helped dozens of engineering organizations at the 50-500 person scale make this decision with full cost transparency. Here is the analysis we share with every prospect.
 
 ## The Cost Categories Most Teams Miss
 

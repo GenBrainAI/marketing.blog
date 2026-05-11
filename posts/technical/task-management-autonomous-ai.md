@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, firestore-state-store-ai, agent-context-m
 
 # Task Management Systems for Autonomous AI
 
-When AI agents work autonomously, they need more than a simple to-do list. They need a task management system that handles hierarchical decomposition, delegation chains, blockers, priorities, SLA tracking, and progress reporting. At agent.ceo, the task management system is the coordination layer that turns a fleet of independent agents into a coherent organization. This post details the complete design.
+When AI agents work autonomously, they need more than a simple to-do list. They need a task management system that handles hierarchical decomposition, delegation chains, blockers, priorities, SLA tracking, and progress reporting. This is the operational backbone of a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where agents and humans operate as peers, agents own workflows end-to-end, and coordination happens through structured task management rather than ad-hoc communication. At agent.ceo, the task management system is the coordination layer that turns a fleet of independent agents into a coherent organization. This post details the complete design.
 
 ## Task Lifecycle
 

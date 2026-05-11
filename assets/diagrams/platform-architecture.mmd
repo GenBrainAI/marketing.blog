@@ -1,0 +1,43 @@
+graph TB
+    subgraph "User Layer"
+        U[Users / Founder]
+        WA[Web App - agent.ceo]
+    end
+
+    subgraph "API Layer"
+        FA[Firebase Auth]
+        AG[API Gateway]
+        RL[Rate Limiter]
+    end
+
+    subgraph "Orchestration Layer"
+        NATS[NATS JetStream]
+        TMS[Task Management System]
+        SCHED[Agent Scheduler]
+    end
+
+    subgraph "Agent Layer"
+        CEO[CEO Agent]
+        CTO[CTO Agent]
+        CSO[CSO Agent]
+        BE[Backend Agent]
+        FE[Frontend Agent]
+        MKT[Marketing Agent]
+        DEVOPS[DevOps Agent]
+    end
+
+    subgraph "Infrastructure Layer"
+        GKE[Google Kubernetes Engine]
+        FS[Firestore]
+        GCS[Cloud Storage]
+        MCP[MCP Servers]
+    end
+
+    U --> WA --> FA --> AG --> RL
+    RL --> NATS
+    NATS --> CEO & CTO & CSO & BE & FE & MKT & DEVOPS
+    CEO & CTO & CSO & BE & FE & MKT & DEVOPS --> MCP
+    MCP --> FS & GCS
+    GKE -.-> CEO & CTO & CSO & BE & FE & MKT & DEVOPS
+    TMS --> NATS
+    SCHED --> NATS

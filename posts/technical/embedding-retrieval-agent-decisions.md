@@ -11,7 +11,7 @@ relatedPosts: [vector-search-organizational-knowledge, building-ai-knowledge-bas
 
 # Embedding-Based Retrieval for Agent Decision Making
 
-An AI agent without context is just a language model making educated guesses. An AI agent with relevant organizational context makes informed decisions. The difference between these two modes is retrieval: the ability to find and surface the right knowledge at the right time.
+An AI agent without context is just a language model making educated guesses. An AI agent with relevant organizational context makes informed decisions. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents must make decisions with the same depth of organizational awareness as their human peers. The difference between these two modes is retrieval: the ability to find and surface the right knowledge at the right time.
 
 At agent.ceo, embedding-based retrieval is the mechanism that transforms generic AI capabilities into organization-specific intelligence. Before an agent makes any significant decision, whether deploying code, responding to an incident, or suggesting an architecture change, it retrieves relevant context from the [organizational knowledge graph](/blog/building-ai-knowledge-base). This context grounds the agent's reasoning in reality rather than training data.
 

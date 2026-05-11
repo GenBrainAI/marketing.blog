@@ -13,7 +13,7 @@ relatedPosts: [dollar-hour-devops-engineer, ai-agents-handle-oncall, alerting-to
 
 The promise of "always-on" operations has haunted engineering leaders for decades. You know the math: covering a single role 24/7 requires at minimum 4.2 full-time employees when you factor in weekends, holidays, sick days, and the inevitable burnout that comes with shift work. For a team of five distinct operational roles, you're looking at 21+ headcount just to keep the lights on around the clock.
 
-What if that number could be zero?
+What if that number could be zero? This is the promise of the [Cyborgenic Organization](/blog/cyborgenic-organizations) -- a model where AI agents and humans operate as peers, agents own operational workflows end-to-end, and humans focus on direction-setting and exception handling.
 
 ## The True Cost of 24/7 Human Coverage
 

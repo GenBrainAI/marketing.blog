@@ -11,7 +11,7 @@ relatedPosts: [automated-security-auditing, credential-management-multi-cloud, s
 
 # NATS Authentication Hardening for Multi-Agent Systems
 
-NATS is the nervous system of modern multi-agent platforms. At agent.ceo, every agent communicates over [NATS JetStream](/blog/nats-jetstream-ai-agents) -- task assignments, status updates, security alerts, and inter-agent coordination all flow through NATS subjects. When our AI CSO agent performed its first [automated security audit](/blog/automated-security-auditing), four of the 14 HIGH-severity findings were NATS authentication issues: shared tokens across agents, missing TLS enforcement, absent credential rotation, and overly broad subject permissions.
+NATS is the nervous system of modern multi-agent platforms. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), where autonomous agents hold real authority over production systems, securing the messaging layer is as critical as securing the network itself. At agent.ceo, every agent communicates over [NATS JetStream](/blog/nats-jetstream-ai-agents) -- task assignments, status updates, security alerts, and inter-agent coordination all flow through NATS subjects. When our AI CSO agent performed its first [automated security audit](/blog/automated-security-auditing), four of the 14 HIGH-severity findings were NATS authentication issues: shared tokens across agents, missing TLS enforcement, absent credential rotation, and overly broad subject permissions.
 
 This post details what we found, why it matters, and exactly how we hardened NATS authentication for a fleet of autonomous AI agents.
 

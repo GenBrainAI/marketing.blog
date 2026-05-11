@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, event-driven-nats-ai, task-management-aut
 
 # Scaling AI Agents: From 1 to 100 Concurrent Workers
 
-The promise of AI agents is that they scale with demand. One agent handles a founder's tasks during quiet periods. Ten agents tackle a product launch. A hundred agents process a backlog during a sprint. At agent.ceo, scaling is not a future roadmap item, it is a core architectural capability. This post details how we scale from 1 to 100 concurrent agent workers using GKE, custom metrics, and intelligent scheduling.
+The promise of AI agents is that they scale with demand. One agent handles a founder's tasks during quiet periods. Ten agents tackle a product launch. A hundred agents process a backlog during a sprint. For a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where agents and humans work as peers and agents own workflows end-to-end -- elastic scaling is what lets the organization grow without proportional headcount. At agent.ceo, scaling is not a future roadmap item, it is a core architectural capability. This post details how we scale from 1 to 100 concurrent agent workers using GKE, custom metrics, and intelligent scheduling.
 
 ## Scaling Dimensions
 

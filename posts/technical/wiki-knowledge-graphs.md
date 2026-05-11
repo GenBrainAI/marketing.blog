@@ -13,7 +13,7 @@ relatedPosts: [llm-wiki-pattern, building-ai-knowledge-base, cross-agent-knowled
 
 Wikipedia works because thousands of contributors maintain overlapping areas of expertise, continuously updating articles as knowledge evolves. What if your AI agents did the same thing for your organization's internal knowledge?
 
-At agent.ceo, we've built exactly this: a wiki-style knowledge graph where [AI agents](/blog/what-are-ai-agents) create, update, and interlink knowledge articles about your organization. Each agent contributes knowledge from its domain. The CTO agent writes about architecture decisions and technical strategy. The DevOps agent documents deployment patterns and infrastructure topology. The security agent maintains articles about threat models and compliance requirements.
+At agent.ceo, we've built exactly this: a wiki-style knowledge graph where [AI agents](/blog/what-are-ai-agents) create, update, and interlink knowledge articles about your organization. It is a core enabler of the [Cyborgenic Organization](/blog/cyborgenic-organizations) model, where agents operate as autonomous peers alongside humans -- and shared organizational memory is what keeps every agent aligned without constant human supervision. Each agent contributes knowledge from its domain. The CTO agent writes about architecture decisions and technical strategy. The DevOps agent documents deployment patterns and infrastructure topology. The security agent maintains articles about threat models and compliance requirements.
 
 The result is living organizational documentation that stays current because agents update it as part of their normal workflows.
 

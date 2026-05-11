@@ -13,7 +13,7 @@ relatedPosts: [private-installation-guide, enterprise-air-gapped-deployments, tc
 
 Choosing between a hosted SaaS platform and a private enterprise installation is one of the most consequential infrastructure decisions engineering leaders face when adopting AI agent orchestration. agent.ceo offers both options, and the right choice depends on your organization's security posture, compliance requirements, team size, and operational maturity.
 
-GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform built on Kubernetes, NATS messaging, Neo4j knowledge graph, and Firebase authentication. Whether you choose our hosted SaaS or deploy on your own infrastructure, the core platform capabilities remain identical.
+GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform built on Kubernetes, NATS messaging, Neo4j knowledge graph, and Firebase authentication. Both deployment models enable the [Cyborgenic Organization](/blog/cyborgenic-organizations) approach -- where AI agents and humans operate as peers, agents own workflows end-to-end, and humans set direction and handle exceptions. Whether you choose our hosted SaaS or deploy on your own infrastructure, the core platform capabilities remain identical.
 
 ## The Two Deployment Models
 

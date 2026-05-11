@@ -11,7 +11,7 @@ relatedPosts: [building-ai-knowledge-base, wiki-knowledge-graphs, cross-agent-kn
 
 # Git Repository Ingestion for AI Context
 
-Source code repositories contain the ground truth of how an organization's systems actually work. Not how they were designed to work, not how the documentation says they work, but how they actually function in production today. For AI agents to make informed decisions about infrastructure, deployments, and architecture, they need to understand this ground truth.
+Source code repositories contain the ground truth of how an organization's systems actually work. Not how they were designed to work, not how the documentation says they work, but how they actually function in production today. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), AI agents are expected to understand the codebase as deeply as any senior engineer on the team. For agents to make informed decisions about infrastructure, deployments, and architecture, they need to understand this ground truth.
 
 At agent.ceo, git repository ingestion is the foundation of how agents build contextual understanding. When an agent [connects to a GitHub repository](/blog/connecting-ai-agents-github), it doesn't just clone the code. It extracts structured knowledge: service boundaries, dependency graphs, configuration patterns, deployment specifications, and architecture decisions embedded in the code itself.
 

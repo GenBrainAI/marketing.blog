@@ -13,7 +13,7 @@ relatedPosts: [alerting-to-resolution-ai-agents, 24-7-operations-zero-overhead, 
 
 On-call duty is the tax that engineering organizations pay for running production systems. It's necessary, universally dreaded, and poorly executed more often than anyone admits. The 3 AM page that wakes an engineer from deep sleep, the context-switching from whatever they were working on, the scramble to remember which runbook applies to this particular failure mode — it's a system designed to produce mediocre results under the worst possible conditions.
 
-AI agents don't have these limitations. They don't sleep. They don't forget runbooks. They don't have degraded cognitive function at 3 AM. And they don't quit your company because the on-call rotation burned them out.
+AI agents don't have these limitations. They don't sleep. They don't forget runbooks. They don't have degraded cognitive function at 3 AM. And they don't quit your company because the on-call rotation burned them out. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents handle on-call as autonomous peers -- owning the incident response workflow end-to-end while humans set policies and handle truly novel escalations.
 
 ## The Human On-Call Problem
 

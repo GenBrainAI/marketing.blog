@@ -11,7 +11,7 @@ relatedPosts: [resilient-ai-agent-fleets, what-are-ai-agents, multi-agent-archit
 
 # Agent Lifecycle Management: Create, Deploy, Scale, Pause
 
-AI agents are not static processes. They need to be created with specific configurations, deployed to infrastructure, scaled up when demand spikes, scaled down when idle, paused without losing state, and eventually terminated cleanly. Getting lifecycle management right is the difference between a reliable agent fleet and an expensive, unpredictable mess.
+AI agents are not static processes. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents are team members — and like any team member, they need to be onboarded, given responsibilities, scaled with demand, and gracefully offboarded. They need to be created with specific configurations, deployed to infrastructure, scaled up when demand spikes, scaled down when idle, paused without losing state, and eventually terminated cleanly. Getting lifecycle management right is the difference between a reliable agent fleet and an expensive, unpredictable mess.
 
 This guide covers the full agent lifecycle as implemented on agent.ceo's Kubernetes-based platform.
 

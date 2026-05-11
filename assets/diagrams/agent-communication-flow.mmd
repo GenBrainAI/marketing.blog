@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant F as Founder
+    participant CEO as CEO Agent
+    participant NATS as NATS JetStream
+    participant CTO as CTO Agent
+    participant BE as Backend Agent
+    participant CSO as CSO Agent
+    participant DEVOPS as DevOps Agent
+
+    F->>CEO: Strategic directive
+    CEO->>NATS: Publish task assignment
+    NATS->>CTO: Task: architect new feature
+    CTO->>NATS: Design approved, assign implementation
+    NATS->>BE: Task: implement API endpoint
+    BE->>NATS: Code committed, request review
+    NATS->>CSO: Security review request
+    CSO->>NATS: Review passed ✓
+    NATS->>DEVOPS: Deploy to staging
+    DEVOPS->>NATS: Deployed ✓
+    NATS->>CEO: Status: feature shipped
+    CEO->>F: Weekly report: feature complete

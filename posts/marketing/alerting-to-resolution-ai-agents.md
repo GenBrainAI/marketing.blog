@@ -15,7 +15,7 @@ Modern observability stacks are remarkable at detecting problems. Prometheus, Da
 
 The alert fires. A human gets paged. They open a laptop, read the alert, check dashboards, correlate with recent changes, form a hypothesis, test it, apply a fix, verify the fix worked, update the incident channel, write the postmortem. Dozens of steps, multiple tools, significant cognitive load — all performed under time pressure by someone who might have been asleep thirty seconds ago.
 
-This fragmented, human-dependent workflow is the gap between "detecting a problem" and "resolving a problem." It's where MTTR lives. And it's exactly where AI agents deliver transformative value.
+This fragmented, human-dependent workflow is the gap between "detecting a problem" and "resolving a problem." It's where MTTR lives. And it's exactly where AI agents deliver transformative value. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents close this loop autonomously -- they own the full incident lifecycle as peers to the engineering team, escalating to humans only when the situation demands judgment beyond established patterns.
 
 ## The Broken Loop
 

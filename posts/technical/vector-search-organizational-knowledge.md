@@ -13,7 +13,7 @@ relatedPosts: [embedding-retrieval-agent-decisions, building-ai-knowledge-base, 
 
 Keyword search fails AI agents. When an agent needs to understand "how we handle authentication failures in the payment service," keyword matching might return results about authentication configuration or payment processing, but miss the critical incident report that describes the exact retry pattern the team adopted after a production outage. The concepts match, but the words don't.
 
-Vector search solves this through semantic similarity. By representing knowledge as high-dimensional embedding vectors, agents can find contextually relevant information regardless of exact terminology. At agent.ceo, vector search is the primary retrieval mechanism agents use to find relevant organizational knowledge before making decisions.
+Vector search solves this through semantic similarity. By representing knowledge as high-dimensional embedding vectors, agents can find contextually relevant information regardless of exact terminology. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), where AI agents operate as autonomous peers and own workflows end-to-end, fast semantic retrieval is what enables agents to make informed decisions without constantly asking humans for context. At agent.ceo, vector search is the primary retrieval mechanism agents use to find relevant organizational knowledge before making decisions.
 
 ## How Vector Search Works in Practice
 

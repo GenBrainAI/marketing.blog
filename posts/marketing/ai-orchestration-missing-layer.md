@@ -17,7 +17,7 @@ Each layer solves a specific problem well. Together, they form a capable platfor
 
 That layer is **orchestration intelligence**: the ability to observe your entire system, make decisions about what needs to happen, and execute multi-step workflows that span your existing tools. Today, this layer is staffed by humans — your DevOps engineers, SREs, and platform teams. They are the connective tissue between your automated tools.
 
-[AI agent orchestration](/blog/multi-agent-architecture-patterns) is that missing layer, automated.
+[AI agent orchestration](/blog/multi-agent-architecture-patterns) is that missing layer, automated. It is what transforms a collection of tools and people into a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents operate as peers alongside humans, owning workflows end-to-end while humans set direction and handle exceptions.
 
 ## The Gap Between Tools and Intelligence
 

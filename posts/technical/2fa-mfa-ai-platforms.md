@@ -11,7 +11,7 @@ relatedPosts: [automated-security-auditing, credential-management-multi-cloud, n
 
 # 2FA/MFA Implementation for AI Platforms
 
-When your platform orchestrates autonomous AI agents that manage infrastructure, deploy code, and handle sensitive data, single-factor authentication is not enough. A compromised password grants an attacker control over an entire fleet of AI agents -- the blast radius is orders of magnitude greater than a compromised individual account. At agent.ceo, we are implementing multi-factor authentication that covers human operators, API access, and critical agent operations, building on TOTP (RFC 6238), bcrypt-hashed backup codes, and a WebAuthn/passkeys roadmap for phishing-resistant authentication.
+When your platform orchestrates autonomous AI agents that manage infrastructure, deploy code, and handle sensitive data, single-factor authentication is not enough. In a [Cyborgenic Organization](/blog/cyborgenic-organizations) — where AI agents and humans operate as peers within the same org structure — a compromised password grants an attacker control over an entire fleet of AI agents. The blast radius is orders of magnitude greater than a compromised individual account. At agent.ceo, we are implementing multi-factor authentication that covers human operators, API access, and critical agent operations, building on TOTP (RFC 6238), bcrypt-hashed backup codes, and a WebAuthn/passkeys roadmap for phishing-resistant authentication.
 
 This post covers our implementation architecture, the specific cryptographic choices we made, and how MFA integrates with an [AI agent platform](/blog/what-are-ai-agents).
 

@@ -11,7 +11,7 @@ relatedPosts: [saas-platform-ai-agents, multi-tenant-agent-orchestration, real-t
 
 # API Gateway Design for AI Agent Platforms
 
-An AI agent platform's API gateway serves three distinct communication patterns simultaneously: traditional REST for management operations, WebSocket for real-time agent status streaming, and the Model Context Protocol (MCP) for tool integration. Designing a gateway that handles all three while enforcing multi-tenant authentication, rate limiting, and routing is a non-trivial engineering challenge. This post details the gateway architecture powering agent.ceo.
+The architecture behind a [Cyborgenic Organization](/blog/cyborgenic-organizations) demands infrastructure that treats agent traffic as a first-class concern alongside human traffic. An AI agent platform's API gateway serves three distinct communication patterns simultaneously: traditional REST for management operations, WebSocket for real-time agent status streaming, and the Model Context Protocol (MCP) for tool integration. Designing a gateway that handles all three while enforcing multi-tenant authentication, rate limiting, and routing is a non-trivial engineering challenge. This post details the gateway architecture powering agent.ceo.
 
 ## Gateway Architecture Overview
 

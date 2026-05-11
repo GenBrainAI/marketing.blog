@@ -11,7 +11,7 @@ relatedPosts: [getting-started-agent-ceo, deploying-ai-agents-kubernetes, monito
 
 # Configuring Cloud Discovery for AWS/GCP/Azure
 
-Understanding your cloud infrastructure is the first step toward managing it effectively. agent.ceo's cloud discovery feature connects to your AWS, GCP, or Azure accounts with read-only credentials and automatically maps every resource, service, and relationship in your environment.
+Understanding your cloud infrastructure is the first step toward managing it effectively. Whether you are building a [Cyborgenic Organization](/blog/cyborgenic-organizations) from scratch or adding AI agents to an existing team, your agents need a complete picture of the infrastructure they will operate on. agent.ceo's cloud discovery feature connects to your AWS, GCP, or Azure accounts with read-only credentials and automatically maps every resource, service, and relationship in your environment.
 
 This guide walks you through connecting each cloud provider, running discovery scans, and using the resulting infrastructure map to deploy specialized [cloud discovery AI agents](/blog/cloud-discovery-ai-agents).
 

@@ -11,7 +11,7 @@ relatedPosts: [building-ai-knowledge-base, wiki-knowledge-graphs, llm-wiki-patte
 
 # Cross-Agent Knowledge Sharing Patterns
 
-A single AI agent with access to organizational knowledge is useful. A fleet of agents that share knowledge in real-time is transformative. When the DevOps agent discovers a new deployment pattern, the CTO agent should know about it immediately. When the security agent identifies a vulnerability, every agent working on affected services needs that context.
+A single AI agent with access to organizational knowledge is useful. A fleet of agents that share knowledge in real-time is transformative. This is the operational reality of a [Cyborgenic Organization](/blog/cyborgenic-organizations): agents are not siloed tools but collaborative team members who must learn from each other continuously. When the DevOps agent discovers a new deployment pattern, the CTO agent should know about it immediately. When the security agent identifies a vulnerability, every agent working on affected services needs that context.
 
 At agent.ceo, cross-agent knowledge sharing happens through two complementary channels: NATS pub/sub for real-time knowledge events, and Neo4j graph queries for persistent knowledge retrieval. Together, they create an information fabric where [AI agents](/blog/what-are-ai-agents) learn from each other continuously.
 

@@ -11,7 +11,7 @@ relatedPosts: [deploying-ai-agents-kubernetes, first-ai-agent-team, getting-star
 
 # Monitoring Your AI Agent Fleet
 
-Running autonomous AI agents without monitoring is like deploying servers without observability. You need visibility into what your agents are doing, how they are performing, what they are costing, and when they need attention. This guide covers setting up comprehensive monitoring for your agent.ceo fleet.
+Running autonomous AI agents without monitoring is like deploying servers without observability. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), your agent fleet is your workforce — and you need the same visibility into their performance as you would for any team. You need to see what your agents are doing, how they are performing, what they are costing, and when they need attention. This guide covers setting up comprehensive monitoring for your agent.ceo fleet.
 
 By the end of this tutorial, you will have a fully configured monitoring stack with dashboards, alerts, and cost tracking for all your agents.
 

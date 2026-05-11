@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, mcp-tool-integration, task-management-aut
 
 # Agent Context Management: Compaction and Memory
 
-Every AI agent has a fundamental constraint: a finite context window. Claude's context window is large (200K tokens), but autonomous agents that run for hours, process dozens of tasks, and accumulate tool outputs can exhaust it. When context fills up, agents lose track of earlier decisions, repeat work, or make contradictory choices. agent.ceo solves this with two complementary systems: context compaction (reducing current-session context while preserving key information) and cross-session memory (persisting learnings that survive pod restarts).
+Every AI agent has a fundamental constraint: a finite context window. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), where agents operate as persistent team members handling end-to-end workflows, this constraint becomes critical — agents run for hours, process dozens of tasks, and accumulate tool outputs that can exhaust it. When context fills up, agents lose track of earlier decisions, repeat work, or make contradictory choices. agent.ceo solves this with two complementary systems: context compaction (reducing current-session context while preserving key information) and cross-session memory (persisting learnings that survive pod restarts).
 
 ## The Context Problem
 

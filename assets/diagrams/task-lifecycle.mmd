@@ -1,0 +1,13 @@
+stateDiagram-v2
+    [*] --> assigned: CEO creates task
+    assigned --> accepted: Agent accepts
+    accepted --> in_progress: Work begins
+    in_progress --> in_progress: Progress notes added
+    in_progress --> blocked: Blocker found
+    blocked --> in_progress: Blocker resolved
+    in_progress --> completed_unverified: Agent marks done
+    completed_unverified --> completed: CEO verifies
+    completed_unverified --> in_progress: Verification failed
+    completed --> [*]
+    in_progress --> failed: Unrecoverable error
+    failed --> [*]

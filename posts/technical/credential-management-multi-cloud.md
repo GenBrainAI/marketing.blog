@@ -11,7 +11,7 @@ relatedPosts: [automated-security-auditing, nats-auth-hardening, 2fa-mfa-ai-plat
 
 # Credential Management for Multi-Cloud AI Agents
 
-AI agents that operate across cloud providers need credentials -- API keys, IAM roles, service account tokens, OAuth tokens -- to interact with infrastructure, deploy resources, and manage services. The challenge: how do you grant agents the access they need while maintaining least-privilege, enforcing automatic rotation, and preventing credential theft from becoming a catastrophic breach? At agent.ceo, our agents access AWS, GCP, and Azure with scoped credentials that rotate automatically, are stored encrypted, and are audited continuously by our [AI CSO agent](/blog/automated-security-auditing).
+AI agents that operate across cloud providers need credentials -- API keys, IAM roles, service account tokens, OAuth tokens -- to interact with infrastructure, deploy resources, and manage services. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents are autonomous peers that hold real credentials with real blast radius — making credential management a foundational security concern, not an afterthought. The challenge: how do you grant agents the access they need while maintaining least-privilege, enforcing automatic rotation, and preventing credential theft from becoming a catastrophic breach? At agent.ceo, our agents access AWS, GCP, and Azure with scoped credentials that rotate automatically, are stored encrypted, and are audited continuously by our [AI CSO agent](/blog/automated-security-auditing).
 
 This post details our credential management architecture, the implementation patterns for each cloud provider, and how we maintain SOC 2 compliance across a multi-cloud AI agent fleet.
 

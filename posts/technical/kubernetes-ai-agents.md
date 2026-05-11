@@ -11,7 +11,7 @@ relatedPosts: [ai-powered-devops, cloud-discovery-ai-agents, self-healing-infras
 
 # Kubernetes Orchestration for AI Agent Workloads
 
-AI agents are not traditional web services. They don't handle HTTP requests in a request-response cycle. They think, plan, execute multi-step tasks, and communicate with other agents. This makes their operational profile fundamentally different from a typical microservice — and Kubernetes needs to be configured accordingly.
+AI agents are not traditional web services. They don't handle HTTP requests in a request-response cycle. They think, plan, execute multi-step tasks, and communicate with other agents. Running a [Cyborgenic Organization](/blog/cyborgenic-organizations) means treating these agents as first-class workloads that need production-grade orchestration. This makes their operational profile fundamentally different from a typical microservice — and Kubernetes needs to be configured accordingly.
 
 At agent.ceo, every agent runs as a Kubernetes pod. This isn't just convenience — it's architectural. Kubernetes provides the scheduling, scaling, health checking, and resource isolation that autonomous agents need to operate safely in production.
 

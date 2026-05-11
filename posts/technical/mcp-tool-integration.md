@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, task-management-autonomous-ai, agent-cont
 
 # MCP (Model Context Protocol) for Tool Integration
 
-A language model without tools is a text generator. A language model with tools is an autonomous agent. The Model Context Protocol (MCP) is the bridge that transforms Claude from a conversational AI into a capable worker that can read files, execute code, search the web, manage git repositories, and coordinate with other agents. At agent.ceo, MCP is how we give each agent precisely the capabilities it needs, with precisely the permissions it should have.
+A language model without tools is a text generator. A language model with tools is an autonomous agent. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents need the same access to tools and systems that human team members have. The Model Context Protocol (MCP) is the bridge that transforms Claude from a conversational AI into a capable worker that can read files, execute code, search the web, manage git repositories, and coordinate with other agents. At agent.ceo, MCP is how we give each agent precisely the capabilities it needs, with precisely the permissions it should have.
 
 ## What is MCP?
 

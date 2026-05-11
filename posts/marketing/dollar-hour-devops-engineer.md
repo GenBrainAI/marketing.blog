@@ -13,7 +13,7 @@ relatedPosts: [next-hire-ai-agent, roi-ai-agent-teams, ai-orchestration-missing-
 
 DevOps engineers are among the most expensive and hardest-to-retain roles in technology. The median salary crossed $165,000 in 2025, senior roles command $200,000+, and the average tenure is under two years. Organizations are spending enormous sums to hire people whose primary job function is managing processes that are, by definition, automatable.
 
-This is not a criticism of DevOps engineers. It is an observation about market misallocation. When you break down what a DevOps engineer actually does hour by hour, a significant portion of their work — often 60-70% — consists of tasks that an AI agent can perform at $1 per hour.
+This is not a criticism of DevOps engineers. It is an observation about market misallocation. The [Cyborgenic Organization](/blog/cyborgenic-organizations) model offers a better path: AI agents handle the process-driven work as autonomous peers, while human engineers focus on the high-judgment architectural and strategic decisions where they add irreplaceable value. When you break down what a DevOps engineer actually does hour by hour, a significant portion of their work — often 60-70% — consists of tasks that an AI agent can perform at $1 per hour.
 
 ## Breaking Down the DevOps Workload
 

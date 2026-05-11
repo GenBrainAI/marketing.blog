@@ -13,7 +13,7 @@ relatedPosts: [building-ai-knowledge-base, wiki-knowledge-graphs, architecture-a
 
 Today we're announcing the general availability of the agent.ceo Knowledge Base — a Neo4j-powered knowledge graph that gives your AI agents persistent, queryable understanding of your organization's systems, processes, decisions, and institutional knowledge.
 
-This isn't a document store with search. It's a living graph of relationships: how your services connect, which teams own what, what decisions were made and why, how incidents relate to changes, and thousands of other organizational facts that currently live in individual people's heads.
+This isn't a document store with search. It's a living graph of relationships: how your services connect, which teams own what, what decisions were made and why, how incidents relate to changes, and thousands of other organizational facts that currently live in individual people's heads. The Knowledge Base is a cornerstone of the [Cyborgenic Organization](/blog/cyborgenic-organizations) model -- it gives agents the shared organizational memory they need to operate as autonomous peers alongside humans, making informed decisions without constant human guidance.
 
 ## The Problem We're Solving
 

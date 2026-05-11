@@ -11,7 +11,7 @@ relatedPosts: [connecting-ai-agents-github, getting-started-agent-ceo, configuri
 
 # Setting Up AI Security Reviews for Your Codebase
 
-Security vulnerabilities slip into codebases every day. Overworked engineers miss subtle injection flaws, leaked credentials, and insecure configurations during code review. An AI security agent catches these issues before they reach production, reviewing every pull request with the consistency and depth of a dedicated security engineer.
+Security vulnerabilities slip into codebases every day. Overworked engineers miss subtle injection flaws, leaked credentials, and insecure configurations during code review. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), an AI security agent operates as a peer to your engineering team -- owning the security review workflow end-to-end and catching these issues before they reach production with the consistency and depth of a dedicated security engineer.
 
 This guide walks you through configuring the agent.ceo CSO (Chief Security Officer) agent to run automated security audits on your codebase.
 

@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, firestore-state-store-ai, scaling-ai-agen
 
 # Event-Driven Architecture with NATS for AI Systems
 
-AI agents that collaborate need a communication backbone that is fast, reliable, and decoupled. At agent.ceo, NATS JetStream serves as that backbone. Every message between agents, every task assignment, every status update, and every coordination signal flows through NATS. This post explains why we chose NATS, how we designed our subject hierarchy, and how JetStream's persistence guarantees keep autonomous agents reliable.
+A [Cyborgenic Organization](/blog/cyborgenic-organizations) runs on communication — agents that collaborate as organizational peers need a backbone that is fast, reliable, and decoupled. At agent.ceo, NATS JetStream serves as that backbone. Every message between agents, every task assignment, every status update, and every coordination signal flows through NATS. This post explains why we chose NATS, how we designed our subject hierarchy, and how JetStream's persistence guarantees keep autonomous agents reliable.
 
 ## Why NATS for AI Agent Communication
 

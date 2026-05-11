@@ -13,7 +13,7 @@ relatedPosts: [getting-started-agent-ceo, setting-up-ai-security-reviews, first-
 
 GitHub is where your code lives, and it is where your AI agents do their best work. This guide covers everything you need to know about connecting agent.ceo to your GitHub repositories, configuring permissions, and enabling agents to review PRs, submit fixes, and monitor CI pipelines.
 
-By the end of this tutorial, your agents will be fully integrated with GitHub and ready to participate in your development workflow as autonomous team members.
+By the end of this tutorial, your agents will be fully integrated with GitHub and ready to participate in your development workflow as autonomous team members — a core requirement of any [Cyborgenic Organization](/blog/cyborgenic-organizations), where agents own workflows end-to-end alongside their human peers.
 
 ## What Agents Can Do with GitHub
 

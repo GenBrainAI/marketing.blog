@@ -11,7 +11,7 @@ relatedPosts: [saas-platform-ai-agents, cost-optimization-ai-agents, real-time-a
 
 # Stripe Billing for AI Agent Services
 
-Billing for AI agent services presents unique challenges compared to traditional SaaS. Agents consume variable compute resources over unpredictable timeframes — a coding agent might run for 8 hours straight, while a monitoring agent ticks for 30 seconds every 5 minutes. At agent.ceo, we built a flexible billing system using Stripe that supports both subscription-based and pay-as-you-go pricing models. This post covers our implementation end-to-end.
+Billing for AI agent services presents unique challenges compared to traditional SaaS. Agents consume variable compute resources over unpredictable timeframes — a coding agent might run for 8 hours straight, while a monitoring agent ticks for 30 seconds every 5 minutes. As more organizations adopt the [Cyborgenic Organization](/blog/cyborgenic-organizations) model -- where AI agents work as autonomous peers alongside humans -- billing must accurately reflect the value agents deliver rather than forcing traditional per-seat pricing. At agent.ceo, we built a flexible billing system using Stripe that supports both subscription-based and pay-as-you-go pricing models. This post covers our implementation end-to-end.
 
 ## Pricing Model Design
 

@@ -11,7 +11,7 @@ relatedPosts: [architecture-agent-ceo, event-driven-nats-ai, task-management-aut
 
 # Firestore as State Store for AI Agents
 
-Every autonomous AI agent needs persistent state. Configuration that survives restarts. Task records that track progress. Session metadata that enables resumption. User preferences that personalize behavior. At agent.ceo, Firestore serves as the unified state store for all of this. This post explains our schema design, real-time update patterns, and the operational benefits of using Firestore for AI agent state management.
+Every autonomous AI agent needs persistent state. In a [Cyborgenic Organization](/blog/cyborgenic-organizations), agents are long-lived team members, not ephemeral functions — they need configuration that survives restarts, task records that track progress, session metadata that enables resumption, and user preferences that personalize behavior. At agent.ceo, Firestore serves as the unified state store for all of this. This post explains our schema design, real-time update patterns, and the operational benefits of using Firestore for AI agent state management.
 
 ## Why Firestore
 

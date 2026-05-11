@@ -13,7 +13,7 @@ relatedPosts: [automated-security-auditing, path-traversal-defense, ssrf-protect
 
 Knowledge graphs power the contextual intelligence behind modern AI agent platforms. At agent.ceo, our agents build and query a Neo4j [knowledge graph](/blog/wiki-knowledge-graphs) that maps relationships between tasks, agents, decisions, and organizational knowledge. When our AI CSO agent ran its first [automated security audit](/blog/automated-security-auditing), it identified three HIGH-severity Cypher injection vulnerabilities -- places where user-controlled input could manipulate graph queries to exfiltrate data, modify relationships, or escalate privileges.
 
-This post examines the anatomy of Cypher injection, demonstrates real vulnerable patterns our CSO agent caught, and provides the parameterized query patterns that eliminate the risk entirely.
+Running as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents own workflows end-to-end and humans set direction -- means agents constantly query the knowledge graph to make autonomous decisions, making injection prevention a foundational security requirement. This post examines the anatomy of Cypher injection, demonstrates real vulnerable patterns our CSO agent caught, and provides the parameterized query patterns that eliminate the risk entirely.
 
 ## What Is Cypher Injection?
 

@@ -11,7 +11,7 @@ relatedPosts: [saas-platform-ai-agents, api-gateway-ai-agents, firebase-gke-ai-s
 
 # Multi-Tenant Agent Orchestration
 
-Running AI agents for a single team is straightforward. Running agents for hundreds of organizations simultaneously — each with their own credentials, data, and compliance requirements — demands a fundamentally different approach. Multi-tenant agent orchestration is the backbone of any agent-as-a-service platform. This post details how agent.ceo isolates, schedules, and manages agents across tenant boundaries.
+Running AI agents for a single team is straightforward. Running agents for hundreds of organizations simultaneously — each building their own [Cyborgenic Organization](/blog/cyborgenic-organizations) with unique credentials, data, and compliance requirements — demands a fundamentally different approach. Multi-tenant agent orchestration is the backbone of any agent-as-a-service platform. This post details how agent.ceo isolates, schedules, and manages agents across tenant boundaries.
 
 ## Tenancy Model: Namespace-Per-Organization
 
