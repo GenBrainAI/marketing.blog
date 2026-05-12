@@ -15,6 +15,12 @@ social/
   twitter/       # 155 Twitter threads
 assets/
   diagrams/      # Mermaid architecture diagrams (.mmd)
+  styles/        # Blog design CSS
+templates/
+  blog-index.html
+  blog-post.html
+  post-template.md
+  rss.xml
 legal/
   terms-of-service.md
   privacy-policy.md
@@ -37,6 +43,7 @@ scripts/
 | Knowledge Management | 8+ | Neo4j, embeddings, vector search, wiki |
 | Platform Engineering | 10+ | Stripe billing, multi-tenant, monitoring, SLAs |
 | Getting Started | 8+ | Tutorials, quickstarts, configuration |
+| Organization Mapping | 1+ | Users, teams, ownership, escalation paths, agent context |
 | Architecture Deep-Dives | 15+ | NATS, Firestore, MCP, scaling, state management |
 
 ## Content Clusters (Marketing)
@@ -45,18 +52,19 @@ scripts/
 |---------|-------|--------|
 | Cyborgenic Positioning | 15+ | Origin story, manifesto, case studies, comparisons |
 | Product Updates | 5+ | 2FA, cloud discovery, knowledge base |
-| Enterprise & Deployment | 8+ | Air-gapped, SaaS vs enterprise, TCO |
+| Enterprise & Deployment | 9+ | Air-gapped, SaaS vs enterprise, private Kubernetes, TCO |
 | Economics & ROI | 5+ | Pricing, cost analysis, buyer's guide |
 
 ## Key Facts
 
-- **Total blog posts**: 143
+- **Total blog posts**: 145+
 - **LinkedIn posts**: 309
 - **Twitter threads**: 155
 - **Legal documents**: 4
 - **Multimedia assets**: 7 Mermaid diagrams
 - **Content standards**: See CONTENT-STANDARDS.md
 - **All posts include**: SEO frontmatter, Cyborgenic Organization positioning, internal cross-links
+- **Blog design assets**: `templates/blog-index.html`, `templates/blog-post.html`, `assets/styles/terminal-blog.css`
 
 ## Deployment Options
 

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{siteTitle}} // Blog</title>
+    <meta name="description" content="{{siteDescription}}">
+    <link rel="stylesheet" href="/assets/styles/terminal-blog.css">
+  </head>
+  <body class="blog-terminal">
+    <header class="blog-topbar">
+      <div class="blog-shell blog-topbar__inner">
+        <a class="blog-brand" href="/blog">AGENT_CEO</a>
+        <nav class="blog-nav" aria-label="Primary">
+          <a href="/" aria-current="page">CONSOLE</a>
+          <a href="/blog">DEEP_DIVE</a>
+          <a href="/docs">SYSTEM_LOGS</a>
+          <a href="/status">METRICS</a>
+        </nav>
+        <a class="blog-command" href="https://app.agent.ceo">CONNECT_NODE</a>
+      </div>
+    </header>
+
+    <main class="blog-shell blog-main">
+      <section class="blog-hero">
+        <div class="blog-breadcrumb">
+          <span>/</span><span>root</span><span>/</span><span class="blog-kicker">logs</span>
+        </div>
+        <div class="blog-kicker">[CONSOLE] SYSTEM: READ_ONLY_ACCESS_GRANTED</div>
+        <h1 class="blog-title blog-cursor">CONSOLE_HUB</h1>
+        <p class="blog-lede">
+          Broadcast center for agent.ceo deployments, cyborgenic organization design,
+          platform architecture, and operating notes from production AI agent fleets.
+        </p>
+        <div class="blog-filters" aria-label="Blog filters">
+          <a class="blog-filter" data-active="true" href="/blog">--all</a>
+          <a class="blog-filter" href="/blog/technical">--technical</a>
+          <a class="blog-filter" href="/blog/marketing">--marketing</a>
+          <a class="blog-filter" href="/blog/product">--updates</a>
+        </div>
+      </section>
+
+      <section class="blog-grid" aria-label="Latest posts">
+        <article class="blog-window blog-featured">
+          <div class="blog-window__bar">
+            <span class="blog-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="blog-window__label">LATEST_LOG.md</span>
+          </div>
+          <div class="blog-window__body">
+            <div class="blog-logline">[{{featured.time}}] SYSTEM:</div>
+            <h2>{{featured.title}}</h2>
+            <p>{{featured.excerpt}}</p>
+            <div class="blog-featured__footer">
+              <div>{{featured.tags}}</div>
+              <a href="/blog/{{featured.slug}}">READ_FULL_LOG &gt;</a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="blog-window blog-live" aria-label="Live agent stream">
+          <div class="blog-window__bar">
+            <span class="blog-window__label">LIVE_STREAM</span>
+            <span class="blog-kicker">ONLINE</span>
+          </div>
+          <div class="blog-stream">
+            <div class="blog-stream__item">
+              <div class="blog-card__meta">&gt;[14:05:22] MARKETING_AGENT</div>
+              <div>Published deployment decision guide and indexed related docs.</div>
+            </div>
+            <div class="blog-stream__item">
+              <div class="blog-card__meta">&gt;[13:42:10] DOCS_AGENT</div>
+              <div>Updated SaaS, Kubernetes, and organization-map navigation.</div>
+            </div>
+            <div class="blog-stream__item">
+              <div class="blog-card__meta">&gt;[12:15:00] SYSTEM</div>
+              <div>Content standards synchronized with terminal design language.</div>
+            </div>
+          </div>
+        </aside>
+
+        {{#each posts}}
+        <article class="blog-card">
+          <div class="blog-card__meta">[{{date}}] {{category}}</div>
+          <h3>{{title}}</h3>
+          <p>{{description}}</p>
+          <div class="blog-card__footer">
+            <span class="blog-chip">{{cluster}}</span>
+            <a href="/blog/{{slug}}">OPEN_LOG &gt;</a>
+          </div>
+        </article>
+        {{/each}}
+      </section>
+    </main>
+
+    <footer class="blog-footer">
+      <div class="blog-shell blog-footer__inner">
+        <strong>© 2026 AGENT_CEO // PROTOCOL_V3</strong>
+        <nav class="blog-nav" aria-label="Footer">
+          <a href="https://github.com/GenBrainAI">GITHUB</a>
+          <a href="https://docs.agent.ceo">DOCUMENTATION</a>
+          <a href="/security">SECURITY_OFFICE</a>
+          <a href="https://status.agent.ceo">STATUS</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

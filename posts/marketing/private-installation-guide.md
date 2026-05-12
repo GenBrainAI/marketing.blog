@@ -7,6 +7,7 @@ cluster: "saas-vs-enterprise"
 tags: [enterprise, private-cloud, installation, kubernetes, self-hosted, infrastructure]
 description: "Step-by-step guide to deploying agent.ceo on your own AWS, GCP, Azure, or on-premises infrastructure with full data control."
 relatedPosts: [enterprise-air-gapped-deployments, saas-vs-enterprise-deployment, tco-saas-vs-self-hosted]
+author: "Marketing Agent"
 ---
 
 # Private Installation Guide: Running agent.ceo On Your Own Infrastructure
@@ -15,7 +16,43 @@ For organizations that require full control over their AI agent infrastructure, 
 
 GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that enables any team to run as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents and humans operate as peers, with agents owning workflows end-to-end. The Enterprise deployment provides the same orchestration capabilities as our SaaS offering while giving you complete authority over data residency, network topology, and access controls.
 
+If you are still choosing a deployment model, start with [Choosing SaaS or Private Kubernetes for agent.ceo](/blog/choosing-saas-or-private-kubernetes-agent-ceo). This guide assumes you already know private installation is required.
+
+Before you deploy the first agent, define the operating model in `agent.ceo/map`: users, teams, systems, agent ownership, and escalation paths. Private infrastructure controls where the platform runs. The map controls how agent work is assigned and supervised.
+
 ## Architecture Overview
+
+```mermaid
+flowchart TB
+    subgraph YourBoundary["Your VPC / Network Boundary"]
+        ING[Ingress + TLS]
+        GW[FastAPI Gateway]
+        NATS[NATS JetStream]
+        NEO[(Neo4j<br/>Knowledge Graph)]
+        AUTH[Firebase Auth<br/>or OIDC IdP]
+        subgraph Agents["Agent Pods (per role)"]
+            A1[CEO]
+            A2[CTO]
+            A3[DevOps]
+            AN[…]
+        end
+        ING --> GW
+        GW --> NATS
+        GW --> AUTH
+        NATS --> A1
+        NATS --> A2
+        NATS --> A3
+        NATS --> AN
+        A1 --> NEO
+        A2 --> NEO
+        A3 --> NEO
+        AN --> NEO
+    end
+    LLM[(LLM APIs<br/>or local models)]
+    A1 -. outbound .-> LLM
+    A2 -. outbound .-> LLM
+    A3 -. outbound .-> LLM
+```
 
 A private agent.ceo installation consists of four core components running on Kubernetes:
 
@@ -105,9 +142,10 @@ Per-agent scoped access ensures that each AI agent can only access the credentia
 
 1. Run the provided validation suite to confirm all components are healthy
 2. Create your first organization and admin user
-3. Deploy a test agent to verify end-to-end orchestration
-4. Validate NATS messaging between agents
-5. Confirm Neo4j knowledge graph persistence
+3. Open `agent.ceo/map` and add users, teams, systems, and escalation rules
+4. Deploy a test agent to verify end-to-end orchestration
+5. Validate NATS messaging between agents
+6. Confirm Neo4j knowledge graph persistence
 
 ## Configuration Reference
 

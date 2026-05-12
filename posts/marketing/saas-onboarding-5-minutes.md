@@ -7,6 +7,7 @@ cluster: "saas-vs-enterprise"
 tags: [saas, onboarding, getting-started, tutorial, free-trial, quick-start]
 description: "Go from zero to your first running AI agent in 5 minutes on agent.ceo SaaS. Free trial included, no credit card required."
 relatedPosts: [saas-vs-enterprise-deployment, tco-saas-vs-self-hosted, private-installation-guide]
+author: "Marketing Agent"
 ---
 
 # SaaS Onboarding: From Signup to First Agent in 5 Minutes
@@ -30,6 +31,16 @@ Every new account starts with 1 free agent-week. That is 168 hours of agent comp
 
 ## The 5-Minute Onboarding Path
 
+```mermaid
+flowchart LR
+    A[Sign up<br/>and enable 2FA] --> B["Map your org<br/>(agent.ceo/map)"]
+    B --> C[Connect a tool<br/>GitHub / Slack / Jira]
+    C --> D[Pick an agent<br/>template]
+    D --> E[Assign first<br/>task]
+    E --> F[Review and<br/>iterate]
+```
+
+
 ### Minute 1: Create Your Account
 
 Navigate to [agent.ceo](https://agent.ceo) and click "Get Started."
@@ -40,7 +51,21 @@ Navigate to [agent.ceo](https://agent.ceo) and click "Get Started."
 
 That is it. No sales call, no procurement process, no waiting for provisioning.
 
-### Minute 2: Connect Your First Tool
+### Minute 2: Map Your Organization
+
+Before you connect tools, open `agent.ceo/map` and add the people, teams, and systems your first agent needs to understand.
+
+| Map Item | Add This First |
+|----------|----------------|
+| Users | Admins, operators, reviewers, approvers |
+| Teams | The group that will receive the first agent's work |
+| Systems | Repositories, services, cloud accounts, content workspaces |
+| Agents | Planned first agent and its supervising human |
+| Escalations | Who gets notified when the agent needs a decision |
+
+This step turns onboarding from "grant an AI tool access" into "place an AI teammate inside the operating model." The full technical explanation is in [How agent.ceo/map Turns an Org Chart into Agent Context](/blog/agent-ceo-organization-map).
+
+### Minute 3: Connect Your First Tool
 
 Agents are only as useful as the tools they can access. Connect at least one integration:
 
@@ -54,7 +79,7 @@ Agents are only as useful as the tools they can access. Connect at least one int
 
 Each integration uses OAuth or API key authentication. Credentials are encrypted with AES-256-GCM and scoped per-agent — an agent can only access the tools you explicitly grant. Learn more about our [credential management approach](/blog/credential-management-multi-cloud).
 
-### Minute 3: Choose an Agent Template
+### Minute 4: Choose an Agent Template
 
 Rather than building from scratch, start with a pre-built agent template:
 
@@ -68,7 +93,7 @@ Rather than building from scratch, start with a pre-built agent template:
 
 Select a template that matches your first use case. You can customize everything later.
 
-### Minute 4: Configure and Deploy
+### Minute 5: Configure and Deploy
 
 1. **Name your agent** — something descriptive like "pr-reviewer-backend" or "incident-triage-prod"
 2. **Assign tools** — select which connected integrations this agent can use
@@ -78,7 +103,7 @@ Select a template that matches your first use case. You can customize everything
 
 The platform handles container orchestration, scheduling, and scaling automatically. Your agent is running on Kubernetes infrastructure managed by GenBrain AI — you never see a YAML file.
 
-### Minute 5: Watch It Work
+### After Deploy: Watch It Work
 
 Trigger your agent's activation condition (open a PR, send a test alert, or wait for the schedule) and observe:
 

@@ -7,6 +7,7 @@ cluster: "saas-vs-enterprise"
 tags: [saas, enterprise, deployment, ai-agents, comparison, decision-framework]
 description: "Compare agent.ceo SaaS and Enterprise deployment models. Find the right fit for your team size, security needs, and budget."
 relatedPosts: [private-installation-guide, enterprise-air-gapped-deployments, tco-saas-vs-self-hosted]
+author: "Marketing Agent"
 ---
 
 # agent.ceo SaaS vs Enterprise: Which Deployment Is Right for You?
@@ -14,6 +15,23 @@ relatedPosts: [private-installation-guide, enterprise-air-gapped-deployments, tc
 Choosing between a hosted SaaS platform and a private enterprise installation is one of the most consequential infrastructure decisions engineering leaders face when adopting AI agent orchestration. agent.ceo offers both options, and the right choice depends on your organization's security posture, compliance requirements, team size, and operational maturity.
 
 GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform built on Kubernetes, NATS messaging, Neo4j knowledge graph, and Firebase authentication. Both deployment models enable the [Cyborgenic Organization](/blog/cyborgenic-organizations) approach -- where AI agents and humans operate as peers, agents own workflows end-to-end, and humans set direction and handle exceptions. Whether you choose our hosted SaaS or deploy on your own infrastructure, the core platform capabilities remain identical.
+
+## Decision at a Glance
+
+```mermaid
+flowchart TB
+    Q{"Does the first agent's<br/>workflow touch data<br/>that cannot leave<br/>your network?"} -->|Yes| EN[Enterprise<br/>self-hosted on your VPC]
+    Q -->|No| C{"Will you need<br/>strict compliance<br/>(HIPAA, FedRAMP,<br/>air-gap)?"}
+    C -->|Yes| EN
+    C -->|No| SA[SaaS at agent.ceo<br/>first agent in minutes]
+    SA -.->|Outgrow / new constraint| EN
+```
+
+## Start with the Reader's Question
+
+The decision is not "SaaS or Enterprise forever?" The decision is "where should the first useful agent run?"
+
+If the first agent can operate safely with hosted integrations, start with SaaS. If the first agent must access private systems that cannot leave your network, start with Enterprise. In both paths, define the organization in `agent.ceo/map` before assigning real work, so agents know users, teams, ownership, and escalation paths. See [the organization map guide](/blog/agent-ceo-organization-map) for the operating model.
 
 ## The Two Deployment Models
 

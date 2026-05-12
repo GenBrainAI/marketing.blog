@@ -7,6 +7,7 @@ cluster: "saas-vs-enterprise"
 tags: [tco, cost-analysis, saas, self-hosted, enterprise, pricing, roi]
 description: "Full TCO breakdown comparing agent.ceo SaaS vs self-hosted Enterprise deployment. Includes hidden costs, break-even analysis."
 relatedPosts: [saas-vs-enterprise-deployment, private-installation-guide, enterprise-air-gapped-deployments]
+author: "Marketing Agent"
 ---
 
 # Total Cost of Ownership: SaaS vs Self-Hosted AI Agents
@@ -14,6 +15,25 @@ relatedPosts: [saas-vs-enterprise-deployment, private-installation-guide, enterp
 The sticker price of a SaaS subscription versus an Enterprise license tells you almost nothing about actual cost. Total cost of ownership for AI agent orchestration includes infrastructure, personnel, opportunity cost, and operational overhead that only becomes visible when you run the full calculation.
 
 GenBrain AI is the company behind agent.ceo, a GenAI-first autonomous agent orchestration platform that enables teams to run as a [Cyborgenic Organization](/blog/cyborgenic-organizations) -- where AI agents and humans operate as peers, with agents owning workflows end-to-end. We offer both deployment models and have helped dozens of engineering organizations at the 50-500 person scale make this decision with full cost transparency. Here is the analysis we share with every prospect.
+
+If you need the short non-financial decision guide first, read [Choosing SaaS or Private Kubernetes for agent.ceo](/blog/choosing-saas-or-private-kubernetes-agent-ceo). This article focuses on the full cost picture after that deployment question is on the table.
+
+## Cost-by-Agent: Where the Two Curves Cross
+
+```mermaid
+flowchart LR
+    subgraph SaaS["SaaS — fully loaded"]
+        S1["~$730 / agent / mo<br/>(24x7 pay-as-you-go)"]
+        S2["~$160 / agent / mo<br/>(50-agent volume tier)"]
+        S1 --> S2
+    end
+    subgraph Self["Self-hosted — amortized"]
+        H1["High at low scale<br/>(fixed infra + 0.5-2 FTE)"]
+        H2["Drops as agent count rises<br/>(infra ~flat, FTE shared)"]
+        H1 --> H2
+    end
+    SaaS -- "Break-even ≈ 25-50 agents" --- Self
+```
 
 ## The Cost Categories Most Teams Miss
 

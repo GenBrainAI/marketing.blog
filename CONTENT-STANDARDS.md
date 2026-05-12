@@ -47,6 +47,20 @@ Follow: **Problem → What we built → What happened → What we learned**
 3. **What happened**: Real results with numbers. What surprised us?
 4. **What we learned**: Honest lessons. What would we do differently?
 
+## Human Readability and Page Design
+
+Blog posts should read like polished technical pages, not generated content dumps.
+
+- Start with the reader's decision or problem in the first 2 paragraphs
+- Use short sections with concrete headings
+- Prefer tables for comparisons, paths, roles, and decision criteria
+- Put commands, payloads, and configs in fenced code blocks with language labels
+- Use Mermaid diagrams when a workflow, architecture, or sequence would be clearer visually
+- Keep paragraphs focused; split long explanation into smaller blocks before adding more prose
+- Link to the next practical step naturally inside the article
+
+The visual direction for rendered pages is **High-Fidelity Terminalism**: dark terminal surfaces, monospaced typography, sharp edges, readable technical density, and green/purple status accents. Content should support that design by using strong hierarchy, clear labels, code examples, compact tables, and diagrams that feel operational rather than decorative.
+
 ## Frontmatter Format
 
 ```yaml

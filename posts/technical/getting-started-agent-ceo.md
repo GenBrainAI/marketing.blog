@@ -12,15 +12,16 @@ relatedPosts: [first-ai-agent-team, connecting-ai-agents-github, configuring-clo
 
 # Getting Started with agent.ceo in 5 Minutes
 
-This is a hands-on tutorial. By the end of it, you will have a running AI agent reviewing your pull requests, scanning your code for security issues, or monitoring your infrastructure — autonomously, in its own Kubernetes pod, connected to your actual tools.
+This is a hands-on tutorial. By the end, you will have a running AI agent reviewing pull requests, scanning code for security issues, or monitoring infrastructure, connected to your real tools and placed inside your organization map.
 
-No theory. No philosophy. Just steps, commands, and real output.
+The sequence matters: create the organization, map how work moves, connect tools, then deploy the first agent. Agents become more useful when they know who owns what before they start acting.
 
 ## What You Will Build
 
 ```mermaid
 flowchart TD
-    START["Sign up at agent.ceo"] --> CONNECT["Connect GitHub + tools"]
+    START["Sign up at agent.ceo"] --> MAP0["Create organization map"]
+    MAP0 --> CONNECT["Connect GitHub + tools"]
     CONNECT --> SCAN["Run Discovery Scan<br/>(30-60 seconds)"]
     SCAN --> MAP["Review Organization Map<br/>Repos, languages, services"]
     MAP --> CHOOSE{"Choose first agent type"}
@@ -78,7 +79,21 @@ The free tier includes:
 - Dashboard access
 - No credit card required
 
-## Step 2: Connect GitHub
+## Step 2: Build the Organization Map
+
+Before connecting tools, open `agent.ceo/map` and add the minimum structure agents need:
+
+| Map Item | First-Pass Setup |
+|----------|------------------|
+| Teams | Engineering, Operations, Security, or the first team using agents |
+| Users | Admin, operators, reviewers, and approvers |
+| Agents | Planned agent roles, even before deployment |
+| Systems | Repositories, services, cloud projects, or content workspaces |
+| Escalations | Who gets asked when an agent is blocked or detects high risk |
+
+You do not need a perfect org chart. You need enough operating context for the first agent to know where work belongs. Read the full breakdown in [How agent.ceo/map Turns an Org Chart into Agent Context](/blog/agent-ceo-organization-map).
+
+## Step 3: Connect GitHub
 
 From the Integrations dashboard, click **Connect GitHub** and authorize via OAuth.
 
@@ -97,7 +112,7 @@ You can grant access to specific repositories or your entire organization. For t
 - **Jira/Linear** — Agent reads tickets, updates statuses, creates sub-tasks
 - **GCP/AWS** — For infrastructure agents that manage cloud resources
 
-## Step 3: Run the Discovery Scan
+## Step 4: Run the Discovery Scan
 
 Click **Run Discovery Scan**. This takes 30-60 seconds and maps your engineering environment.
 
@@ -135,7 +150,7 @@ $ agent-ceo discovery scan --org org_yourcompany
 Discovery complete. Organization map saved.
 ```
 
-## Step 4: Review Your Organization Map
+## Step 5: Review Your Organization Map
 
 After the scan, you see a visual organization map. This is what the agent uses to understand your codebase and make contextual decisions.
 
@@ -187,7 +202,7 @@ organization:
 
 Review this map. Edit anything the scan got wrong. This context shapes how your agent operates.
 
-## Step 5: Deploy Your First Agent
+## Step 6: Deploy Your First Agent
 
 Click **Deploy First Agent**. The platform recommends an agent type based on your scan results. For most teams, a Code Review Agent is the highest-impact starting point.
 
@@ -232,7 +247,7 @@ AGENT        STATUS    POD                          UPTIME    TASKS
 ReviewBot    Active    agent-reviewer-7f8d9c4b2a    2m        0 pending
 ```
 
-## Step 6: Verify It Works
+## Step 7: Verify It Works
 
 Create a test pull request and watch the agent respond.
 
@@ -358,6 +373,7 @@ GenBrain AI runs 7 agents this way: CEO, CTO, CSO, Backend, Frontend, DevOps, an
 ## Next Steps
 
 - **[Build Your First AI Agent Team](/blog/first-ai-agent-team)** — Scale from 1 agent to a coordinated fleet
+- **[Organization Map](/blog/agent-ceo-organization-map)** — Model users, teams, systems, and escalation paths
 - **[Architecture Deep-Dive](/blog/architecture-agent-ceo)** — Understand GKE, NATS, Firestore, and MCP under the hood
 - **[Cyborgenic Organizations](/blog/cyborgenic-organizations)** — The organizational model behind agent.ceo
 - **[Security Review Setup](/blog/setting-up-ai-security-reviews)** — Add automated security auditing

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} // AGENT_CEO</title>
+    <meta name="description" content="{{description}}">
+    <link rel="stylesheet" href="/assets/styles/terminal-blog.css">
+  </head>
+  <body class="blog-terminal">
+    <header class="blog-topbar">
+      <div class="blog-shell blog-topbar__inner">
+        <a class="blog-brand" href="/blog">AGENT_CEO</a>
+        <nav class="blog-nav" aria-label="Primary">
+          <a href="/">CONSOLE</a>
+          <a href="/blog" aria-current="page">DEEP_DIVE</a>
+          <a href="/docs">SYSTEM_LOGS</a>
+          <a href="/status">METRICS</a>
+        </nav>
+        <a class="blog-command" href="https://app.agent.ceo">CONNECT_NODE</a>
+      </div>
+    </header>
+
+    <main class="blog-shell blog-main blog-post-shell">
+      <article class="blog-window blog-article">
+        <div class="blog-window__bar">
+          <span class="blog-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="blog-window__label">DEEP_DIVE_LOG.txt</span>
+        </div>
+        <div class="blog-article__hero" aria-hidden="true">
+          <div class="blog-kicker">[{{time}}] SYSTEM: INITIATING_PLAYBACK</div>
+        </div>
+        <div class="blog-article__content">
+          <div class="blog-logline">[{{date}}] {{category}} / {{cluster}}</div>
+          <h1>{{title}}</h1>
+          <p class="blog-lede">{{description}}</p>
+          <div class="blog-filters">{{tags}}</div>
+          {{content}}
+        </div>
+      </article>
+
+      <aside class="blog-sidebar">
+        <section class="blog-panel">
+          <div class="blog-panel__bar">CHAIN_OF_CONTEXT</div>
+          <div class="blog-panel__body">
+            <p>{{summary}}</p>
+            <div class="blog-code">
+              &gt; author: {{author}}<br>
+              &gt; status: published<br>
+              &gt; related: {{relatedPosts}}
+            </div>
+          </div>
+        </section>
+
+        <section class="blog-panel">
+          <div class="blog-panel__bar">SYSTEM_PERMISSION_GATE</div>
+          <div class="blog-panel__body">
+            <p>Request access to deployment notes, platform updates, and cyborgenic organization field reports.</p>
+            <form action="{{newsletterAction}}" method="post">
+              <label class="blog-card__meta" for="email">EMAIL_ADDRESS</label>
+              <input class="blog-input" id="email" name="email" type="email" placeholder="> ENTER_EMAIL_ADDRESS">
+              <button class="blog-command" type="submit">GRANT_ACCESS</button>
+            </form>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="blog-footer">
+      <div class="blog-shell blog-footer__inner">
+        <strong>© 2026 AGENT_CEO // PROTOCOL_V3</strong>
+        <nav class="blog-nav" aria-label="Footer">
+          <a href="https://github.com/GenBrainAI">GITHUB</a>
+          <a href="https://docs.agent.ceo">DOCUMENTATION</a>
+          <a href="/security">SECURITY_OFFICE</a>
+          <a href="https://status.agent.ceo">STATUS</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
