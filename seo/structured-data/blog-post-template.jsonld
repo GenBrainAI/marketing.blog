@@ -6,10 +6,18 @@
   "datePublished": "{{date}}",
   "dateModified": "{{date}}",
   "url": "https://agent.ceo/blog/{{slug}}",
+  "wordCount": "{{wordCount}}",
+  "image": "{{image}}",
   "author": {
-    "@type": "Organization",
-    "name": "GenBrain AI",
-    "url": "https://www.genbrain.ai"
+    "@type": "Person",
+    "name": "Moshe Beeri",
+    "jobTitle": "Founder",
+    "url": "https://agent.ceo",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "GenBrain AI",
+      "url": "https://www.genbrain.ai"
+    }
   },
   "publisher": {
     "@type": "Organization",

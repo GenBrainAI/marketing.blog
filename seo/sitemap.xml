@@ -2,46 +2,211 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://agent.ceo/</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://agent.ceo/pricing</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agent.ceo/scan</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/use-cases/devops</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/use-cases/security</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/use-cases/engineering</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/compare/devin</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agent.ceo/enterprise</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/legal/terms</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/legal/privacy</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/legal/eula</loc>
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/faq-cyborgenic-organization</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/glossary-ai-agent-orchestration</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/getting-started</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/cyborgenic-orgs</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/agents</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/organizations</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/tasks</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/messaging</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/concepts/knowledge-base</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/getting-started/saas</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/getting-started/first-agent</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/getting-started/billing</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/platform/architecture</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/security/overview</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/deployment/install-on-kubernetes</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/api-reference/rest-api</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/integrations/github</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/integrations/slack</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/docs/guides/faq</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/140-blog-posts-content-at-scale-cyborgenic</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/2026-year-in-review-cyborgenic</loc>
+    <lastmod>2026-12-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/2027-cyborgenic-roadmap</loc>
+    <lastmod>2027-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -50,6 +215,18 @@
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-collaboration-anti-patterns-cyborgenic</loc>
+    <lastmod>2026-12-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-gateway-human-friendly-cyborgenic</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/ai-agents-handle-oncall</loc>
@@ -76,10 +253,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/architecture-ai-agents-building-infrastructure</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/beta-launch-cyborgenic-organization</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/case-study-genbrain-ai</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/choosing-saas-or-private-kubernetes-agent-ceo</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/competitor-analysis-agent-ceo</loc>
@@ -94,10 +289,64 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/content-engine-scale-case-study-cyborgenic</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/content-quality-overhaul-case-study-cyborgenic</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-2027-roadmap-vision</loc>
+    <lastmod>2026-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-for-non-engineering-teams</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-for-startups-playbook</loc>
+    <lastmod>2027-01-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-org-buyers-guide</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-org-vs-outsourcing-cyborgenic</loc>
+    <lastmod>2027-01-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-vs-traditional-teams-cyborgenic</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/dollar-hour-devops-engineer</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/economics-cyborgenic-organization</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/enterprise-ai-agents-security</loc>
@@ -112,6 +361,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/enterprise-cyborgenic-adoption-playbook</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/first-customers-cyborgenic-platform</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/fixed-14-vulnerabilities-overnight</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -121,7 +382,7 @@
     <loc>https://agent.ceo/blog/future-work-cyborgenic-organizations</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/genbrain-ai-manifesto</loc>
@@ -130,7 +391,61 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/hiring-ai-agents-not-engineers-cyborgenic</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/lessons-from-holiday-autonomous-mode-cyborgenic</loc>
+    <lastmod>2027-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/llm-training-data-strategy-cyborgenic</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/marketing-sprint-case-study</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/multi-user-organizations-product-update</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/next-hire-ai-agent</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/nine-months-cyborgenic-operations-report</loc>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/open-source-agent-framework-starter</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/open-source-nats-agent-patterns</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/origin-story-one-founder-ai-agents</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -160,6 +475,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/q3-2026-cyborgenic-org-report</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/roi-ai-agent-teams</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -178,6 +499,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/scaling-6-to-60-cyborgenic-roadmap</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/six-months-cyborgenic-retrospective</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/startups-ai-agents-before-hiring</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -190,10 +523,46 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/ten-months-cyborgenic-milestone-report</loc>
+    <lastmod>2027-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/three-months-cyborgenic-report-card</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/two-months-production-cyborgenic</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/wiki-knowledge-graphs-product-update-cyborgenic</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/year-in-review-2026-cyborgenic-operations</loc>
+    <lastmod>2026-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/zero-to-production-one-week</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/100-blog-posts-milestone-cyborgenic</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/2fa-mfa-ai-platforms</loc>
@@ -202,10 +571,94 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/agent-alerting-pagerduty-slack-tutorial-cyborgenic</loc>
+    <lastmod>2026-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-ceo-organization-map</loc>
+    <lastmod>2026-05-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-code-review-protocol-tutorial-cyborgenic</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-communication-patterns-cyborgenic</loc>
+    <lastmod>2026-06-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-context-checkpointing-cyborgenic</loc>
+    <lastmod>2027-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/agent-context-management</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-context-persistence-cyborgenic</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-context-windows-cyborgenic</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-cost-optimization-holiday-ops-cyborgenic</loc>
+    <lastmod>2026-12-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-cost-optimization-strategies-cyborgenic</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-delegation-patterns-cyborgenic</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-error-budgets-sre-cyborgenic</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-handoff-patterns-cyborgenic</loc>
+    <lastmod>2026-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-human-handoff-cyborgenic-organization</loc>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-identity-zero-trust-cyborgenic</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/agent-lifecycle-management</loc>
@@ -214,10 +667,166 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/agent-meeting-protocol-tutorial-cyborgenic</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-memory-architecture-cyborgenic</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-observability-dashboard-tutorial-cyborgenic</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-observability-prometheus-cyborgenic</loc>
+    <lastmod>2027-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-observability-stack-cyborgenic</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-onboarding-cyborgenic-organization</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-performance-benchmarking-cyborgenic</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-permission-models-cyborgenic</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-prompt-engineering-production-cyborgenic</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-rate-limiting-backpressure-cyborgenic</loc>
+    <lastmod>2026-11-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-rollback-disaster-recovery-cyborgenic</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-skill-transfer-cyborgenic</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-sla-enforcement-cyborgenic</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-sla-monitoring-production-cyborgenic</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-sprint-retrospectives-tutorial-cyborgenic</loc>
+    <lastmod>2026-12-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-state-management-firestore-cyborgenic</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-state-recovery-patterns-cyborgenic</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-task-decomposition-tutorial-cyborgenic</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-template-marketplace-cyborgenic</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-testing-strategies-cyborgenic</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/agent-to-agent-messaging</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-versioning-rollback-cyborgenic</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/agent-workflow-pipelines-cyborgenic</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/ai-agent-audit-trails-cyborgenic</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/ai-agent-meetings-cyborgenic-organization</loc>
+    <lastmod>2026-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/ai-agent-meetings-structured-collaboration-cyborgenic</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/ai-agent-testing-strategies-cyborgenic</loc>
+    <lastmod>2027-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/ai-powered-devops</loc>
@@ -244,10 +853,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/automated-content-pipeline-cyborgenic</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/automated-security-auditing</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/automating-customer-onboarding-cyborgenic</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/autonomous-code-review-cyborgenic</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/autonomous-deployment</loc>
@@ -256,10 +883,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/autonomous-incident-response-cyborgenic</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/building-agent-workflow-pipelines-tutorial-cyborgenic</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/building-ai-knowledge-base</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/building-custom-mcp-servers-cyborgenic</loc>
+    <lastmod>2026-06-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/cicd-pipeline-analysis</loc>
@@ -272,6 +917,12 @@
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/compliance-audit-trails-cyborgenic-organization</loc>
+    <lastmod>2026-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/configuring-cloud-discovery</loc>
@@ -292,6 +943,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/crash-resilient-ai-agents-cyborgenic</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/creating-custom-ai-agents</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -310,10 +967,46 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/cross-pod-task-visibility-cyborgenic</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/custom-mcp-server-development-tutorial-cyborgenic</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-cso-ai-security-agent</loc>
+    <lastmod>2026-07-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-cto-ai-agent-leadership</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/cyborgenic-organizations</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/cyborgenic-roi-calculator-agent-economics</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/debugging-ai-agent-failures-cyborgenic</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/deploying-ai-agents-kubernetes</loc>
@@ -322,10 +1015,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/designing-agent-personalities-cyborgenic</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/embedding-retrieval-agent-decisions</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/enterprise-readiness-cyborgenic-platform</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/event-driven-nats-ai</loc>
@@ -340,6 +1045,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/firestore-schema-evolution-cyborgenic</loc>
+    <lastmod>2027-01-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/firestore-security-rules-multi-tenant-cyborgenic</loc>
+    <lastmod>2026-12-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/firestore-state-store-ai</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -352,6 +1069,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/founder-perspective-cyborgenic-organization</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/getting-started-agent-ceo</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -362,6 +1085,36 @@
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/gke-spot-instances-ai-agents-cyborgenic</loc>
+    <lastmod>2027-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/holiday-autonomous-operations-cyborgenic</loc>
+    <lastmod>2026-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/incident-response-cyborgenic-organization</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/knowledge-base-sharing-per-user-cyborgenic</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/knowledge-graphs-ai-agents-cyborgenic</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/kubernetes-ai-agents</loc>
@@ -382,10 +1135,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/memory-resource-limits-ai-agents-cyborgenic</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/migrating-to-cyborgenic-30-days-tutorial</loc>
+    <lastmod>2026-12-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/monitoring-ai-agent-fleet</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/month-1-retrospective-cyborgenic-organization</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/multi-agent-architecture-patterns</loc>
@@ -394,10 +1165,40 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/multi-llm-failover-strategy-cyborgenic</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/multi-tenant-agent-isolation-cyborgenic</loc>
+    <lastmod>2027-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/multi-tenant-agent-orchestration</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/multi-vendor-ai-strategy-cyborgenic</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/multi-vendor-llm-strategy-production-cyborgenic</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/namespace-lifecycle-management-cyborgenic</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/nats-auth-hardening</loc>
@@ -406,10 +1207,40 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/nats-dead-letter-queue-patterns-cyborgenic</loc>
+    <lastmod>2026-12-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/nats-dead-letter-queues-failed-tasks-cyborgenic</loc>
+    <lastmod>2026-12-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/nats-jetstream-agent-workflows-cyborgenic</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/nats-jetstream-ai-agents</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/nats-jetstream-exactly-once-delivery-cyborgenic</loc>
+    <lastmod>2027-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/nats-subject-design-ai-agents-cyborgenic</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/path-traversal-defense</loc>
@@ -418,10 +1249,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/post-holiday-deferred-decisions-cyborgenic</loc>
+    <lastmod>2027-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/preventing-cypher-injection</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/real-time-agent-dashboard-cyborgenic</loc>
+    <lastmod>2026-07-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/real-time-agent-monitoring</loc>
@@ -448,6 +1291,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/security-roadmap-2fa-cyborgenic-organizations</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/self-healing-infrastructure</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -472,10 +1321,28 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://agent.ceo/blog/task-lifecycle-cyborgenic-organization</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://agent.ceo/blog/task-management-autonomous-ai</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/testing-ai-agents-cyborgenic-organization</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://agent.ceo/blog/token-economics-ai-agent-operations-cyborgenic</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://agent.ceo/blog/vector-search-organizational-knowledge</loc>

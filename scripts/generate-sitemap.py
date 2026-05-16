@@ -4,26 +4,55 @@
 Reads all .md files in posts/, extracts slug from frontmatter,
 and generates a complete sitemap.xml for agent.ceo.
 
-Usage: python3 scripts/generate-sitemap.py > seo/sitemap.xml
+Usage: cd marketing.blog && python3 scripts/generate-sitemap.py > seo/sitemap.xml
 """
 
 import glob
+import os
 import re
 from datetime import datetime
 
 SITE_URL = "https://agent.ceo"
+TODAY = datetime.now().strftime('%Y-%m-%d')
 
 STATIC_PAGES = [
-    ("/", "weekly", "1.0"),
-    ("/pricing", "monthly", "0.9"),
-    ("/scan", "monthly", "0.9"),
-    ("/blog", "daily", "0.8"),
-    ("/use-cases/devops", "monthly", "0.8"),
-    ("/use-cases/security", "monthly", "0.8"),
-    ("/use-cases/engineering", "monthly", "0.8"),
-    ("/compare/devin", "monthly", "0.7"),
-    ("/enterprise", "monthly", "0.8"),
+    ("/", "weekly", "1.0", TODAY),
+    ("/pricing", "monthly", "0.9", TODAY),
+    ("/scan", "monthly", "0.9", TODAY),
+    ("/blog", "daily", "0.8", TODAY),
+    ("/use-cases/devops", "monthly", "0.8", "2026-05-10"),
+    ("/use-cases/security", "monthly", "0.8", "2026-05-10"),
+    ("/use-cases/engineering", "monthly", "0.8", "2026-05-10"),
+    ("/compare/devin", "monthly", "0.7", "2026-05-10"),
+    ("/enterprise", "monthly", "0.8", "2026-05-10"),
+    ("/legal/terms", "monthly", "0.6", "2026-05-15"),
+    ("/legal/privacy", "monthly", "0.6", "2026-05-15"),
+    ("/legal/eula", "monthly", "0.6", "2026-05-15"),
+    ("/blog/faq-cyborgenic-organization", "monthly", "0.8", "2026-05-16"),
+    ("/blog/glossary-ai-agent-orchestration", "monthly", "0.8", "2026-05-16"),
+    ("/docs", "weekly", "0.8", TODAY),
 ]
+
+DOCS_PAGES = [
+    ("/docs/getting-started", "weekly", "0.8"),
+    ("/docs/concepts/cyborgenic-orgs", "monthly", "0.8"),
+    ("/docs/concepts/agents", "monthly", "0.7"),
+    ("/docs/concepts/organizations", "monthly", "0.7"),
+    ("/docs/concepts/tasks", "monthly", "0.7"),
+    ("/docs/concepts/messaging", "monthly", "0.7"),
+    ("/docs/concepts/knowledge-base", "monthly", "0.7"),
+    ("/docs/getting-started/saas", "monthly", "0.7"),
+    ("/docs/getting-started/first-agent", "monthly", "0.7"),
+    ("/docs/getting-started/billing", "monthly", "0.7"),
+    ("/docs/platform/architecture", "monthly", "0.7"),
+    ("/docs/security/overview", "monthly", "0.7"),
+    ("/docs/deployment/install-on-kubernetes", "monthly", "0.7"),
+    ("/docs/api-reference/rest-api", "monthly", "0.6"),
+    ("/docs/integrations/github", "monthly", "0.6"),
+    ("/docs/integrations/slack", "monthly", "0.6"),
+    ("/docs/guides/faq", "monthly", "0.7"),
+]
+
 
 def extract_frontmatter(filepath):
     with open(filepath) as f:
@@ -38,13 +67,23 @@ def extract_frontmatter(filepath):
             fm[key.strip()] = val.strip().strip('"')
     return fm
 
+
 def main():
     print('<?xml version="1.0" encoding="UTF-8"?>')
     print('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
 
-    for path, freq, priority in STATIC_PAGES:
+    for path, freq, priority, lastmod in STATIC_PAGES:
         print(f'  <url>')
         print(f'    <loc>{SITE_URL}{path}</loc>')
+        print(f'    <lastmod>{lastmod}</lastmod>')
+        print(f'    <changefreq>{freq}</changefreq>')
+        print(f'    <priority>{priority}</priority>')
+        print(f'  </url>')
+
+    for path, freq, priority in DOCS_PAGES:
+        print(f'  <url>')
+        print(f'    <loc>{SITE_URL}{path}</loc>')
+        print(f'    <lastmod>{TODAY}</lastmod>')
         print(f'    <changefreq>{freq}</changefreq>')
         print(f'    <priority>{priority}</priority>')
         print(f'  </url>')
@@ -54,9 +93,8 @@ def main():
         if not fm or 'slug' not in fm:
             continue
         slug = fm['slug']
-        date = fm.get('date', datetime.now().strftime('%Y-%m-%d'))
-        category = fm.get('category', 'technical')
-        priority = "0.8" if 'getting-started' in slug or 'case-study' in slug else "0.7"
+        date = fm.get('date', TODAY)
+        priority = "0.8" if 'getting-started' in slug or 'case-study' in slug or 'cyborgenic' in slug else "0.7"
 
         print(f'  <url>')
         print(f'    <loc>{SITE_URL}/blog/{slug}</loc>')
@@ -66,6 +104,7 @@ def main():
         print(f'  </url>')
 
     print('</urlset>')
+
 
 if __name__ == '__main__':
     main()
