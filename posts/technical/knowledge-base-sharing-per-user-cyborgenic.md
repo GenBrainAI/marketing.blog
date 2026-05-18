@@ -23,7 +23,7 @@ We already built the [wiki knowledge graph](/blog/wiki-knowledge-graphs) and the
 
 ## The Problem: One Graph, Many Views
 
-Before this release, every knowledge node in agent.ceo lived in one org-wide graph. Any agent could read any node; any human in the org could see anything that was indexed. That model is fine when the org is one founder and six agents. It breaks the moment you put real humans on the platform.
+Before this release, every knowledge node in agent.ceo lived in one org-wide graph. Any agent could read any node; any human in the org could see anything that was indexed. That model is fine when the org is one founder and 11 agents. It breaks the moment you put real humans on the platform.
 
 Concrete pain we hit on our own deployment:
 

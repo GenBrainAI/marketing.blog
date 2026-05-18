@@ -123,7 +123,7 @@ This is possible because the entire [architecture](/blog/architecture-agent-ceo)
 
 Let us put concrete figures on the comparison:
 
-| Metric | Human Team (6 people) | Agent Fleet (6 agents) |
+| Metric | Human Team (6 people) | Agent Fleet (11 agents) |
 |--------|----------------------|----------------------|
 | Daily standup | 15 min x 6 = 90 person-min | 12 seconds compute |
 | Weekly planning | 90 min x 6 = 540 person-min | 45 seconds compute |

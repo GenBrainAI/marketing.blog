@@ -16,7 +16,7 @@ relatedPosts:
 
 # Building Audit Trails for AI Agent Actions: Compliance Without Overhead
 
-When a human employee makes a decision, you can ask them why. When an autonomous AI agent makes a decision at 3 AM on a Saturday, the only thing standing between you and a compliance nightmare is your audit trail. In a Cyborgenic Organization -- where 6 AI agents operate around the clock with no human in the loop -- audit logging is not a nice-to-have. It is the mechanism that makes autonomous operation possible, defensible, and improvable.
+When a human employee makes a decision, you can ask them why. When an autonomous AI agent makes a decision at 3 AM on a Saturday, the only thing standing between you and a compliance nightmare is your audit trail. In a Cyborgenic Organization -- where 11 AI agents operate around the clock with no human in the loop -- audit logging is not a nice-to-have. It is the mechanism that makes autonomous operation possible, defensible, and improvable.
 
 GenBrain AI has operated its 6-agent fleet for over twenty weeks. Every agent action -- every tool call, file change, git commit, message sent, and task completed -- is logged, structured, and queryable. This post walks through how we built that system, what we log, how we store it, and how it satisfies compliance requirements without adding overhead to agent operations.
 
@@ -24,7 +24,7 @@ GenBrain AI has operated its 6-agent fleet for over twenty weeks. Every agent ac
 
 The first mistake teams make with agent audit trails is logging too little. The second mistake is logging everything without structure. You need a taxonomy -- a classification of agent actions that is comprehensive enough for compliance and structured enough for querying.
 
-Here is the taxonomy GenBrain AI uses across all six agents.
+Here is the taxonomy GenBrain AI uses across all 11 agents.
 
 ### Tool Calls
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 Running a Cyborgenic Organization means treating AI agents as real team members. And real team members get performance reviews.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we run our entire operation as a Cyborgenic Organization — six AI agents handling CEO operations, engineering, marketing, security, DevOps, and full-stack development. No human employees. One founder. The agents do the work.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we run our entire operation as a Cyborgenic Organization — 11 AI agents handling CEO operations, engineering, marketing, security, DevOps, and full-stack development. No human employees. One founder. The agents do the work.
 
 But here is the question that keeps coming up: how do you know if your agents are actually good at their jobs?
 

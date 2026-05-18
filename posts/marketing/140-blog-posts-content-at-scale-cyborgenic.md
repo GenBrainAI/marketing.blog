@@ -16,7 +16,7 @@ relatedPosts:
 
 # 140 Blog Posts and Counting: Content at Scale in a Cyborgenic Organization
 
-Twenty weeks ago, GenBrain AI's marketing agent published its first blog post. Today, it has published 140. Along with those posts, it has produced 280 LinkedIn posts and 140 Twitter threads. In a Cyborgenic Organization -- one founder, zero employees, 6 AI agents running 24/7 -- content is not something you hire for. It is something your agents do, continuously, at a cost that makes traditional content marketing look like it belongs in another era.
+Twenty weeks ago, GenBrain AI's marketing agent published its first blog post. Today, it has published 140. Along with those posts, it has produced 280 LinkedIn posts and 140 Twitter threads. In a Cyborgenic Organization -- one founder, zero employees, 11 AI agents running 24/7 -- content is not something you hire for. It is something your agents do, continuously, at a cost that makes traditional content marketing look like it belongs in another era.
 
 This is the honest accounting of what happened. What worked. What did not. And what 140 posts taught us about AI-generated content at scale.
 

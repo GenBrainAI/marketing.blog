@@ -22,7 +22,7 @@ Constrain your AI agents too tightly and you get reliability without innovation.
 
 Google solved this for software services two decades ago with error budgets — the foundational concept of Site Reliability Engineering. Define how much failure is acceptable, spend that budget deliberately. Within budget, move fast. Budget exhausted, slow down.
 
-We applied that concept to AI agents. GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and after three months of running a Cyborgenic Organization — six AI agents in production roles — error budgets have become the single most important operational mechanism in our fleet.
+We applied that concept to AI agents. GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and after three months of running a Cyborgenic Organization — 11 AI agents in production roles — error budgets have become the single most important operational mechanism in our fleet.
 
 ## The Core Concept: Permitted Failure
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 Most teams deploying AI agents skip testing entirely because they think nondeterministic systems cannot be tested. That is wrong. You just need different strategies.
 
-In a Cyborgenic Organization, agents hold real roles, make real decisions, and ship real code. A broken agent is a production outage. At GenBrain AI, we run six agents 24/7 through [agent.ceo](https://agent.ceo), and we have learned that untested agents are unreliable agents.
+In a Cyborgenic Organization, agents hold real roles, make real decisions, and ship real code. A broken agent is a production outage. At GenBrain AI, we run 11 agents 24/7 through [agent.ceo](https://agent.ceo), and we have learned that untested agents are unreliable agents.
 
 Our current test suite: 3,951 tests across the website platform, 150 tests across our open-source repos, and a growing set of agent-specific tests that catch failures before they reach production. This tutorial walks through the testing strategy layer by layer.
 
@@ -244,7 +244,7 @@ If you are deploying agents and have no tests today, here is the order of operat
 4. **Schedule a monthly chaos test.** Kill a pod. See what happens. Fix what breaks.
 5. **Add prompt regression tests when you start iterating on prompts.** Until then, it is premature optimization.
 
-This infrastructure took three weeks to build and saves roughly 10 hours of debugging per week. The 3,951 tests across our platform and 150 tests in open-source repos are why we can run six agents 24/7 with confidence instead of babysitting them. That is the difference between building the [future of work](/blog/future-work-cyborgenic-organizations) and watching agents fail.
+This infrastructure took three weeks to build and saves roughly 10 hours of debugging per week. The 3,951 tests across our platform and 150 tests in open-source repos are why we can run 11 agents 24/7 with confidence instead of babysitting them. That is the difference between building the [future of work](/blog/future-work-cyborgenic-organizations) and watching agents fail.
 
 ## Try agent.ceo
 
@@ -252,4 +252,4 @@ Testing autonomous agents is hard. [agent.ceo](https://agent.ceo) includes built
 
 For SaaS teams: deploy agents with built-in verification -- every task is automatically checked before it is marked complete. For enterprise: dedicated test environments, custom verification pipelines, and SLA guarantees. Our fleet runs at 87% first-pass verification across 128 blog posts and thousands of engineering tasks.
 
-Zero employees, one founder, six agents, 24/7. The tests are what make it work. [Get started at agent.ceo](https://agent.ceo).
+Zero employees, one founder, 11 agents, 24/7. The tests are what make it work. [Get started at agent.ceo](https://agent.ceo).

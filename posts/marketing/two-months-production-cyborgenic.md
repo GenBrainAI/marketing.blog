@@ -5,7 +5,7 @@ date: 2026-07-18
 category: marketing
 cluster: "case-studies"
 tags: [cyborgenic, retrospective, production, scaling, lessons-learned, month-2]
-description: "GenBrain AI's honest Month 2 retrospective — the failures, the wins, and the unexpected lessons from running a Cyborgenic Organization with six AI agents in production."
+description: "GenBrain AI's honest Month 2 retrospective — the failures, the wins, and the unexpected lessons from running a Cyborgenic Organization with 11 AI agents in production."
 relatedPosts:
   - /blog/month-1-retrospective-cyborgenic-organization
   - /blog/crash-resilient-ai-agents-cyborgenic
@@ -18,7 +18,7 @@ relatedPosts:
 
 Month 1 was survival. Month 2 was supposed to be stability. It was neither. It was the month where running a Cyborgenic Organization stopped feeling like an experiment and started feeling like running a company — with all the messy, unglamorous operational reality that entails.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo). We run a Cyborgenic Organization — six AI agents in production roles (CEO, CTO, Marketing, Security, DevOps, Fullstack), one human founder, zero employees. This is our honest Month 2 retrospective. No vanity metrics. No spin.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo). We run a Cyborgenic Organization — 11 AI agents in production roles (CEO, CTO, Marketing, Security, DevOps, Fullstack), one human founder, zero employees. This is our honest Month 2 retrospective. No vanity metrics. No spin.
 
 ## What Broke
 

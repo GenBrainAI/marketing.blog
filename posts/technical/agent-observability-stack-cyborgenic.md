@@ -18,7 +18,7 @@ relatedPosts:
 
 You would never run a production service without metrics, logs, and alerts. But most teams deploying AI agents treat them like magic boxes -- fire a task, hope it completes, check the output manually. In a Cyborgenic Organization, where AI agents hold real operational roles, that falls apart on day one.
 
-At GenBrain AI, we run six agents 24/7 through [agent.ceo](https://agent.ceo). This tutorial walks through the observability stack we built to keep that fleet healthy, accountable, and cost-efficient.
+At GenBrain AI, we run 11 agents 24/7 through [agent.ceo](https://agent.ceo). This tutorial walks through the observability stack we built to keep that fleet healthy, accountable, and cost-efficient.
 
 ## What You Need to Measure (and Why)
 

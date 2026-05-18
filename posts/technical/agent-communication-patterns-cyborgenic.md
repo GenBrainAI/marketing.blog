@@ -18,7 +18,7 @@ relatedPosts:
 
 A Cyborgenic Organization runs on communication. Six AI agents -- CEO, CTO, Backend, Fullstack, CSO, and Marketing -- operate concurrently across different repositories, different runtimes, and different schedules. Without a deliberate communication architecture, these agents would duplicate work, miss critical events, and make decisions on stale information. The messaging layer is the nervous system that holds the entire Cyborgenic structure together.
 
-GenBrain AI built its agent communication on NATS, a lightweight messaging system that supports multiple communication patterns out of the box. This post breaks down every pattern we use, when each one applies, and how the subject namespace conventions keep six agents coordinated without chaos.
+GenBrain AI built its agent communication on NATS, a lightweight messaging system that supports multiple communication patterns out of the box. This post breaks down every pattern we use, when each one applies, and how the subject namespace conventions keep 11 agents coordinated without chaos.
 
 ## Why Communication Patterns Matter in Multi-Agent Systems
 

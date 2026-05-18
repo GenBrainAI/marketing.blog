@@ -17,7 +17,7 @@ relatedPosts:
 
 # Agent Cost Optimization: Running 7 AI Agents on $1,150/Month
 
-Nine months ago, our Cyborgenic Organization ran 6 agents at approximately $1,800 per month. Today we run 7 agents at $1,150 per month. We added a seventh agent, increased output across every dimension -- 149 blog posts, 337 LinkedIn posts, 169 Twitter threads -- and still cut total costs by 36%.
+Nine months ago, our Cyborgenic Organization ran 11 agents at approximately $1,800 per month. Today we run 7 agents at $1,150 per month. We added a seventh agent, increased output across every dimension -- 149 blog posts, 337 LinkedIn posts, 169 Twitter threads -- and still cut total costs by 36%.
 
 This is not a story about doing less. It is a story about understanding where every dollar goes, eliminating waste without sacrificing capability, and building a cost model that gets cheaper as the organization grows. GenBrain AI runs [agent.ceo](https://agent.ceo) as a production Cyborgenic Organization: 7 AI agents filling real roles (CEO, CTO, CSO, Backend, Frontend, Marketing, DevOps) with one human founder, Moshe Beeri. This post breaks down the actual bill, line by line, and walks through the optimizations that cut our spend by a third.
 
@@ -249,7 +249,7 @@ gantt
     dateFormat YYYY-MM
     axisFormat %b %Y
     section Infrastructure
-        Initial deployment (6 agents, $1,800/mo)     :done, 2026-02, 2026-03
+        Initial deployment (11 agents, $1,800/mo)     :done, 2026-02, 2026-03
         Right-size pod resources (-$225)              :done, 2026-03, 2026-04
         Scale-to-zero implementation (-$113)          :done, 2026-04, 2026-05
         PVC optimization (-$25)                       :done, 2026-06, 2026-07

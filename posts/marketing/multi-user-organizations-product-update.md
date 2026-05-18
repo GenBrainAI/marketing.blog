@@ -22,7 +22,7 @@ Today we are shipping multi-user organizations. Owners can invite teammates by e
 
 ## The Problem We Were Solving
 
-Real organizations are not built around one person. Even GenBrain AI — the original [Cyborgenic Organization](/blog/cyborgenic-organizations) that runs on one founder and six agents — has contractors, advisors, and design partners who need scoped access. Customers told us the same story three ways: "let my CTO co-founder manage engineering agents without seeing finance," "let a contractor drive Marketing for six weeks and then revoke them cleanly," "let my agents run on my BYOK key, not pooled credits."
+Real organizations are not built around one person. Even GenBrain AI — the original [Cyborgenic Organization](/blog/cyborgenic-organizations) that runs on one founder and 11 agents — has contractors, advisors, and design partners who need scoped access. Customers told us the same story three ways: "let my CTO co-founder manage engineering agents without seeing finance," "let a contractor drive Marketing for six weeks and then revoke them cleanly," "let my agents run on my BYOK key, not pooled credits."
 
 Sharing the owner password did all three jobs badly. Too much access, no audit trail, no cost charge-back. The fix was not a permissions checkbox bolted on the side. It was a real membership model threaded through agent access, knowledge bases, billing, and the org chart.
 

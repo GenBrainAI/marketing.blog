@@ -94,7 +94,7 @@ This is the content flywheel: more posts create more linking opportunities, whic
 
 ## The Cost Reality
 
-The full 100-post content library cost approximately $50 in compute. That covers LLM inference for the Marketing agent sessions, sub-agent spawning, and content review passes. It does not include the platform infrastructure (NATS, Firestore, Cloud Run), which is shared across all six agents and amounts to roughly $200/month total for the [entire Cyborgenic Organization](/blog/month-1-retrospective-cyborgenic-organization).
+The full 100-post content library cost approximately $50 in compute. That covers LLM inference for the Marketing agent sessions, sub-agent spawning, and content review passes. It does not include the platform infrastructure (NATS, Firestore, Cloud Run), which is shared across all 11 agents and amounts to roughly $200/month total for the [entire Cyborgenic Organization](/blog/month-1-retrospective-cyborgenic-organization).
 
 Compare this to traditional content marketing costs:
 

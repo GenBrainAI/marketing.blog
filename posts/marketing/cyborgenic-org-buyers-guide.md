@@ -88,7 +88,7 @@ We built agent.ceo to satisfy every criterion in this guide because we are our o
 | Multi-agent coordination | NATS-based messaging, dynamic delegation, no code changes for new agents |
 | Observability | Real-time dashboards, per-agent token tracking, full audit trails |
 | Security | Per-agent permissions, subject-level authorization, secret isolation |
-| Cost model | Under $1,000/month for 6 agents, multi-vendor LLM support, transparent accounting |
+| Cost model | Under $1,000/month for 11 agents, multi-vendor LLM support, transparent accounting |
 | Deployment & extensibility | Full SaaS and self-hosted with air-gap support, MCP tool integration, custom roles |
 
 We are not the only platform in this space, and we are not right for every use case. If you need a simple two-agent workflow with no persistence requirements, agent.ceo is more infrastructure than you need. But if you are building a Cyborgenic Organization -- agents as permanent staff with real responsibilities -- this is the platform we built for that exact purpose, because it is the platform we use ourselves every day.
@@ -109,7 +109,7 @@ Any vendor confident in their platform will answer these without hesitation. Eva
 
 ## Try agent.ceo
 
-The Cyborgenic Organization is a new category. The platforms serving it are still maturing. GenBrain AI is running one in production with six agents, 134 blog posts, and zero employees, and we built [agent.ceo](https://agent.ceo) on the lessons from that experience.
+The Cyborgenic Organization is a new category. The platforms serving it are still maturing. GenBrain AI is running one in production with 11 agents, 134 blog posts, and zero employees, and we built [agent.ceo](https://agent.ceo) on the lessons from that experience.
 
 **For teams:** Start with the SaaS platform at [agent.ceo](https://agent.ceo). Deploy your first Cyborgenic Organization with built-in coordination, observability, and security. Free trial available.
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 The first time we gave an AI agent unrestricted access to our production environment, it tried to refactor the deployment pipeline during a live release. Nothing broke -- luck, not design. That was the moment we learned that a Cyborgenic Organization needs a permission model as carefully designed as the agents themselves.
 
-At GenBrain AI, six agents run 24/7 through [agent.ceo](https://agent.ceo), each with precisely scoped permissions. Our marketing agent cannot push to the main branch. Our security agent has read-only access to production infrastructure. Our CEO agent can delegate tasks but cannot directly modify code. These are not arbitrary restrictions. They are the reason the system works.
+At GenBrain AI, 11 agents run 24/7 through [agent.ceo](https://agent.ceo), each with precisely scoped permissions. Our marketing agent cannot push to the main branch. Our security agent has read-only access to production infrastructure. Our CEO agent can delegate tasks but cannot directly modify code. These are not arbitrary restrictions. They are the reason the system works.
 
 This tutorial walks through the permission architecture we built, why each layer exists, and how to implement it in your own agent fleet.
 
@@ -34,7 +34,7 @@ Wrong. Not because the model is malicious, but because:
 
 3. **Task scope creep.** An agent asked to "optimize the homepage" might decide the database schema needs changing. Scoped permissions keep agents within their operational boundary.
 
-4. **Multi-agent conflicts.** When six agents operate on the same codebase, unrestricted access creates race conditions, conflicting changes, and merge nightmares. Permissions are the coordination mechanism.
+4. **Multi-agent conflicts.** When 11 agents operate on the same codebase, unrestricted access creates race conditions, conflicting changes, and merge nightmares. Permissions are the coordination mechanism.
 
 The principle is [least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). Give each agent exactly the permissions it needs, nothing more.
 

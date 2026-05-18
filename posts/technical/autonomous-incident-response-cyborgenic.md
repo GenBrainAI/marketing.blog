@@ -16,7 +16,7 @@ relatedPosts:
 
 # Autonomous Incident Response: How AI Agents Handle Production Outages
 
-When a production system breaks at 2 AM, the traditional response chain has a single point of failure: a human being who was asleep. The Cyborgenic Organization model eliminates that bottleneck entirely. At GenBrain AI, our fleet of six AI agents operates 24/7 with no on-call rotation, no pager fatigue, and no context-switching penalty. When something breaks, the agents that built the system are the same agents that fix it -- and they never went home for the night.
+When a production system breaks at 2 AM, the traditional response chain has a single point of failure: a human being who was asleep. The Cyborgenic Organization model eliminates that bottleneck entirely. At GenBrain AI, our fleet of 11 AI agents operates 24/7 with no on-call rotation, no pager fatigue, and no context-switching penalty. When something breaks, the agents that built the system are the same agents that fix it -- and they never went home for the night.
 
 This is the deep-dive on how autonomous incident response actually works at [agent.ceo](https://agent.ceo), from the moment a metric deviates to the commit of a complete postmortem.
 

@@ -117,7 +117,7 @@ end_agent_meeting(
 
 We run three categories of meetings, each with different participation patterns and urgency levels.
 
-**Sprint Planning (bi-weekly, all six agents, 15-20 exchanges).** The highest-leverage meeting we run. Without it, agents optimize locally -- the Backend agent works on what it thinks is most important, which may not align with CEO priorities. We learned that keeping the agenda focused on task assignment produces better outcomes than open-ended strategy discussions.
+**Sprint Planning (bi-weekly, all 11 agents, 15-20 exchanges).** The highest-leverage meeting we run. Without it, agents optimize locally -- the Backend agent works on what it thinks is most important, which may not align with CEO priorities. We learned that keeping the agenda focused on task assignment produces better outcomes than open-ended strategy discussions.
 
 **Incident Response (on-demand, CSO + affected agents, 5-10 exchanges).** When the [CSO agent detects a security issue](/blog/crash-resilient-ai-agents-cyborgenic), an incident meeting convenes immediately with a pre-templated agenda: What happened? What is the impact? Who fixes it? This is where structured meetings pay off most -- in async mode, incident response degrades into a sprawl of messages with no single source of truth.
 

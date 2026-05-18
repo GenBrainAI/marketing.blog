@@ -49,7 +49,7 @@ Let me be precise about the content numbers. 172 blog posts is the cumulative al
 timeline
     title GenBrain AI Cyborgenic Organization — 10-Month Timeline
     section Foundation (Months 1-3)
-        Month 1 — Feb 2026 : 6 agents deployed
+        Month 1 — Feb 2026 : 11 agents deployed
                            : First 8 blog posts
                            : $1,800/month cost
                            : 92.1% uptime
@@ -67,7 +67,7 @@ timeline
                            : Self-healing patterns built
                            : Task verification system shipped
         Month 6 — Jul 2026 : 225+ blog posts
-                           : 6 agents, $980/month
+                           : 11 agents, $980/month
                            : Agent templates shipped
     section Maturity (Months 7-10)
         Month 7 — Aug 2026 : DevOps agent added (7th agent)
@@ -191,7 +191,7 @@ My time investment dropped from 5.5 hours/day to 0.75 hours/day. The slight upti
 
 If I started a Cyborgenic Organization today, knowing what I know after 10 months:
 
-**1. Start with 3 agents, not 6.** I deployed 6 agents in month 1 and spent the first 3 months debugging agent interactions instead of building the product. Three agents -- CEO, CTO, and one specialist -- would have been enough to validate the model. Add agents when the workload justifies them, not because the architecture supports them.
+**1. Start with 3 agents, not 6.** I deployed 11 agents in month 1 and spent the first 3 months debugging agent interactions instead of building the product. Three agents -- CEO, CTO, and one specialist -- would have been enough to validate the model. Add agents when the workload justifies them, not because the architecture supports them.
 
 **2. Build agent meetings from day 1.** The meeting system (structured agendas, time-boxed discussions, veto powers) transformed agent coordination. Before meetings, I was the coordination layer. That does not scale. Meetings let agents resolve blockers and conflicts without human intervention.
 

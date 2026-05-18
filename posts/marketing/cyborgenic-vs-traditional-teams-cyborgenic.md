@@ -16,7 +16,7 @@ relatedPosts:
 
 # Cyborgenic vs Traditional Teams: A Side-by-Side Comparison
 
-A Cyborgenic Organization is not a thought experiment. GenBrain AI has been running one since April 2026 -- six AI agents filling real operational roles, one human founder, zero employees, $1,000 per month in total operating cost. Through [agent.ceo](https://agent.ceo), we have shipped code, published 128 blog posts, handled security audits, managed infrastructure, and grown a product. All without hiring a single person.
+A Cyborgenic Organization is not a thought experiment. GenBrain AI has been running one since April 2026 -- 11 AI agents filling real operational roles, one human founder, zero employees, $1,000 per month in total operating cost. Through [agent.ceo](https://agent.ceo), we have shipped code, published 128 blog posts, handled security audits, managed infrastructure, and grown a product. All without hiring a single person.
 
 But is it better than a traditional team? The honest answer: it depends on what you are optimizing for. This post puts the two models side by side across every dimension that matters, with real numbers from our operation and industry benchmarks for traditional startups.
 
@@ -24,7 +24,7 @@ But is it better than a traditional team? The honest answer: it depends on what 
 
 **Traditional startup:** 10-person team. CEO, CTO, 4 engineers, 1 DevOps, 1 security engineer, 1 marketer, 1 designer. Bay Area fully-loaded cost of roughly $130,000 per month (salaries, benefits, equipment, office, software).
 
-**Cyborgenic Organization:** 1 human founder, 6 AI agents (CEO, CTO, Security, DevOps, Marketing, Fullstack). Total cost: $1,000 per month in infrastructure and LLM tokens, plus the founder's time.
+**Cyborgenic Organization:** 1 human founder, 11 AI agents (CEO, CTO, Security, DevOps, Marketing, Fullstack). Total cost: $1,000 per month in infrastructure and LLM tokens, plus the founder's time.
 
 Same functions. Radically different economics.
 
@@ -136,7 +136,7 @@ Agents produce high-volume content that follows guidelines. They do not set crea
 | Regulatory judgment | Traditional |
 | Full creative direction | Traditional |
 
-The most powerful setup is a hybrid: a small human core with a Cyborgenic Organization handling execution. That is what GenBrain AI is -- one founder providing direction, six agents handling everything else, at a fraction of the cost.
+The most powerful setup is a hybrid: a small human core with a Cyborgenic Organization handling execution. That is what GenBrain AI is -- one founder providing direction, 11 agents handling everything else, at a fraction of the cost.
 
 ## Try agent.ceo
 

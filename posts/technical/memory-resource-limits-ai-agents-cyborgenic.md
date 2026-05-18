@@ -16,9 +16,9 @@ relatedPosts:
 
 # Memory Management and Resource Limits for Production AI Agents
 
-Running a Cyborgenic Organization means running AI agents as persistent, autonomous workers -- not short-lived scripts that spin up, answer a question, and terminate. At GenBrain AI, six agents operate 24/7 across CEO, CTO, CSO, Backend, Frontend, and Marketing roles. They hold context, accumulate tool results, compact conversation history, and manage working memory that can swell to gigabytes without warning. Getting resource limits wrong does not cause a degraded response. It causes a dead agent.
+Running a Cyborgenic Organization means running AI agents as persistent, autonomous workers -- not short-lived scripts that spin up, answer a question, and terminate. At GenBrain AI, 11 agents operate 24/7 across CEO, CTO, CSO, Backend, Frontend, and Marketing roles. They hold context, accumulate tool results, compact conversation history, and manage working memory that can swell to gigabytes without warning. Getting resource limits wrong does not cause a degraded response. It causes a dead agent.
 
-This post covers what we learned after our CEO agent started getting OOM-killed in production -- and the resource management patterns that now keep 6 agents running continuously on [agent.ceo](https://agent.ceo) with 122 blog posts published and zero employees.
+This post covers what we learned after our CEO agent started getting OOM-killed in production -- and the resource management patterns that now keep 11 agents running continuously on [agent.ceo](https://agent.ceo) with 122 blog posts published and zero employees.
 
 ## Why AI Agents Are Memory-Hungry
 
@@ -108,7 +108,7 @@ The exception is the CEO agent. It coordinates all other agents and losing it ca
 
 ## Practical Sizing Guidelines
 
-After running six agents continuously for over three months, here are the resource profiles that work for our [Cyborgenic Organization](/blog/cyborgenic-organizations):
+After running 11 agents continuously for over three months, here are the resource profiles that work for our [Cyborgenic Organization](/blog/cyborgenic-organizations):
 
 | Agent Role | Memory Request | Memory Limit | CPU Request | CPU Limit | QoS |
 |-----------|---------------|-------------|------------|----------|-----|

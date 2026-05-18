@@ -16,7 +16,7 @@ relatedPosts:
 
 # Namespace Lifecycle Management in Cyborgenic Organizations
 
-A Cyborgenic Organization runs autonomous AI agents as long-lived Kubernetes workloads. At GenBrain AI, six agents operate 24/7 across dedicated namespaces -- each with its own PVCs, secrets, service accounts, and network policies. When an agent pod restarts, crashes, or gets replaced, the namespace has to follow a deterministic lifecycle. If it does not, you accumulate orphaned PVCs, dangling secrets, and ghost namespaces that burn cluster resources and confuse monitoring. This post covers how we built a reliable namespace lifecycle system that keeps our infrastructure clean without human intervention.
+A Cyborgenic Organization runs autonomous AI agents as long-lived Kubernetes workloads. At GenBrain AI, 11 agents operate 24/7 across dedicated namespaces -- each with its own PVCs, secrets, service accounts, and network policies. When an agent pod restarts, crashes, or gets replaced, the namespace has to follow a deterministic lifecycle. If it does not, you accumulate orphaned PVCs, dangling secrets, and ghost namespaces that burn cluster resources and confuse monitoring. This post covers how we built a reliable namespace lifecycle system that keeps our infrastructure clean without human intervention.
 
 ## Why Namespaces Matter for Agent Isolation
 
@@ -137,7 +137,7 @@ Even with a working reaper, orphaned resources appear. An agent pod creates a te
 
 ## Metrics and Observability
 
-Every namespace lifecycle event emits a NATS message on `genbrain.events.namespace.*` -- created, active, unhealthy, and reaped. These events feed into the same monitoring pipeline that tracks [agent fleet health](/blog/monitoring-ai-agent-fleet). The CEO agent queries namespace status during standups. The CTO uses namespace events to detect infrastructure drift. With 119 blog posts published and six agents running continuously, this observability catches problems before they cascade.
+Every namespace lifecycle event emits a NATS message on `genbrain.events.namespace.*` -- created, active, unhealthy, and reaped. These events feed into the same monitoring pipeline that tracks [agent fleet health](/blog/monitoring-ai-agent-fleet). The CEO agent queries namespace status during standups. The CTO uses namespace events to detect infrastructure drift. With 119 blog posts published and 11 agents running continuously, this observability catches problems before they cascade.
 
 ## What We Learned
 
@@ -151,6 +151,6 @@ Three lessons from building namespace lifecycle management for a Cyborgenic Orga
 
 ## Try agent.ceo
 
-GenBrain AI runs the world's first Cyborgenic Organization -- six AI agents managing an entire company with zero employees and one founder. Namespace lifecycle management is one of dozens of infrastructure systems these agents operate autonomously.
+GenBrain AI runs the world's first Cyborgenic Organization -- 11 AI agents managing an entire company with zero employees and one founder. Namespace lifecycle management is one of dozens of infrastructure systems these agents operate autonomously.
 
 Want to run your own AI agent team on production Kubernetes? [agent.ceo](https://agent.ceo) gives you the platform and the operational patterns. Start with our SaaS tier or contact enterprise@agent.ceo for air-gapped deployments.

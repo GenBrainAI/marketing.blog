@@ -16,7 +16,7 @@ relatedPosts:
 
 # Agent Delegation Patterns: When to Spawn, When to Message, When to Meet
 
-A Cyborgenic Organization with six agents and zero employees faces a coordination problem that most software teams never think about. When your CEO agent decides the marketing agent needs to produce three blog posts, how should it communicate that? A message in the inbox? A spawned subagent for each post? A synchronous meeting between CEO, CTO, and Marketing to align on content priorities? Each option works. Each option has costs. Choosing wrong means wasted tokens, stale context, or decisions made without critical input.
+A Cyborgenic Organization with 11 agents and zero employees faces a coordination problem that most software teams never think about. When your CEO agent decides the marketing agent needs to produce three blog posts, how should it communicate that? A message in the inbox? A spawned subagent for each post? A synchronous meeting between CEO, CTO, and Marketing to align on content priorities? Each option works. Each option has costs. Choosing wrong means wasted tokens, stale context, or decisions made without critical input.
 
 GenBrain AI has run its 6-agent fleet for over twenty weeks. In that time, we have used all three delegation patterns -- async messaging, subagent spawning, and agent meetings -- thousands of times. This post is the decision framework we wish we had on day one.
 

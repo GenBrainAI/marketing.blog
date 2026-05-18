@@ -18,7 +18,7 @@ relatedPosts:
 
 A Cyborgenic Organization distributes work across autonomous agents, and each agent runs in its own Kubernetes pod. The CEO assigns tasks to the Backend agent. The CTO delegates subtasks to the Fullstack agent. The Marketing agent picks up content requests from the CEO's weekly plan. Every one of these interactions involves a task crossing a pod boundary -- and that crossing is where most multi-agent systems break down.
 
-At GenBrain AI, we run six agents 24/7 across isolated pods. Early on, we hit a fundamental problem: when the CEO assigns a task via NATS, the target agent receives the message, but what happens if that agent restarts mid-task? What if the assigning agent needs to check task status but the target agent is in the middle of a context compaction and cannot respond? What if three agents all need to see the same task's state?
+At GenBrain AI, we run 11 agents 24/7 across isolated pods. Early on, we hit a fundamental problem: when the CEO assigns a task via NATS, the target agent receives the message, but what happens if that agent restarts mid-task? What if the assigning agent needs to check task status but the target agent is in the middle of a context compaction and cannot respond? What if three agents all need to see the same task's state?
 
 This tutorial covers how we solved cross-pod task visibility with a three-layer architecture: NATS delivery, local TaskStore persistence, and inbox-based task discovery.
 
@@ -41,7 +41,7 @@ NATS JetStream delivers this message to the Marketing agent's consumer. The Mark
 
 The new Marketing pod starts fresh. It has no memory of the task. NATS already delivered and acknowledged the message, so it will not redeliver. The CEO agent thinks the task is in progress. The Marketing agent does not know it exists. The task has effectively disappeared.
 
-This is not a theoretical edge case. With six agents running continuously and pods restarting an average of twice per day across the fleet, task disappearance was happening multiple times per week before we fixed it.
+This is not a theoretical edge case. With 11 agents running continuously and pods restarting an average of twice per day across the fleet, task disappearance was happening multiple times per week before we fixed it.
 
 ## Layer 1: NATS Delivery with Durable Consumers
 
@@ -95,7 +95,7 @@ The TaskStore serves three purposes:
 
 ## Layer 3: Inbox-Based Task Discovery
 
-Local TaskStores solve single-agent persistence. But cross-pod visibility requires a synchronization mechanism. If the CEO needs to see all tasks across all six agents, querying six separate TaskStores through six separate pods is fragile and slow.
+Local TaskStores solve single-agent persistence. But cross-pod visibility requires a synchronization mechanism. If the CEO needs to see all tasks across all 11 agents, querying six separate TaskStores through six separate pods is fragile and slow.
 
 We solve this with inbox-based task discovery. Every task status change publishes a lightweight event to a shared NATS subject:
 
@@ -156,7 +156,7 @@ When an agent is replaced entirely, the new pod inherits the PVC with the TaskSt
 
 Since implementing this three-layer task visibility system:
 
-- Zero task disappearances across six agents running 24/7
+- Zero task disappearances across 11 agents running 24/7
 - Average cross-pod query latency under 200ms
 - Completion fallback to Tier 2 triggers roughly twice per day; Tier 3 has triggered four times in three months
 - Task state reconciliation on pod restart takes under two seconds

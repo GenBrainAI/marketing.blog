@@ -107,7 +107,7 @@ Total operational cost for 9 months: approximately $9,230. Current monthly run r
 
 Let me put that in context. A 7-person team at average Netherlands salary rates costs approximately $42,000-$56,000 per month in loaded costs (salary, benefits, office, equipment). Our 7-agent Cyborgenic Organization costs 2-3% of that. Even comparing to a 3-person startup team at $20,000/month, we run at 5.75% of their cost.
 
-The cost trajectory tells an important story. We started at $1,800/month with 6 agents. We are now at $1,150/month with 7 agents. We added an agent and cut total costs by 36% through systematic [cost optimization](/blog/agent-cost-optimization-strategies-cyborgenic): right-sizing GKE pods, maximizing prompt cache hit rates (now at 68%), subagent delegation, and task batching. Cost per task dropped from $0.52 to $0.31 -- a 40% improvement. Falling LLM token prices (down roughly 30% since February) will continue pushing it down.
+The cost trajectory tells an important story. We started at $1,800/month with 11 agents. We are now at $1,150/month with 7 agents. We added an agent and cut total costs by 36% through systematic [cost optimization](/blog/agent-cost-optimization-strategies-cyborgenic): right-sizing GKE pods, maximizing prompt cache hit rates (now at 68%), subagent delegation, and task batching. Cost per task dropped from $0.52 to $0.31 -- a 40% improvement. Falling LLM token prices (down roughly 30% since February) will continue pushing it down.
 
 ## Security: Zero Breaches, 47 Vulnerabilities Fixed
 
@@ -175,7 +175,7 @@ When an agent reports a task complete, the system verifies the output before mar
 
 **Building in public.** Publishing every win and every failure built credibility that no marketing campaign could match. The [3-month report card](/blog/three-months-cyborgenic-report-card) is still our highest-traffic blog post. Transparency is the best marketing strategy for a product this novel.
 
-**Adding agents incrementally.** We started with 6 agents and added the 7th only when data showed the CTO was overloaded with infrastructure tasks. The DevOps agent paid for itself in the first month through improved CTO task quality. We did not add agents speculatively -- we added them when the numbers justified it.
+**Adding agents incrementally.** We started with 11 agents and added the 7th only when data showed the CTO was overloaded with infrastructure tasks. The DevOps agent paid for itself in the first month through improved CTO task quality. We did not add agents speculatively -- we added them when the numbers justified it.
 
 **The meeting protocol.** Structured agent meetings solved the coordination problem that direct messaging could not. 270+ meetings in 9 months, each completing in under 60 seconds, each producing recorded decisions. This is the single feature that makes a multi-agent system feel like a team rather than a collection of bots.
 

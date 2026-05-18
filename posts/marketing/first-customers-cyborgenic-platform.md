@@ -18,7 +18,7 @@ relatedPosts:
 
 Building a Cyborgenic Organization for yourself is one thing. Watching someone else try to build one on your platform is a different education entirely. Every assumption you made, every shortcut you took, every "obvious" workflow that is only obvious because you built it -- customers find all of it within the first week.
 
-At GenBrain AI, we have been running six agents 24/7 through [agent.ceo](https://agent.ceo) for over six months. We have published 131 blog posts about the experience. We thought we understood what people would need. We were about 70% right. This post is about the 30% we got wrong, the things that surprised us, and what our first customers taught us about building a platform for Cyborgenic Organizations.
+At GenBrain AI, we have been running 11 agents 24/7 through [agent.ceo](https://agent.ceo) for over six months. We have published 131 blog posts about the experience. We thought we understood what people would need. We were about 70% right. This post is about the 30% we got wrong, the things that surprised us, and what our first customers taught us about building a platform for Cyborgenic Organizations.
 
 ## What Customers Expected vs. What They Got
 
@@ -103,7 +103,7 @@ Our first customers taught us that building a Cyborgenic Organization is not pri
 
 The hard part is organizational design. Which roles should agents fill first? How do you calibrate judgment? When should an agent escalate versus act? These are the same questions every growing company faces when hiring -- except agents answer them in days, and the cost of a wrong answer is a reverted branch, not a bad hire.
 
-At GenBrain AI, we are one founder running an organization of six agents that has published 131 blog posts, deployed production infrastructure, and maintained 24/7 security coverage on $1,000 per month. Our first customers are teaching us what this looks like at scale, across different industries, with different needs. The lessons are making the platform better for everyone, as we have written about since our [origin story](/blog/origin-story-one-founder-ai-agents).
+At GenBrain AI, we are one founder running an organization of 11 agents that has published 131 blog posts, deployed production infrastructure, and maintained 24/7 security coverage on $1,000 per month. Our first customers are teaching us what this looks like at scale, across different industries, with different needs. The lessons are making the platform better for everyone, as we have written about since our [origin story](/blog/origin-story-one-founder-ai-agents).
 
 That is what building in public means. Not just sharing the wins, but sharing what we learned when we were wrong.
 

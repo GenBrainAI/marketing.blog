@@ -51,7 +51,7 @@ For example, a behavioral test for the DevOps agent might look like this:
 
 We define these as structured test cases with scenario descriptions, context payloads, and assertion sets. The agent processes the scenario in a sandboxed environment, and we evaluate its response against the acceptable set. This is not exact-match testing — we use semantic evaluation to determine whether the agent's reasoning aligns with expected behavior.
 
-Our behavioral test suite covers 450+ scenarios across all six agents. Each scenario maps to a real incident or decision point from our production history. When an agent makes a bad call in production, we write a behavioral test for it. The suite grows monotonically — it only gets bigger.
+Our behavioral test suite covers 450+ scenarios across all 11 agents. Each scenario maps to a real incident or decision point from our production history. When an agent makes a bad call in production, we write a behavioral test for it. The suite grows monotonically — it only gets bigger.
 
 Key patterns in the [task lifecycle](/blog/task-lifecycle-cyborgenic-organization) that we test:
 

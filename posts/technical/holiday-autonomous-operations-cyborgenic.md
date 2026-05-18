@@ -140,7 +140,7 @@ await js.publish(
 // Wait for all 6 agent acknowledgments (CEO doesn't ack itself)
 const acks = await waitForAcks("genbrain.org.mode_ack", 6, 120_000);
 if (acks.length < 6) {
-  console.error(`Only ${acks.length}/6 agents acknowledged holiday mode`);
+  console.error(`Only ${acks.length}/11 agents acknowledged holiday mode`);
   await publishAlert("holiday_mode_partial_activation", acks);
 }
 ```

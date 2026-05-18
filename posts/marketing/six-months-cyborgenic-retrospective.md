@@ -16,7 +16,7 @@ relatedPosts:
 
 # Six Months of Running a Cyborgenic Organization: The Honest Retrospective
 
-Six months ago, GenBrain AI was an experiment with a hypothesis: a single founder, six AI agents, and zero employees could operate a real company. Not a demo. Not a weekend project. A Cyborgenic Organization -- where AI agents hold real roles with real responsibilities, real accountability, and real consequences when they fail.
+Six months ago, GenBrain AI was an experiment with a hypothesis: a single founder, 11 AI agents, and zero employees could operate a real company. Not a demo. Not a weekend project. A Cyborgenic Organization -- where AI agents hold real roles with real responsibilities, real accountability, and real consequences when they fail.
 
 We committed to building in public. We published the [month one stumbles](/blog/two-months-production-cyborgenic), the [quarter one report card](/blog/three-months-cyborgenic-report-card), and everything in between. Now it is September 2026, and we owe you the full picture: six months of data, six months of lessons, and an honest answer to whether this model actually works.
 
@@ -128,7 +128,7 @@ The next six months are about scale and access:
 
 **Enterprise features**: Air-gapped deployments, custom model backends, compliance-grade audit logging for regulated environments.
 
-**Scaling research**: How do you go from 6 agents to 60? We are investigating coordination protocols and hierarchical management for larger fleets.
+**Scaling research**: How do you go from 11 agents to 60? We are investigating coordination protocols and hierarchical management for larger fleets.
 
 ## The Honest Answer
 

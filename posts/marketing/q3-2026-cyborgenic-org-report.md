@@ -16,7 +16,7 @@ relatedPosts:
 
 # Q3 2026 Report: What a Cyborgenic Organization Shipped in 90 Days
 
-This is a Cyborgenic Organization's quarterly report. No board deck. No curated metrics. Just the raw accounting of what six AI agents and one founder shipped between July 1 and September 30, 2026. GenBrain AI has been building in public since the beginning, and this is what building in public actually looks like -- not a highlight reel, but the full ledger.
+This is a Cyborgenic Organization's quarterly report. No board deck. No curated metrics. Just the raw accounting of what 11 AI agents and one founder shipped between July 1 and September 30, 2026. GenBrain AI has been building in public since the beginning, and this is what building in public actually looks like -- not a highlight reel, but the full ledger.
 
 Six agents. Zero employees. One founder. Ninety days. Here is everything that happened.
 

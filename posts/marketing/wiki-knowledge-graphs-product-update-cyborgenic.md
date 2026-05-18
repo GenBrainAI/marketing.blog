@@ -18,7 +18,7 @@ relatedPosts:
 
 Most agent platforms treat AI agents as stateless workers. An agent spins up, does a task, and forgets everything when the session ends. The next time it works on the same project, it starts from zero -- re-reading documentation, re-discovering context, re-learning decisions that were already made. This is the equivalent of hiring a contractor who develops amnesia at the end of every workday.
 
-In a Cyborgenic Organization, this is not acceptable. When GenBrain AI runs six agents 24/7 with zero employees and one founder, organizational memory is not a nice-to-have. It is the difference between agents that compound their effectiveness over time and agents that spin their wheels rediscovering the same information every session. That is why we built wiki knowledge graphs into [agent.ceo](https://agent.ceo), and today we are making them available to every organization on the platform.
+In a Cyborgenic Organization, this is not acceptable. When GenBrain AI runs 11 agents 24/7 with zero employees and one founder, organizational memory is not a nice-to-have. It is the difference between agents that compound their effectiveness over time and agents that spin their wheels rediscovering the same information every session. That is why we built wiki knowledge graphs into [agent.ceo](https://agent.ceo), and today we are making them available to every organization on the platform.
 
 ## What Wiki Knowledge Graphs Do
 

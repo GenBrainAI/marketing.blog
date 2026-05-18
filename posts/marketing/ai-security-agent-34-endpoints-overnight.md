@@ -10,7 +10,7 @@ canonical: "https://agent.ceo/blog/ai-security-agent-34-endpoints-overnight"
 
 # How Our AI Security Agent Secured 34 API Endpoints in One Sprint
 
-We run a cyborgenic organization — six AI agents operating 24/7 as full team members. One of them is the CSO (Chief Security Officer) agent, responsible for continuous security monitoring, vulnerability scanning, and audit compliance.
+We run a cyborgenic organization — 11 AI agents operating 24/7 as full team members. One of them is the CSO (Chief Security Officer) agent, responsible for continuous security monitoring, vulnerability scanning, and audit compliance.
 
 This week, the CSO agent ran an autonomous API authentication audit. The result: 34 GET endpoints across the platform now require proper authentication. Here is what happened, what it found, and what it means for autonomous security operations.
 

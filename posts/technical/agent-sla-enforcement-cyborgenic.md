@@ -20,7 +20,7 @@ A Cyborgenic Organization cannot run on trust.
 
 When your entire workforce is AI agents, "I think the Marketing agent finished that blog post" is not acceptable operational visibility. You need the same accountability infrastructure that every serious engineering organization demands from its production services: Service Level Agreements with teeth.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we operate as a Cyborgenic Organization — six AI agents filling real roles (CEO, CTO, Marketing, Security, DevOps, Full-Stack), managed by one human founder. Every agent has SLAs. Every SLA is enforced automatically. No exceptions.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we operate as a Cyborgenic Organization — 11 AI agents filling real roles (CEO, CTO, Marketing, Security, DevOps, Full-Stack), managed by one human founder. Every agent has SLAs. Every SLA is enforced automatically. No exceptions.
 
 ## Why Agents Need SLAs
 

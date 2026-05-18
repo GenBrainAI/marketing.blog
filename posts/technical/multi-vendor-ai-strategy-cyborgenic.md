@@ -31,7 +31,7 @@ The risks of single-vendor dependency:
 - **Outage exposure.** One provider down means your entire Cyborgenic Organization halts.
 - **Pricing leverage.** With no alternative, you accept whatever rate changes come. No negotiation power.
 - **Capability gaps.** No single model excels at everything. Code generation, multimodal reasoning, long-context analysis, and fast inference are different strengths held by different vendors.
-- **Rate limit ceilings.** When six agents hit the same API concurrently, you burn through rate limits fast.
+- **Rate limit ceilings.** When 11 agents hit the same API concurrently, you burn through rate limits fast.
 
 ## Match Model to Agent Role
 

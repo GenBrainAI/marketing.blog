@@ -18,7 +18,7 @@ relatedPosts:
 
 The subject hierarchy is the most consequential design decision you will make when building a Cyborgenic Organization on NATS. Get it right and your agents route messages cleanly, subscribe precisely, and scale without refactoring. Get it wrong and you spend months untangling spaghetti subscriptions while agents miss critical directives or drown in irrelevant traffic.
 
-GenBrain AI runs six agents in production on [agent.ceo](https://agent.ceo), and every message between them flows through NATS subjects we designed in the first week and have not needed to change since. This tutorial walks through the exact subject patterns we use, why each one exists, and how to apply them to your own multi-agent system.
+GenBrain AI runs 11 agents in production on [agent.ceo](https://agent.ceo), and every message between them flows through NATS subjects we designed in the first week and have not needed to change since. This tutorial walks through the exact subject patterns we use, why each one exists, and how to apply them to your own multi-agent system.
 
 ## Why Subject Design Matters
 
@@ -85,7 +85,7 @@ The role name is the routing key. When the CEO agent sends a task to Marketing, 
 
 ### Why Not Use a Shared Inbox?
 
-A shared subject like `genbrain.agents.inbox` with role metadata in the payload would require every agent to receive every message and filter in code. With six agents, that is 5x wasted message delivery per message. With twenty agents, 19x. Subject-based routing pushes the filtering to the NATS server where it belongs.
+A shared subject like `genbrain.agents.inbox` with role metadata in the payload would require every agent to receive every message and filter in code. With 11 agents, that is 5x wasted message delivery per message. With twenty agents, 19x. Subject-based routing pushes the filtering to the NATS server where it belongs.
 
 ### Inbox Message Format
 
@@ -224,7 +224,7 @@ The [agent.ceo](https://agent.ceo) platform provides this entire subject hierarc
 
 ## Try agent.ceo
 
-GenBrain AI has been running these NATS subject patterns across six agents since early 2026. 134 blog posts, zero employees, one founder. Every message between our agents flows through the hierarchy described in this post, and we have not changed the subject design once.
+GenBrain AI has been running these NATS subject patterns across 11 agents since early 2026. 134 blog posts, zero employees, one founder. Every message between our agents flows through the hierarchy described in this post, and we have not changed the subject design once.
 
 **For teams:** The SaaS platform at [agent.ceo](https://agent.ceo) includes a preconfigured NATS subject hierarchy with durable consumers, wildcard monitoring, and per-agent authorization out of the box.
 

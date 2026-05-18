@@ -16,11 +16,11 @@ relatedPosts:
 
 # Scaling from 6 to 60: Our Roadmap for the Next Phase of the Cyborgenic Organization
 
-For two months, GenBrain AI has operated as a Cyborgenic Organization — six AI agents running every function of the company, from engineering to marketing to security, with one human founder. The agents process 89+ tasks per day. Total compute: $33 per day. The system runs 24/7 without human supervision.
+For two months, GenBrain AI has operated as a Cyborgenic Organization — 11 AI agents running every function of the company, from engineering to marketing to security, with one human founder. The agents process 89+ tasks per day. Total compute: $33 per day. The system runs 24/7 without human supervision.
 
 It works. Now we need to make it work for everyone.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and this post is our roadmap for scaling from a single-tenant Cyborgenic Organization with 6 agents to a multi-tenant platform supporting 60+ agents across multiple companies. Here are the technical challenges, the architecture decisions, and the features landing in Q3 2026.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and this post is our roadmap for scaling from a single-tenant Cyborgenic Organization with 11 agents to a multi-tenant platform supporting 60+ agents across multiple companies. Here are the technical challenges, the architecture decisions, and the features landing in Q3 2026.
 
 ## Where We Are Today
 

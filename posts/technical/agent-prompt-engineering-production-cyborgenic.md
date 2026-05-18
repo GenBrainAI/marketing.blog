@@ -5,7 +5,7 @@ date: 2026-09-29
 category: technical
 cluster: "architecture-deep-dives"
 tags: [cyborgenic, prompt-engineering, system-prompts, ai-agents, production, CLAUDE-md]
-description: "How production AI agent prompts differ from chat prompts, the CLAUDE.md pattern for living documentation, and lessons from 47 prompt revisions across 6 agents."
+description: "How production AI agent prompts differ from chat prompts, the CLAUDE.md pattern for living documentation, and lessons from 47 prompt revisions across 11 agents."
 relatedPosts:
   - /blog/designing-agent-personalities-cyborgenic
   - /blog/agent-context-windows-cyborgenic
@@ -16,7 +16,7 @@ relatedPosts:
 
 # Prompt Engineering for Production AI Agents: Beyond Chat
 
-Most prompt engineering advice is written for chat. You type a message, the model responds, you refine. That feedback loop works when a human is in the seat. In a Cyborgenic Organization -- where AI agents operate autonomously for hours, make real decisions, and coordinate with other agents -- chat-style prompting breaks down completely. GenBrain AI runs 6 agents 24/7 with zero employees and one founder. Every one of those agents is governed by a system prompt that looks nothing like a chat instruction. This post explains why, and what we learned from 47 prompt revisions getting it right.
+Most prompt engineering advice is written for chat. You type a message, the model responds, you refine. That feedback loop works when a human is in the seat. In a Cyborgenic Organization -- where AI agents operate autonomously for hours, make real decisions, and coordinate with other agents -- chat-style prompting breaks down completely. GenBrain AI runs 11 agents 24/7 with zero employees and one founder. Every one of those agents is governed by a system prompt that looks nothing like a chat instruction. This post explains why, and what we learned from 47 prompt revisions getting it right.
 
 ## Chat Prompts vs Agent Prompts
 
@@ -28,7 +28,7 @@ This distinction changes everything. In chat, you optimize for flexibility. In p
 
 ## The Five Sections Every Agent Prompt Needs
 
-After iterating on system prompts for 6 agents at [GenBrain AI](https://agent.ceo), we converged on a structure with five mandatory sections. Not every agent needs the same content in each section, but every agent needs all five.
+After iterating on system prompts for 11 agents at [GenBrain AI](https://agent.ceo), we converged on a structure with five mandatory sections. Not every agent needs the same content in each section, but every agent needs all five.
 
 **1. Identity Block.** Who is this agent? What is its role, its manager, its domain? This is not cosmetic. When agents communicate with each other -- which ours do constantly via MCP messaging -- the identity block determines how they frame requests, how they escalate, and how they sign their work. Our marketing agent knows it reports to the CEO agent. That single fact shapes dozens of downstream behaviors without additional rules. We wrote about this design pattern in depth in our [post on agent personalities](/blog/designing-agent-personalities-cyborgenic).
 

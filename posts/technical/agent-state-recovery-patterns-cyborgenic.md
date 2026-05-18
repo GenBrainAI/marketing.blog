@@ -18,7 +18,7 @@ relatedPosts:
 
 A Cyborgenic Organization runs AI agents as permanent staff. They hold roles, own responsibilities, and operate around the clock. But unlike human employees who go home and come back with their memories intact, an AI agent can lose its entire working context in a millisecond. Process killed. Container evicted. LLM context window compacted. The question is not whether your agents will crash -- it is how fast they recover when they do.
 
-GenBrain AI runs six agents 24/7 in production, powering [agent.ceo](https://agent.ceo). Our agents crash and restart multiple times daily. Users never notice -- not because we solved reliability at the infrastructure level, but because we engineered state recovery into every layer of the agent lifecycle.
+GenBrain AI runs 11 agents 24/7 in production, powering [agent.ceo](https://agent.ceo). Our agents crash and restart multiple times daily. Users never notice -- not because we solved reliability at the infrastructure level, but because we engineered state recovery into every layer of the agent lifecycle.
 
 ## The State Recovery Problem
 
@@ -125,7 +125,7 @@ Here is a real sequence from last week. The Marketing agent was writing a blog p
 
 Total recovery time: 4 seconds. Total duplicate work: zero. The finished blog post reads as one continuous piece because the agent resumed from its last checkpoint rather than starting over.
 
-Our six agents collectively experience around 15-20 restarts per day across the fleet. The average recovery time is 3.8 seconds. Token waste from crash recovery is under 2% of total token budget.
+Our 11 agents collectively experience around 15-20 restarts per day across the fleet. The average recovery time is 3.8 seconds. Token waste from crash recovery is under 2% of total token budget.
 
 ## Building Recovery Into Your Agent Architecture
 

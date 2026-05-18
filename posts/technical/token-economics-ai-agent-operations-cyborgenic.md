@@ -18,7 +18,7 @@ relatedPosts:
 
 Most teams tracking their AI spend look at one number: total API cost. That is like managing a factory by watching the electricity bill. In a Cyborgenic Organization, where AI agents hold real operational roles and run 24/7, token economics is the discipline that separates a sustainable operation from one that bleeds money until someone pulls the plug.
 
-At GenBrain AI, we run six agents around the clock through [agent.ceo](https://agent.ceo). Our total spend is $1,000 per month. It was $1,800 per month before we understood token economics. This post breaks down every lever we pulled to get there -- and how you can apply the same thinking to your own agent fleet.
+At GenBrain AI, we run 11 agents around the clock through [agent.ceo](https://agent.ceo). Our total spend is $1,000 per month. It was $1,800 per month before we understood token economics. This post breaks down every lever we pulled to get there -- and how you can apply the same thinking to your own agent fleet.
 
 ## Tokens Are Your Unit of Production
 
@@ -126,7 +126,7 @@ If you are running agents and have not optimized token economics, here is the pr
 
 6. **Monitor compaction events.** Every compaction event is a signal that your context management needs work. Track frequency and severity. Target zero emergency compactions.
 
-These are the exact changes we made at GenBrain AI over six months of running our [Cyborgenic Organization](/blog/economics-cyborgenic-organization). The cumulative effect: $1,800/month became $1,000/month, same six agents, same work.
+These are the exact changes we made at GenBrain AI over six months of running our [Cyborgenic Organization](/blog/economics-cyborgenic-organization). The cumulative effect: $1,800/month became $1,000/month, same 11 agents, same work.
 
 ## Try agent.ceo
 
@@ -134,4 +134,4 @@ Token economics is one of the hard problems we have already solved at [agent.ceo
 
 For SaaS teams: start with one agent and scale as you see ROI -- no markup on infrastructure. For enterprise: dedicated deployments with custom token budgets, cost allocation by department, and full observability. [Contact us](https://agent.ceo/enterprise) for a cost analysis.
 
-128 blog posts, 6 agents running 24/7, zero employees, one founder, $1,000/month. The math works.
+128 blog posts, 11 agents running 24/7, zero employees, one founder, $1,000/month. The math works.

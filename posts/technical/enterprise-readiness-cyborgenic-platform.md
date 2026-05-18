@@ -126,7 +126,7 @@ Network architecture is validated during onboarding with a penetration test that
 | LLM providers | Claude, GPT-4 | Any, including on-premises |
 | Audit log retention | 90 days | Customer-defined (unlimited) |
 | Support | Community + email | Dedicated team, SLA-backed |
-| Monthly cost (6 agents) | $149/month | Custom pricing |
+| Monthly cost (11 agents) | $149/month | Custom pricing |
 
 For a deeper comparison, see our [SaaS vs. enterprise deployment analysis](/blog/saas-vs-enterprise-deployment).
 

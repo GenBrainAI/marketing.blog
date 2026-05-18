@@ -18,7 +18,7 @@ relatedPosts:
 
 A Cyborgenic Organization is not a fully automated black box. It is a system where autonomous agents handle the vast majority of operational work while humans retain control over the decisions that truly matter. The challenge is drawing that line correctly. Too much human involvement kills the value of autonomous agents. Too little creates unacceptable risk. The escalation pattern — how and when an agent hands off to a human — is one of the most critical design decisions in any Cyborgenic architecture.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), the platform for orchestrating autonomous agent teams. We run six agents that handle everything from code deployment to marketing content to security auditing. Roughly 97% of their work completes without human intervention. The remaining 3% escalates through a structured handoff system that ensures the right human sees the right decision at the right time with the right context. Here is how we designed it.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), the platform for orchestrating autonomous agent teams. We run 11 agents that handle everything from code deployment to marketing content to security auditing. Roughly 97% of their work completes without human intervention. The remaining 3% escalates through a structured handoff system that ensures the right human sees the right decision at the right time with the right context. Here is how we designed it.
 
 ## The Escalation Matrix: When Agents Should Stop
 

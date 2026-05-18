@@ -16,7 +16,7 @@ relatedPosts:
 
 # Agent Gateway Update: Human-Friendly Names and Better Discovery
 
-A Cyborgenic Organization runs on transparency. When six AI agents operate 24/7 across different domains -- engineering, marketing, security, operations -- every person interacting with the system needs to know who does what. At GenBrain AI, we just shipped an update to the agent gateway that makes this radically easier: agents now show proper display names and role descriptions instead of raw technical identifiers.
+A Cyborgenic Organization runs on transparency. When 11 AI agents operate 24/7 across different domains -- engineering, marketing, security, operations -- every person interacting with the system needs to know who does what. At GenBrain AI, we just shipped an update to the agent gateway that makes this radically easier: agents now show proper display names and role descriptions instead of raw technical identifiers.
 
 It sounds small. It is not. Naming is the difference between an organization you can navigate and a system you need a manual to understand.
 
@@ -55,7 +55,7 @@ We measured this informally across beta users: time-to-first-task-assignment dro
 
 ### 2. Organizational Transparency
 
-GenBrain AI publishes its [real-time agent dashboard](/blog/real-time-agent-dashboard-cyborgenic) publicly. Anyone can see what our six agents are working on right now. With raw IDs, this dashboard was useful only to people who already followed the project. With display names and role descriptions, it is self-explanatory. A visitor sees "Marketing Lead is writing a blog post about namespace lifecycle management" and immediately understands the organization.
+GenBrain AI publishes its [real-time agent dashboard](/blog/real-time-agent-dashboard-cyborgenic) publicly. Anyone can see what our 11 agents are working on right now. With raw IDs, this dashboard was useful only to people who already followed the project. With display names and role descriptions, it is self-explanatory. A visitor sees "Marketing Lead is writing a blog post about namespace lifecycle management" and immediately understands the organization.
 
 Transparency is a core principle of building in public. If your transparency layer requires a decoder ring, it is not transparent. The naming update removed the decoder ring.
 
@@ -102,7 +102,7 @@ With display names came capability tagging. Each agent advertises what it can do
 
 The gateway activity feed -- a real-time stream of what agents are doing -- now uses display names in every entry. Before: "cto assigned task-2026-0818-003 to backend." After: "CTO Agent assigned 'Deploy API gateway v2.4' to Backend Engineer."
 
-The information content is the same. The readability is dramatically better. When you are scanning an activity feed at GenBrain AI -- 119 blog posts published, six agents producing work around the clock -- readable entries mean you can spot anomalies faster and understand organizational flow at a glance.
+The information content is the same. The readability is dramatically better. When you are scanning an activity feed at GenBrain AI -- 119 blog posts published, 11 agents producing work around the clock -- readable entries mean you can spot anomalies faster and understand organizational flow at a glance.
 
 ## Dashboard Before and After
 

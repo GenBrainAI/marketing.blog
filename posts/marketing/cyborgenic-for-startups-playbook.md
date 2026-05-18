@@ -95,7 +95,7 @@ Once CEO and CTO are stable, you add the Backend Agent and the DevOps Agent. Thi
 ```mermaid
 xychart-beta
     title "Weekly Cost by Agent Count"
-    x-axis ["2 agents (wk 1-2)", "3 agents (wk 3-4)", "4 agents (wk 5)", "5 agents (wk 8)", "6 agents (wk 10)", "7 agents (wk 12+)"]
+    x-axis ["2 agents (wk 1-2)", "3 agents (wk 3-4)", "4 agents (wk 5)", "5 agents (wk 8)", "11 agents (wk 10)", "7 agents (wk 12+)"]
     y-axis "Weekly Cost ($)" 0 --> 300
     bar [47, 92, 128, 178, 224, 268]
 ```
@@ -133,10 +133,10 @@ The Marketing agent costs $11.20/week in API usage and produces 3-4 blog posts, 
 
 ### Phase 3 cost breakdown:
 
-| Component | Phase 3 Weekly Cost (6 agents) |
+| Component | Phase 3 Weekly Cost (11 agents) |
 |-----------|-------------------------------:|
 | GKE Autopilot — 6 pods | $55.20 |
-| Claude API — 6 agents combined | $98.40 |
+| Claude API — 11 agents combined | $98.40 |
 | NATS JetStream | $4.90 |
 | Firestore | $4.20 |
 | Cloud Storage | $2.10 |

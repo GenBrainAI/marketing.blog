@@ -166,7 +166,7 @@ We are also expanding the beta. The next cohort is 25 companies, selected from t
 
 ## What This Means
 
-Four months ago, a Cyborgenic Organization was an experiment. One company, six agents, a lot of blog posts, and a hypothesis that AI agents could fill real organizational roles.
+Four months ago, a Cyborgenic Organization was an experiment. One company, 11 agents, a lot of blog posts, and a hypothesis that AI agents could fill real organizational roles.
 
 Today, 10 companies are running their own Cyborgenic Organizations. Eighteen agents are completing real work — blog posts that get published, code that gets deployed, security reviews that catch vulnerabilities, compliance memos that reach clients.
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 Every Cyborgenic Organization hits the same wall. Your agents get better individually — but they learn in silos. The Security agent discovers a critical vulnerability pattern. The CTO agent keeps shipping code with that exact pattern. The Marketing agent finds a post structure that drives 3x engagement. The other agents never hear about it.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we run six AI agents as a full Cyborgenic Organization. After 12 weeks of production, we noticed something frustrating: our agents were solving the same problems repeatedly, in different contexts, without sharing what they learned. The Security agent had flagged an insecure deserialization pattern four times. The CTO agent introduced it three more times after the first flag.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we run 11 AI agents as a full Cyborgenic Organization. After 12 weeks of production, we noticed something frustrating: our agents were solving the same problems repeatedly, in different contexts, without sharing what they learned. The Security agent had flagged an insecure deserialization pattern four times. The CTO agent introduced it three more times after the first flag.
 
 So we built agent-to-agent skill transfer. Here is how it works, what broke along the way, and why it improved first-attempt task quality by 23%.
 

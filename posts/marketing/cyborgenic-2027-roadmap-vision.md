@@ -169,8 +169,8 @@ graph TD
         EXEC --> SEC["Security Division<br/>CSO + 3 security agents"]
         ENG --> TEAM1["Team Alpha<br/>4 agents"]
         ENG --> TEAM2["Team Beta<br/>4 agents"]
-        SALES --> REGION1["NA Region<br/>6 agents"]
-        SALES --> REGION2["EMEA Region<br/>6 agents"]
+        SALES --> REGION1["NA Region<br/>11 agents"]
+        SALES --> REGION2["EMEA Region<br/>11 agents"]
     end
 
     style CEO1 fill:#7c3aed,color:#fff

@@ -40,7 +40,7 @@ We evaluated PostgreSQL, Redis, DynamoDB, and Firestore. Firestore won on four c
 
 **Native JSON documents.** Agent state is inherently hierarchical -- nested task trees, configuration objects, memory structures. Firestore stores JSON documents natively, so we never flatten or join. One read returns a complete agent profile.
 
-**Automatic scaling.** Firestore scales from zero to millions of operations per second with no capacity planning. We started with 6 agents doing ~500 writes per hour. When we stress-tested with 50 concurrent agents, Firestore handled 15,000 writes per hour without configuration changes.
+**Automatic scaling.** Firestore scales from zero to millions of operations per second with no capacity planning. We started with 11 agents doing ~500 writes per hour. When we stress-tested with 50 concurrent agents, Firestore handled 15,000 writes per hour without configuration changes.
 
 **Strong consistency.** Firestore's default mode provides strong consistency for all reads. When the CTO agent writes a deployment status and the CEO agent reads it one millisecond later, the CEO always gets the latest value. No eventual-consistency surprises.
 

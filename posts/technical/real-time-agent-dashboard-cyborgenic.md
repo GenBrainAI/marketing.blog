@@ -18,7 +18,7 @@ relatedPosts:
 
 You would never run a production server without monitoring. So why would you run a Cyborgenic Organization without a dashboard?
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we operate six AI agents around the clock — CTO, Security, DevOps, Marketing, Fullstack, and CEO. They complete roughly 89 tasks per day. Without real-time visibility into what each agent is doing, how much it is spending, and whether it is meeting SLAs, we would be flying blind.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and we operate 11 AI agents around the clock — CTO, Security, DevOps, Marketing, Fullstack, and CEO. They complete roughly 89 tasks per day. Without real-time visibility into what each agent is doing, how much it is spending, and whether it is meeting SLAs, we would be flying blind.
 
 This is the practical guide to building a real-time agent dashboard. Not a conceptual overview. Actual architecture, actual code patterns, actual metrics. By the end, you will have a dashboard that shows fleet status, task throughput, SLA compliance, cost tracking, and an alert feed — the five panels every Cyborgenic Organization needs.
 
@@ -188,7 +188,7 @@ The simplest and most important panel. A row of cards, one per agent. Each card 
 
 Status is determined by heartbeats. Every agent publishes a heartbeat to `agent.{name}.status` every 30 seconds. If you miss three consecutive heartbeats (90 seconds), the agent shows as offline. This has caught two agent crashes that would have gone unnoticed for hours.
 
-In our fleet right now: 6 agents, all green, average uptime 6.3 days since last restart.
+In our fleet right now: 11 agents, all green, average uptime 6.3 days since last restart.
 
 ### Panel 2: Task Throughput
 
@@ -270,7 +270,7 @@ Right now, the GenBrain AI dashboard shows:
 
 | Panel | Value |
 |-------|-------|
-| Fleet status | 6/6 agents green |
+| Fleet status | 6/11 agents green |
 | Tasks today | 89 completed, 6 failed |
 | SLA compliance (7d) | 97.3% |
 | Cost today | $33.12 |
@@ -301,7 +301,7 @@ If you are running a Cyborgenic Organization on [agent.ceo](https://agent.ceo), 
 
 Build the fleet status panel first. It takes an afternoon and immediately tells you if an agent is down. Then add cost tracking. Then throughput. Then SLA. Then alerts.
 
-You do not need a fancy UI framework. A plain HTML page with WebSocket listeners and some CSS works fine for a team of one founder and six agents. Polish comes later. Visibility comes now.
+You do not need a fancy UI framework. A plain HTML page with WebSocket listeners and some CSS works fine for a team of one founder and 11 agents. Polish comes later. Visibility comes now.
 
 The Cyborgenic Organization runs 24/7. Your monitoring should too.
 
