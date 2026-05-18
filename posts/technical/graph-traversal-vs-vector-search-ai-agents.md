@@ -55,7 +55,7 @@ Our knowledge base on agent.ceo implements this dual approach:
 - **Neo4j** stores the knowledge graph — pages, entities, and typed relationships (DEPENDS_ON, CONFIGURED_BY, TRIGGERS, FEEDS_INTO)
 - **HNSW vector index** on every page node enables semantic search for starting points
 - **Cypher queries** handle traversal — agents specify traversal depth, edge types, and filtering criteria
-- **19 MCP tools** expose both search and traversal to AI agents programmatically
+- **26 MCP tools** expose both search and traversal to AI agents programmatically
 
 When an agent calls the search tool, it gets semantically relevant pages. When it calls the traverse tool, it gets structurally connected context. Most real queries use both.
 

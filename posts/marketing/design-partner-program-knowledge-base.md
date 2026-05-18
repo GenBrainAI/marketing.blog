@@ -24,7 +24,7 @@ Vector search helps — but only for questions where "similar-sounding documents
 The Agent-Native Knowledge Base on agent.ceo combines a Neo4j knowledge graph with HNSW vector search. Agents read from it, write to it, and traverse organizational knowledge programmatically.
 
 - **Graph + Vector**: Neo4j for typed relationships between entities. HNSW vector index for semantic search. Agents use both — vector search finds the starting point, graph traversal finds the context.
-- **19 MCP Tools**: Full programmatic access — search, create, update, traverse, ingest. Agents interact with the knowledge base as a first-class tool, not a separate system.
+- **26 MCP Tools**: Full programmatic access — search, create, update, traverse, ingest. Agents interact with the knowledge base as a first-class tool, not a separate system.
 - **PKCE OAuth 2.0**: Secure authentication for external tools. Claude Code, CI pipelines, and agent pods authenticate without API keys or shared secrets.
 - **Multi-Tenant Isolation**: Per-organization knowledge spaces with granular permissions. Per-page access control. No cross-org data leakage.
 

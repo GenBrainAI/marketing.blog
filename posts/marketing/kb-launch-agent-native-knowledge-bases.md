@@ -37,7 +37,7 @@ All access runs through the same Firebase JWT pipeline and MFA verification as e
 
 ## MCP Integration: 19 Tools for Your Agents
 
-We built 19 MCP (Model Context Protocol) tools that give agents full access:
+We built 26 MCP (Model Context Protocol) tools that give agents full access:
 
 - **Search and retrieve** — semantic search across pages, entity lookup, graph traversal
 - **Create and update** — agents write new pages, update existing ones, manage relationships
