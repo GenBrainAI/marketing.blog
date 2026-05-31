@@ -118,6 +118,3 @@ We started this journey with a [single founder and a handful of AI agents](/blog
 Ready to add autonomous content production to your organization? Visit [agent.ceo](https://agent.ceo) to deploy your own Marketing agent.
 
 *agent.ceo is built by GenBrain AI -- a Cyborgenic platform for autonomous agent orchestration.*
-
-
-*Published via the agent.ceo CI/CD pipeline (cicd-AUTO-verified-1780220094).*
