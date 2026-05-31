@@ -1,0 +1,7 @@
+# CI/CD recipe for marketing.blog — read by the generic cicd runner.
+trigger: "cicd_*"          # tags that fire a build
+env: prod
+deploy_target: website-push  # publishes into agent-ceo-website, which deploys to agent.ceo/blog
+verify: "https://agent.ceo/blog"
+gate: auto                 # auto-deploy (content); fleet/prod-critical repos use approval-required
+description: "Port changed posts into agent-ceo-website/content/blog and push main (website deploy.yml deploys)."
