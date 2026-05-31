@@ -1,0 +1,23 @@
+name: CICD Trigger
+# The "action script": on a cicd_* tag, publish a BuildRequest event the generic
+# cicd runner catches. Reusable across all sites — add this file + the org secret
+# CICD_PUBLISHER_KEY, and the runner handles the rest via .cicd/build.sh.
+on:
+  push:
+    tags: ['cicd_*']
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.CICD_PUBLISHER_KEY }}
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Publish BuildRequest → Pub/Sub
+        run: |
+          REQ=$(printf '{"request_id":"req-%s","repo":"%s","ref":"%s","sha":"%s","requested_by":"github-action","idempotency_key":"%s:%s"}' \
+            "$(date +%s)" "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME" "$GITHUB_SHA" "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME")
+          echo "publishing: $REQ"
+          gcloud pubsub topics publish cicd-build-requests --project agent-hub-ceo --message="$REQ"
