@@ -59,7 +59,7 @@ Three properties come standard:
 - **Sub-60-second revocation.** Kill a key from the dashboard and the revocation propagates across every
   MCP server in under a minute. Leaked key? It's dead before you finish writing the incident ticket.
 
-And it's fast enough to not notice: API key validation runs at **<10ms p95** with in-process caching
+And it's fast enough to not notice: API key validation runs at **under 10ms p95** with in-process caching
 (60-second TTL), so all this security adds essentially no latency to an agent's tool calls.
 
 ## Minting a key takes about thirty seconds
