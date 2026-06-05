@@ -1,11 +1,11 @@
 ---
-title: "Case Study: How ProAlpha Turned 365 ERP Entities into Navigable AI Memory"
-slug: "proalpha-erp-knowledge-graph-case-study"
+title: "Case Study: How a Manufacturing ERP Vendor Turned 365 Entities into Navigable AI Memory"
+slug: "enterprise-erp-knowledge-graph-case-study"
 date: 2026-06-04
 category: technical
 cluster: "case-studies"
-tags: [case-study, erp, knowledge-graph, neo4j, design-partner, enterprise, proalpha, knowledge-base]
-description: "ProAlpha deployed agent.ceo's knowledge graph on their ERP documentation — 365 entities, 2,820 graph nodes. AI agents now answer cross-module dependency questions that vector search alone cannot."
+tags: [case-study, erp, knowledge-graph, neo4j, design-partner, enterprise, knowledge-base]
+description: "A design partner deployed agent.ceo's knowledge graph on their ERP documentation — 365 entities, 2,820 graph nodes. AI agents now answer cross-module dependency questions that vector search alone cannot."
 relatedPosts:
   - /blog/vector-search-organizational-knowledge
   - /blog/build-ai-agent-knowledge-base-wiki-mcp-tools
@@ -14,15 +14,15 @@ relatedPosts:
   - /blog/building-custom-mcp-servers-cyborgenic
 ---
 
-# Case Study: How ProAlpha Turned 365 ERP Entities into Navigable AI Memory
+# Case Study: How a Manufacturing ERP Vendor Turned 365 Entities into Navigable AI Memory
 
-Enterprise ERP systems are among the most documentation-heavy, relationship-dense software environments in existence. A manufacturing ERP like ProAlpha has hundreds of interconnected modules where changes in one area cascade through others in non-obvious ways. Knowing *that* procurement feeds inventory is one thing. Knowing exactly *which* configuration fields in procurement affect *which* downstream processes in production planning — that's the knowledge that costs $200-400/hour in consultant time and takes weeks to assemble.
+Enterprise ERP systems are among the most documentation-heavy, relationship-dense software environments in existence. A manufacturing ERP with hundreds of interconnected modules has changes in one area that cascade through others in non-obvious ways. Knowing *that* procurement feeds inventory is one thing. Knowing exactly *which* configuration fields in procurement affect *which* downstream processes in production planning — that's the knowledge that costs $200-400/hour in consultant time and takes weeks to assemble.
 
-GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and ProAlpha is our first design partner deploying the Agent-Native Knowledge Base on real enterprise ERP documentation.
+GenBrain AI is the company behind [agent.ceo](https://agent.ceo), and one of our first design partners is a European manufacturing ERP vendor deploying the Agent-Native Knowledge Base on their production documentation.
 
 ## The problem: trapped expertise
 
-ProAlpha's ERP documentation spans hundreds of modules with deep interdependencies. Before deploying agent.ceo, answering a cross-module dependency question — "If we change this procurement configuration, what downstream processes are affected?" — required either an experienced consultant who carried the relationships in their head, or hours of manual documentation tracing.
+The partner's ERP documentation spans hundreds of modules with deep interdependencies. Before deploying agent.ceo, answering a cross-module dependency question — "If we change this procurement configuration, what downstream processes are affected?" — required either an experienced consultant who carried the relationships in their head, or hours of manual documentation tracing.
 
 Three specific pain points drove the deployment:
 
@@ -32,7 +32,7 @@ Three specific pain points drove the deployment:
 
 ## What we deployed
 
-ProAlpha's ERP documentation was ingested into agent.ceo's [Agent-Native Knowledge Base](/blog/agent-native-knowledge-base-llm-wiki-domain-expert) — a Neo4j knowledge graph with typed relationships, paired with vector search for semantic queries.
+The partner's ERP documentation was ingested into agent.ceo's [Agent-Native Knowledge Base](/blog/agent-native-knowledge-base-llm-wiki-domain-expert) — a Neo4j knowledge graph with typed relationships, paired with vector search for semantic queries.
 
 **By the numbers:**
 
@@ -66,7 +66,7 @@ An agent can traverse the graph, follow dependency chains, and produce an impact
 
 ## What's next
 
-ProAlpha is our first design partner, and the deployment validated three architectural decisions:
+This is our first design partner deployment, and it validated three architectural decisions:
 
 1. **Graph + vector, not graph or vector.** Both are needed. Vector handles the "find me something about X" queries. Graph handles the "show me everything connected to X" queries. The retrieval layer orchestrates both.
 2. **Deterministic ingestion for structural data.** No LLM in the parsing pipeline for ERP XML — fast, cheap, and idempotent. `MERGE` on `(kind, external_id)` means re-running the ingester doesn't duplicate nodes.
