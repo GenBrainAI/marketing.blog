@@ -19,7 +19,7 @@ relatedPosts:
 
 The API gateway froze. Not a crash — a freeze. Health probes timed out. Knowledge base queries hung. Super-agent dispatches stalled. The pod was alive, CPU busy, memory fine. But nothing could get through.
 
-The cause wasn't a traffic spike or a memory leak. It was the task management system — the system designed to coordinate all agent work — consuming so much of the asyncio event loop that no other work could execute. The coordination layer was preventing coordination.
+The cause wasn't a traffic spike or a memory leak. It was the task management system — the system designed to coordinate all work across our cyborgenic organization — consuming so much of the asyncio event loop that no other work could execute. The coordination layer was preventing coordination.
 
 This is the story of commit `9fc826fc7`, what we found in `redis_task_store.py`, and why `ZRANGE 0 -1` is the most dangerous default in Redis-backed applications.
 

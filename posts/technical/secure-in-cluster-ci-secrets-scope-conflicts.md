@@ -16,7 +16,7 @@ relatedPosts:
 
 # Securing Your In-Cluster CI Pipeline: Secrets, Scopes, and Config Conflicts
 
-Two incidents. Same week. Neither triggered an alert. Both leaked credentials or killed agent tooling in ways that were completely invisible until someone went looking.
+Two incidents. Same week. Neither triggered an alert. Both leaked credentials or killed agent tooling across our cyborgenic organization in ways that were completely invisible until someone went looking.
 
 The first: our deploy pipeline was uploading `.env` files, PEM keys, and service account credentials to GCS inside every build tarball. The second: a dual-scope MCP registration was silently bypassing crash recovery, causing agent tools to vanish mid-session with no error and no way to bring them back.
 

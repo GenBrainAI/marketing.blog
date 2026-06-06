@@ -16,7 +16,7 @@ relatedPosts:
 
 # Tutorial: How to Build a Policy Gate That Makes Agent Discipline Compulsive
 
-You can write the perfect set of instructions. You can explain every rule, every guardrail, every anti-pattern. And after enough context compactions, enough long-running sessions, enough task switches — your agent will forget one of them.
+You can write the perfect set of instructions. You can explain every rule, every guardrail, every anti-pattern. And after enough context compactions, enough long-running sessions, enough task switches — your agent will forget one of them. In a cyborgenic organization where agents run unattended, that is not a risk; it is a certainty.
 
 This is not a character flaw. It is a property of bounded context windows. The fix is not better instructions. The fix is a gate that sits between the agent's intent and the outside world, checking every action before it executes. Not sometimes. Every time.
 

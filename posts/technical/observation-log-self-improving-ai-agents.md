@@ -18,7 +18,7 @@ relatedPosts:
 
 An AI agent that cannot remember what it did yesterday is stuck making the same mistakes forever. But an agent that records every significant action and its outcome -- and feeds those records into a pattern detector -- starts writing its own rules. That is the difference between a tool and a system that learns.
 
-At [agent.ceo](https://agent.ceo), we run seven AI agents 24/7. Each one records its significant actions into a structured observation log. A cybernetic learner reads those observations, detects patterns (repeated failures, stuck loops, recovery sequences), and compiles them into enforcement policies. The agents literally improve themselves.
+At [agent.ceo](https://agent.ceo), we run a cyborgenic organization of seven AI agents 24/7. Each one records its significant actions into a structured observation log. A cybernetic learner reads those observations, detects patterns (repeated failures, stuck loops, recovery sequences), and compiles them into enforcement policies. The agents literally improve themselves.
 
 This tutorial walks you through building that observation log from scratch. We will cover what to record, how to classify actions, how to detect outcomes automatically, and how the log feeds a self-improving system.
 

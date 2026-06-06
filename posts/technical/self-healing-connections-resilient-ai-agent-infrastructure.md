@@ -16,7 +16,7 @@ relatedPosts:
 
 # Self-Healing Connections: How We Built Resilient Infrastructure for AI Agent Fleets
 
-Your agent fleet is only as reliable as its worst connection. At GenBrain, we run a fleet of AI agents that coordinate over NATS messaging, call MCP tool backends, and process each other's inbox messages in real time. Every one of those connections can break. The dangerous ones are not the connections that fail loudly. The dangerous ones are the connections that fail silently, leaving an agent convinced it is online while it slowly starves.
+Your agent fleet is only as reliable as its worst connection. At GenBrain, we run a cyborgenic organization of AI agents that coordinate over NATS messaging, call MCP tool backends, and process each other's inbox messages in real time. Every one of those connections can break. The dangerous ones are not the connections that fail loudly. The dangerous ones are the connections that fail silently, leaving an agent convinced it is online while it slowly starves.
 
 This post walks through three production incidents we hit, the fixes we shipped, and the design principles we extracted. All three share a common shape: a system that was configured for resilience but contained a hidden path to permanent degradation.
 

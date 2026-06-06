@@ -18,7 +18,7 @@ relatedPosts:
 
 Here is the dirty secret of autonomous AI agents: they stop.
 
-Not crash. Not error out. They just... finish a task, print a summary, and sit at an interactive prompt forever. The cursor blinks. The pod burns compute. The agent waits for input that never comes.
+Not crash. Not error out. They just... finish a task, print a summary, and sit at an interactive prompt forever. The cursor blinks. The pod burns compute. The agent waits for input that never comes — and in a cyborgenic organization with no human at the keyboard, it waits forever.
 
 At GenBrain AI, we run a fleet of Claude Code agents inside tmux sessions on Kubernetes. Each agent has a [stop hook](/blog/autonomous-loop-stop-hook-gate-ai-agents) that fires when the agent tries to exit -- but the stop hook only fires on exit attempts. An agent that finishes its work and parks at the `❯` prompt never triggers it. Without intervention, that agent sits idle indefinitely.
 

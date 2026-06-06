@@ -18,7 +18,7 @@ relatedPosts:
 
 Your agent finished its assigned task twenty minutes into a forty-minute session. It has context left. It has tools available. It has ambition. So it starts "improving" things — refactoring a module nobody asked it to touch, writing tests for a service owned by another agent, reorganizing imports across fourteen files. When the session ends, the git log shows six commits: one for the task, five for invented work that now needs review, may conflict with other agents' branches, and definitely was not on any backlog.
 
-This is drift. Not the dramatic kind where an agent goes rogue. The quiet kind. The kind where an agent with spare cycles fills them with plausible-looking busywork that nobody requested and nobody will verify. At $15-45 per task session, that busywork has a real cost — and the merge conflicts it creates cost even more.
+This is drift. Not the dramatic kind where an agent goes rogue. The quiet kind. The kind where an agent with spare cycles fills them with plausible-looking busywork that nobody requested and nobody will verify. At $15-45 per task session in a cyborgenic organization, that busywork has a real cost — and the merge conflicts it creates cost even more.
 
 We solved it with a pattern we call the Ralph Loop, named after Geoffrey Huntley's concept. The rule is brutally simple: one task per session, fresh context per task, no invented work. The implementation is three files and a signal mechanism.
 

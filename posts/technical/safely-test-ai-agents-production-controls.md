@@ -18,7 +18,7 @@ relatedPosts:
 
 Staging environments lie. An AI agent that behaves perfectly in staging -- where the inbox is empty, the task queue is synthetic, and no other agent is competing for shared resources -- will surprise you in production. The real dependency graph, the real message volume, the real race conditions: these only exist in the live environment.
 
-So you need to test in production. But production is also where a misbehaving agent can send real emails, merge real code, or burn through real API budgets. The question is not whether to test in production, but how to do it without handing an untested agent the keys.
+So you need to test in production. But production is also where a misbehaving agent in a cyborgenic organization can send real emails, merge real code, or burn through real API budgets. The question is not whether to test in production, but how to do it without handing an untested agent the keys.
 
 At [agent.ceo](https://agent.ceo), we run a fleet of autonomous AI agents in production every day. Over the past year, we built six safety mechanisms that let us ship agent changes with the same confidence we deploy application code.
 

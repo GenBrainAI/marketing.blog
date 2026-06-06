@@ -16,7 +16,7 @@ relatedPosts:
 
 # The Outer Loop: How a Shell Script Keeps AI Agents Alive
 
-Every agent in our fleet runs Claude Code inside a tmux session inside a Kubernetes pod. Claude starts, does work, and exits. That exit is not a failure -- it is expected. The real question is: what happens next?
+Every agent in our cyborgenic organization runs Claude Code inside a tmux session inside a Kubernetes pod. Claude starts, does work, and exits. That exit is not a failure -- it is expected. The real question is: what happens next?
 
 The answer is `claude_wrapper.sh` -- a bash script that sits outside Claude Code and manages the entire agent lifecycle. Pre-flight checks, crash recovery, session continuity, loop timing, and work detection. It is the outer loop that keeps every agent in the [agent.ceo](https://agent.ceo) fleet alive and productive, 24 hours a day.
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 Your agent finishes a task. It calls `complete_task_unverified()`, writes a tidy progress note, and decides there is nothing left to do. The Claude Code session exits with code 0 — a clean, successful exit. The wrapper script sees the clean exit and parks the agent, waiting for an external wakeup signal.
 
-Meanwhile, the TMS has two more tasks assigned to this agent. Status: "assigned." The prompt watchdog could inject them — but the session is already gone. There is nothing to inject into. The agent sits idle with work in its queue until something externally restarts it.
+Meanwhile, the TMS has two more tasks assigned to this agent. Status: "assigned." The prompt watchdog could inject them — but the session is already gone. There is nothing to inject into. The agent sits idle with work in its queue until something externally restarts it — a silent productivity hole in any cyborgenic organization.
 
 This is the gap: between "agent decides to exit" and "watchdog could inject work," there is a hook opportunity. A stop hook that checks for pending tasks and says "no, don't exit yet — you have work." We shipped this in commit `eb056af45`, and it closed the single biggest source of idle time in our fleet. This tutorial walks through the exact implementation.
 
