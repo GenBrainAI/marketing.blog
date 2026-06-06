@@ -16,7 +16,7 @@ relatedPosts:
 
 # Composable Agent Instructions: How We Structure CLAUDE.md at Scale
 
-Every AI agent in our fleet runs as a Claude Code CLI process inside a Kubernetes pod. The thing that makes each agent behave like a CTO instead of a Marketing lead is a single file: `CLAUDE.md`. It contains the agent's identity, rules, tools, operational discipline, and working patterns. It is, effectively, the agent's brain wiring.
+Every AI agent in our cyborgenic organization runs as a Claude Code CLI process inside a Kubernetes pod. The thing that makes each agent behave like a CTO instead of a Marketing lead is a single file: `CLAUDE.md`. It contains the agent's identity, rules, tools, operational discipline, and working patterns. It is, effectively, the agent's brain wiring.
 
 We run six agents today -- CEO, CTO, Fullstack, DevOps, CSO, and Marketing. Each one needs different instructions. The Marketing agent needs a content calendar and social media MCP tools. The DevOps agent needs deployment workflows and kubectl permissions. But both of them need to follow the same verification protocol, the same cost discipline, the same task lifecycle, and the same anti-loop rules.
 

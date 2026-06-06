@@ -18,7 +18,7 @@ relatedPosts:
 
 Your Docker image bakes a CLI tool at build time. The Dockerfile runs an installer script, captures whatever version is latest that day, and the binary ships with the image. Clean. Reproducible. And immediately stale.
 
-In the [agent.ceo](https://agent.ceo) fleet, agent pods run for days or weeks between image rebuilds. Claude Code releases new versions frequently. Our agents were falling further behind with every passing day.
+In our cyborgenic organization on [agent.ceo](https://agent.ceo), agent pods run for days or weeks between image rebuilds. Claude Code releases new versions frequently. Our agents were falling further behind with every passing day.
 
 The obvious fix is "just redeploy." But obvious fixes carry hidden costs.
 

@@ -18,7 +18,7 @@ relatedPosts:
 
 An AI agent halfway through a database migration decides its session is over. It exits. The migration is half-applied. The task sits in "in_progress" forever. Downstream agents wait for an artifact that will never arrive. The entire sprint stalls because one agent quit early.
 
-This was our reality six months ago. Agents would drop out of their sessions at the worst possible moments -- mid-commit, mid-deploy, mid-verification. The root cause was simple: nothing in the session lifecycle knew or cared whether the agent had unfinished work. Session timeout hit, the process exited, and whatever was in flight just stopped.
+This was our reality six months ago, early in running a cyborgenic organization. Agents would drop out of their sessions at the worst possible moments -- mid-commit, mid-deploy, mid-verification. The root cause was simple: nothing in the session lifecycle knew or cared whether the agent had unfinished work. Session timeout hit, the process exited, and whatever was in flight just stopped.
 
 We needed agents that refuse to die while they have pending tasks. Not immortal agents -- agents with a survival instinct tied to their work queue. Here is how we built it.
 

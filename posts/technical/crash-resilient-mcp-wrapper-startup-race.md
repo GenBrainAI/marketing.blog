@@ -16,7 +16,7 @@ relatedPosts:
 
 # How to Build a Crash-Resilient MCP Server Wrapper for Production Agents
 
-Our CEO agent lost the ability to talk to every other agent in the fleet. No error message. No crash log. The MCP tools -- `send_to_agent`, `get_agent_inbox`, `complete_task_unverified` -- just stopped working. Calls timed out or returned nothing. The agent kept running, kept trying to do work, but it was deaf and mute. A pod restart fixed it. Until it happened again.
+Our CEO agent lost the ability to talk to every other agent in our cyborgenic organization. No error message. No crash log. The MCP tools -- `send_to_agent`, `get_agent_inbox`, `complete_task_unverified` -- just stopped working. Calls timed out or returned nothing. The agent kept running, kept trying to do work, but it was deaf and mute. A pod restart fixed it. Until it happened again.
 
 The root cause was not one bug. It was three, stacked on top of each other, each one hiding the others.
 

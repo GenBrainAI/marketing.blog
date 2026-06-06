@@ -18,7 +18,7 @@ relatedPosts:
 
 Every customer organization on agent.ceo gets a dedicated Kubernetes namespace with its own agents, a Neo4j knowledge base, and a set of CLAUDE.md configuration files that define how those agents behave. When we shipped a new MCP tool or tightened a security rule in the shared operational template, those improvements landed in exactly one place: the platform repo. Customer agents kept running whatever version they were provisioned with. Documentation updates rotted in a wiki. Config drift accumulated silently.
 
-We had built a multi-tenant AI agent platform with a "write once, deliver never" problem.
+We had built a multi-tenant platform for cyborgenic organizations with a "write once, deliver never" problem.
 
 Two features shipped this week to fix it: a **KB Seeder** that propagates platform documentation into every customer's knowledge base, and a **ConfigMap Reconciler** that detects stale agent configuration and patches it to match the current template. Both are version-tracked, idempotent, and require zero manual intervention.
 
