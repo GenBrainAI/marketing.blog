@@ -16,7 +16,7 @@ relatedPosts:
 
 # Level-Triggered vs Edge-Triggered: Why Our Agent Hot-Looped on Stale Inbox Items
 
-The CEO agent was restarting every two seconds. Not crashing. Not erroring. Cleanly exiting, immediately restarting, cleanly exiting, immediately restarting. A perfect, unbreakable loop burning tokens and compute while accomplishing nothing.
+The CEO agent at the top of our cyborgenic organization was restarting every two seconds. Not crashing. Not erroring. Cleanly exiting, immediately restarting, cleanly exiting, immediately restarting. A perfect, unbreakable loop burning tokens and compute while accomplishing nothing.
 
 The wrapper script was doing exactly what it was told: check for pending work after each session, and if there's work, restart fast so the agent picks it up. The problem wasn't the logic. The problem was the *trigger model*. We were level-triggered when we needed to be edge-triggered.
 

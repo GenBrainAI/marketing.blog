@@ -17,7 +17,7 @@ relatedPosts:
 
 # When max_reconnect_attempts=-1 Isn't Enough: Building a NATS Connection Watchdog
 
-You set `max_reconnect_attempts=-1`. Infinite reconnection. The NATS client will never give up. You deploy with confidence.
+You set `max_reconnect_attempts=-1`. Infinite reconnection. The NATS client will never give up. You deploy with confidence — after all, NATS is the nervous system of our cyborgenic organization.
 
 Then on a Sunday night, the API gateway goes deaf. The `/ready` endpoint returns 503. The provisioning bus is silent. Telemetry stops flowing. Board fan-out halts. NATS-KV API key persistence goes dark. The pod is alive — CPU idle, memory stable, HTTP still serving — but the NATS connection is permanently closed.
 

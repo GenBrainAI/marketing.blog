@@ -16,7 +16,7 @@ relatedPosts:
 
 # How to Build Self-Pacing Autonomous Loops for AI Agents
 
-Your AI agent finishes a task, compacts its context, and dies. You restart it manually. It does one more thing, compacts again, and dies again. You restart it again. This is the default experience for anyone running LLM-based agents in production, and it is miserable.
+Your AI agent finishes a task, compacts its context, and dies. You restart it manually. It does one more thing, compacts again, and dies again. You restart it again. This is the default experience for anyone running LLM-based agents in production, and for a cyborgenic organization that operates around the clock it is miserable.
 
 The core problem is straightforward: most agent frameworks treat each invocation as a one-shot. The agent receives a prompt, does work, and exits. If you want continuous operation, you are left duct-taping cron jobs to shell scripts, hoping the agent picks up where it left off, and checking Slack at 2 AM to see if the whole thing fell over.
 

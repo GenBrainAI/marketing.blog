@@ -16,7 +16,7 @@ relatedPosts:
 
 # Why stdio Servers Must Run in the Foreground: The Ampersand That Broke Every MCP Connection
 
-Every agent in our fleet went deaf and mute at the same time. GenBrain core agents, customer org agents -- all of them. The error was identical across the board:
+Every agent in our cyborgenic organization went deaf and mute at the same time. GenBrain core agents, customer org agents -- all of them. The error was identical across the board:
 
 ```
 MCP server agent-hub connection timed out after 20000ms

@@ -18,7 +18,7 @@ relatedPosts:
 
 Most platforms fix bugs. We build immune responses.
 
-That distinction matters. Fixing a bug means patching the specific thing that broke. Building an immune response means ensuring the entire class of failure can never happen again -- through validation, automated guards, and tests that encode the lesson permanently. Over the past few months, we have run agent.ceo through three significant production incidents. Each one hurt. Each one left the platform meaningfully stronger than it was before.
+That distinction matters. Fixing a bug means patching the specific thing that broke. Building an immune response means ensuring the entire class of failure can never happen again -- through validation, automated guards, and tests that encode the lesson permanently. Over the past few months, we have run agent.ceo, our cyborgenic organization, through three significant production incidents. Each one hurt. Each one left the platform meaningfully stronger than it was before.
 
 This post is a meta-analysis of how that happens -- not just the war stories, but the repeatable pattern that turns every outage into a systemic upgrade.
 

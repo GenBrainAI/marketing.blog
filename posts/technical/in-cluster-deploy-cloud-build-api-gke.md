@@ -16,7 +16,7 @@ relatedPosts:
 
 # Tutorial: In-Cluster Deploys via Cloud Build — Ship Without GitHub Actions
 
-Your AI agents live inside GKE. Your build pipeline lives outside it — on GitHub Actions, or CircleCI, or whatever hosted CI you adopted before you had agents. Every deploy is a round-trip: push code out, wait for external CI to build it, pull the image back in, roll it out. That round-trip costs minutes, money, and a dependency your agents cannot control.
+Your AI agents live inside GKE. Your build pipeline lives outside it — on GitHub Actions, or CircleCI, or whatever hosted CI you adopted before you had agents. Every deploy is a round-trip: push code out, wait for external CI to build it, pull the image back in, roll it out. That round-trip costs minutes, money, and a dependency your agents cannot control — a real drag on a cyborgenic organization where the agents do the shipping.
 
 This tutorial walks through the two-script pipeline we built at GenBrain AI to eliminate that round-trip. One Python script submits builds to the Cloud Build API. One Bash script orchestrates the full cycle: build, deploy, rollback, status. An agent ships a fix with a single command and never leaves the cluster.
 
