@@ -13,7 +13,7 @@ relatedPosts: [kb-launch-agent-native-knowledge-bases, ai-agent-platforms-compar
 
 Every AI knowledge system in 2026 uses vector search. Embed your documents, store the vectors, retrieve by cosine similarity. RAG pipelines have become table stakes.
 
-But vector search solves one specific problem: finding content that is semantically similar to a query. For AI agents operating on enterprise knowledge, that is necessary but not sufficient.
+But vector search solves one specific problem: finding content that is semantically similar to a query. For AI agents in a cyborgenic organization operating on enterprise knowledge, that is necessary but not sufficient.
 
 ## The Limitation of Similarity
 

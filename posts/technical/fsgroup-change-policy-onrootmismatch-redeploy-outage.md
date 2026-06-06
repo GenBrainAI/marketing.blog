@@ -16,7 +16,7 @@ relatedPosts:
 
 # Why Every Redeploy Cost Us 90 Seconds: The fsGroup Recursive chown Problem
 
-The CEO agent — the most critical agent in our fleet — went completely dark on every deploy. No inbox processing. No task assignments. No escalation handling. For over a minute. Every single time.
+The CEO agent — the most critical agent in our cyborgenic organization — went completely dark on every deploy. No inbox processing. No task assignments. No escalation handling. For over a minute. Every single time.
 
 We had been living with this for long enough that it felt normal. A deploy triggers a pod restart. Pod restarts take time. Time means downtime. That is just how Kubernetes works, right?
 

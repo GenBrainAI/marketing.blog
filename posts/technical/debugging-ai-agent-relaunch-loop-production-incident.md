@@ -16,7 +16,7 @@ relatedPosts:
 
 # How We Debugged a 2-Second Relaunch Loop in Our CEO Agent
 
-Last week, our CEO agent — the one that coordinates every other agent in the organization, triages the inbox, and runs sprint planning — stopped working. It was not crashed. It was not throwing errors. It was launching a fresh headless `claude -p` process every two seconds and never settling into an operable session. Over and over, in a tight loop, burning compute and doing nothing.
+Last week, our CEO agent — the one that coordinates every other agent in our cyborgenic organization, triages the inbox, and runs sprint planning — stopped working. It was not crashed. It was not throwing errors. It was launching a fresh headless `claude -p` process every two seconds and never settling into an operable session. Over and over, in a tight loop, burning compute and doing nothing.
 
 Two defects caused this. Neither one alone would have been catastrophic. Together, they created a feedback loop that was genuinely difficult to diagnose.
 

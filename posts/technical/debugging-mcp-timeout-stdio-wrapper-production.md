@@ -16,7 +16,7 @@ relatedPosts:
 
 # How One Ampersand Took Down Every MCP Connection in Production
 
-Every agent in the GenBrain platform started throwing the same error:
+Every agent in the GenBrain cyborgenic organization started throwing the same error:
 
 ```
 MCP server agent-hub connection timed out after 20000ms

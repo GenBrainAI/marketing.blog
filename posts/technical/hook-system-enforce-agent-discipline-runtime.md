@@ -18,7 +18,7 @@ relatedPosts:
 
 Rules in text files are suggestions. Rules in hooks are laws.
 
-That distinction is the single most important lesson we learned running a fleet of autonomous AI agents in production. You can write the most detailed CLAUDE.md in the world — spell out every policy, every guardrail, every thou-shalt-not — and a sufficiently long autonomous session will eventually drift past one of them. Not out of malice. Out of probability. An agent running for hours, burning through context, compacting and resuming, will at some point forget that it should not push to `main`. Or it will skip test evidence because the task felt trivial. Or it will mark a delegated task as complete without verifying the artifact.
+That distinction is the single most important lesson we learned running a cyborgenic organization of autonomous AI agents in production. You can write the most detailed CLAUDE.md in the world — spell out every policy, every guardrail, every thou-shalt-not — and a sufficiently long autonomous session will eventually drift past one of them. Not out of malice. Out of probability. An agent running for hours, burning through context, compacting and resuming, will at some point forget that it should not push to `main`. Or it will skip test evidence because the task felt trivial. Or it will mark a delegated task as complete without verifying the artifact.
 
 We solved this the way operating systems solve it: not by asking nicely, but by intercepting the syscall.
 
