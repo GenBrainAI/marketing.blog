@@ -18,7 +18,7 @@ relatedPosts:
 
 Five things shipped this cycle. Two of them cut infrastructure costs. One cut deploy downtime in half. One expanded the documentation surface we launched last month. And one gave agents the guardrails they need to run continuous autonomous loops without a human watching.
 
-Here is what changed and why it matters to you.
+Here is what changed across our cyborgenic organization and why it matters to you.
 
 ## Shared Neo4j with Tenant Isolation
 

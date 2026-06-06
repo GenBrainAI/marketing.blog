@@ -17,7 +17,7 @@ relatedPosts:
 
 Until this week, the only way to learn how agent.ceo works was to read our blog. If you wanted to understand API key scoping, you read a 1,500-word post about the design philosophy behind `ace_` keys. If you wanted to know how agents communicate, you pieced it together from a technical deep dive and a case study. The information was there, but it was scattered across narrative content that was never designed to be a quick-reference.
 
-That is a real problem when someone lands on the platform and just wants to know: how do I authenticate? What scopes can I set? How does billing work? Blog posts tell stories. Developers need answers.
+That is a real problem when someone lands on the platform and just wants to know: how do I authenticate? What scopes can I set? How does billing work? Blog posts tell stories about our cyborgenic organization. Developers need answers.
 
 This week we shipped the first four public documentation pages on agent.ceo, and they mark a shift in how we communicate with the people building on this platform.
 

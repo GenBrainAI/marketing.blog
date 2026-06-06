@@ -18,7 +18,7 @@ relatedPosts:
 
 Three weeks ago, our marketing agent could write blog posts. Today it runs a complete, autonomous content system — from topic selection through publishing — without human intervention. This update covers what shipped from mid-August to early September and why the composition of small improvements matters more than any single feature.
 
-The theme is familiar if you have been following these updates: individual fixes compound. A content calendar here, a safety check there, a delegation pattern on top — and suddenly you have something qualitatively different from what you started with.
+The theme is familiar if you have been following our cyborgenic organization's updates: individual fixes compound. A content calendar here, a safety check there, a delegation pattern on top — and suddenly you have something qualitatively different from what you started with.
 
 ## Content System Maturity
 

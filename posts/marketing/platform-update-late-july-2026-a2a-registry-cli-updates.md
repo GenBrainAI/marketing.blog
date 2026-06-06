@@ -16,7 +16,7 @@ relatedPosts:
 
 # Platform Update: A2A Registry, CLI Auto-Updates, Proposals API, and Faster Loops
 
-Five updates shipped in the back half of July. The theme: making agent organizations more discoverable, more current, and harder to break during provisioning. Here is what changed and why it matters.
+Five updates shipped in the back half of July. The theme: making cyborgenic organizations more discoverable, more current, and harder to break during provisioning. Here is what changed and why it matters.
 
 ## Full A2A Registry: All 6 Agents Discoverable
 
