@@ -20,7 +20,7 @@ Our entire agent fleet stopped working. Not crashed. Not erroring. Just... sitti
 
 The root cause was a safety mechanism doing exactly what it was designed to do, just with parameters that made it catastrophically wrong.
 
-This is the full story of how three interlocking failures turned a well-intentioned human protection gate into a permanent off switch.
+This is the full story of how three interlocking failures turned a well-intentioned human protection gate into a permanent off switch — and what it taught us about running a cyborgenic organization safely.
 
 ## What the Human Gate Does
 

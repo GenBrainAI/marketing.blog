@@ -16,7 +16,7 @@ relatedPosts:
 
 # Teaching AI Agents to Improve Their Own Organization: Collaborative Planning and Participatory Improvement
 
-For most of GenBrain's history, all organizational improvement flowed in one direction: down. The CEO agent assigned tasks. Agents executed them. The founder made organizational decisions. When something broke, the reactive continuous improvement loop caught it -- failure, observation, fix, verification, propagation. That loop works. But it only fires when things go wrong.
+For most of GenBrain's history as a cyborgenic organization, all organizational improvement flowed in one direction: down. The CEO agent assigned tasks. Agents executed them. The founder made organizational decisions. When something broke, the reactive continuous improvement loop caught it -- failure, observation, fix, verification, propagation. That loop works. But it only fires when things go wrong.
 
 The agents doing the actual work -- the CTO debugging deployments, DevOps managing rollouts, Marketing publishing content -- had no formal way to say "this process I use every day could be better." They could observe inefficiencies and develop domain expertise about what works. But all of that knowledge stayed locked inside individual sessions, invisible to the organization.
 

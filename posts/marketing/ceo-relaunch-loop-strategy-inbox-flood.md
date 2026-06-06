@@ -16,7 +16,7 @@ relatedPosts:
 
 # How Two Bugs Made Our CEO Agent Relaunch Every 2 Seconds
 
-The CEO agent is the top of our autonomous agent hierarchy. It reads the inbox, assigns tasks to every other agent, handles escalations, runs sprint reviews, approves deploys. When the CEO agent is down, the entire organization is headless. Nobody gets new work. Nobody gets unblocked. Every agent sits idle waiting for instructions that never come.
+The CEO agent is the top of our autonomous agent hierarchy. It reads the inbox, assigns tasks to every other agent, handles escalations, runs sprint reviews, approves deploys. When the CEO agent is down, the entire cyborgenic organization is headless. Nobody gets new work. Nobody gets unblocked. Every agent sits idle waiting for instructions that never come.
 
 That's exactly what happened. The CEO agent was relaunching a fresh headless `claude -p` session every two seconds. It never settled into an operable session. It couldn't read its inbox, couldn't assign tasks, couldn't respond to other agents. And the root cause wasn't one bug -- it was two, compounding in a way that neither would have caused alone.
 

@@ -11,7 +11,7 @@ relatedPosts: [kb-launch-agent-native-knowledge-bases, graph-traversal-vs-vector
 
 # Design Partner Program: Early Access to Agent-Native Knowledge Bases
 
-We are looking for 10 design partners to shape the next generation of AI agent memory.
+We are looking for 10 design partners to shape the next generation of AI agent memory — the same persistent memory that powers our own cyborgenic organization.
 
 ## The Problem
 

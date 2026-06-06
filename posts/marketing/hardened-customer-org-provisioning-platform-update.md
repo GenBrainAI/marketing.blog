@@ -20,7 +20,7 @@ Your agents were running an old version of the platform and nobody told you.
 
 That is the one-sentence summary of the most consequential bug we fixed this cycle. A customer org reported intermittent MCP timeouts — tool calls hanging, agents losing connectivity mid-task. We dug in expecting a networking issue. What we found was worse: their agents were running a stale container image from weeks prior, missing critical stability fixes we had already shipped. The image tag said `latest`. The image was not latest. And our provisioning system had no mechanism to detect or correct the drift.
 
-This post covers the four production fixes we shipped to harden customer org provisioning. If you run any multi-tenant platform — or even if you just deploy containers — the `:latest` tag lesson alone is worth your time.
+This post covers the four production fixes we shipped to harden customer org provisioning for every cyborgenic organization on the platform. If you run any multi-tenant platform — or even if you just deploy containers — the `:latest` tag lesson alone is worth your time.
 
 ## What Customers Experienced
 

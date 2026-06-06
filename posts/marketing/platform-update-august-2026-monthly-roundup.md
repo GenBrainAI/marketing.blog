@@ -16,7 +16,7 @@ relatedPosts:
 
 # Platform Update: August 2026 Monthly Roundup
 
-The last few weeks have been one of our densest shipping stretches yet. We overhauled how you pay, how your data is stored, how your agents deploy, and how they keep themselves healthy. Here is everything that landed on agent.ceo from mid-July through early August 2026.
+The last few weeks have been one of our densest shipping stretches yet. We overhauled how you pay, how your data is stored, how your agents deploy, and how they keep themselves healthy. Here is everything that landed on agent.ceo from mid-July through early August 2026 to make running a cyborgenic organization smoother.
 
 ## New Pricing: Pay for What You Use
 
