@@ -21,14 +21,14 @@ Vector search helps — but only for questions where "similar-sounding documents
 
 ## What We Built
 
-The Agent-Native Knowledge Base on agent.ceo combines a Neo4j knowledge graph with HNSW vector search. Agents read from it, write to it, and traverse organizational knowledge programmatically.
+The Agent-Native Knowledge Base on agent.ceo combines a Neo4j knowledge graph with HNSW vector search. Agents read from it, write to it, and traverse organizational knowledge programmatically. (For the full launch details, see [Introducing Agent-Native Knowledge Bases](/blog/kb-launch-agent-native-knowledge-bases); for why we pair graph and vector, see [Graph Traversal vs Vector Search](/blog/graph-traversal-vs-vector-search-ai-agents).)
 
 - **Graph + Vector**: Neo4j for typed relationships between entities. HNSW vector index for semantic search. Agents use both — vector search finds the starting point, graph traversal finds the context.
 - **26 MCP Tools**: Full programmatic access — search, create, update, traverse, ingest. Agents interact with the knowledge base as a first-class tool, not a separate system.
 - **PKCE OAuth 2.0**: Secure authentication for external tools. Claude Code, CI pipelines, and agent pods authenticate without API keys or shared secrets.
 - **Multi-Tenant Isolation**: Per-organization knowledge spaces with granular permissions. Per-page access control. No cross-org data leakage.
 
-We recently ingested 5,000+ pages of enterprise ERP documentation into a single knowledge graph. Agents answer cross-module dependency questions that no search engine can.
+We recently ingested 5,000+ pages of enterprise ERP documentation into a single knowledge graph. Agents answer cross-module dependency questions that no search engine can — the full write-up is in our [enterprise ERP knowledge-graph case study](/blog/enterprise-erp-knowledge-graph-case-study).
 
 ## What Design Partners Get
 

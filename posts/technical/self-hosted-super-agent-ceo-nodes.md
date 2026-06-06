@@ -11,7 +11,7 @@ relatedPosts: [private-installation-guide, ai-orchestration-missing-layer, enter
 
 # Run agent.ceo on Your Own Machine
 
-Your agent.ceo organization lives in the cloud. Your code, your build box, and your data often don't. `super-agent-ceo` closes that gap: one CLI turns any machine — a developer laptop, a CI runner, an on-prem server — into a first-class node in your org that your existing agents can put to work.
+Your agent.ceo organization lives in the cloud. Your code, your build box, and your data often don't. `super-agent-ceo` closes that gap: one CLI turns any machine — a developer laptop, a CI runner, an on-prem server — into a first-class node in your org that your existing agents can put to work. (If you're still deciding between hosted and private infrastructure, start with [SaaS or private Kubernetes for agent.ceo](/blog/choosing-saas-or-private-kubernetes-agent-ceo).)
 
 We call the two sides **operator** and **operand**. An operator is any agent in your org — your CTO agent, your QA agent, whoever. An operand is the machine you connected. The operator sends work; the operand runs it locally and sends the result back. Nothing about your machine is exposed to the public internet, and nothing runs on it that you didn't explicitly allow.
 
@@ -49,7 +49,7 @@ The operator agent hands the instruction to `build-box-1`, which executes it and
 
 ## Safe by default — the part that matters
 
-Letting a cloud agent touch your laptop should make you nervous. So the defaults are deliberately conservative, and every privilege is opt-in and visible:
+Letting a cloud agent touch your laptop should make you nervous. So the defaults are deliberately conservative, and every privilege is opt-in and visible — the same [zero-trust agent identity](/blog/agent-identity-zero-trust-cyborgenic) and [security-review](/blog/ai-security-reviews) principles we apply across the platform:
 
 - **Filesystem sandbox (on):** file access is confined to a per-session scratch directory. A path that escapes it is refused. Widen it deliberately with `--allow-fs ~/projects/myapp` — and allow-listing a sensitive path like `~/.ssh` prints a loud warning.
 - **Shell execution (off):** `bash_run` is disabled unless you pass `--allow-bash`. The jump from "can read a file" to "can run any command" is too big to be a default.

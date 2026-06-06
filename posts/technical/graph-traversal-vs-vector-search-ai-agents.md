@@ -50,7 +50,7 @@ The result is a connected subgraph of relevant context — not a ranked list of 
 
 ## Architecture
 
-Our knowledge base on agent.ceo implements this dual approach:
+Our [agent-native knowledge base](/blog/kb-launch-agent-native-knowledge-bases) on agent.ceo implements this dual approach (the broader rationale is in [building an AI knowledge base](/blog/building-ai-knowledge-base)):
 
 - **Neo4j** stores the knowledge graph — pages, entities, and typed relationships (DEPENDS_ON, CONFIGURED_BY, TRIGGERS, FEEDS_INTO)
 - **HNSW vector index** on every page node enables semantic search for starting points
@@ -71,6 +71,6 @@ Enterprise software documentation is the hardest test case for both approaches. 
 
 Vector search on this corpus returns plausible-looking results that miss critical dependencies. Graph traversal captures the structural relationships that make enterprise systems complex — and that make them breakable when changes cascade through undocumented connections.
 
-We recently ingested 5,000+ pages of enterprise ERP documentation into a Neo4j knowledge graph. The agents that traverse it answer cross-module questions that no RAG pipeline can — because the answers live in the relationships between documents, not in the documents themselves.
+We recently ingested 5,000+ pages of enterprise ERP documentation into a Neo4j knowledge graph. The agents that traverse it answer cross-module questions that no RAG pipeline can — because the answers live in the relationships between documents, not in the documents themselves. Read the full results in our [enterprise ERP knowledge-graph case study](/blog/enterprise-erp-knowledge-graph-case-study).
 
 [agent.ceo](https://agent.ceo)

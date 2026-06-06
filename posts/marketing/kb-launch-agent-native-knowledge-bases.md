@@ -27,7 +27,7 @@ Most AI knowledge systems use vector databases. Embed your documents, store the 
 
 When an agent asks "what changed since the last auth deployment?", vector search returns documents containing the words "auth" and "deployment." A graph traversal starts at the auth service node, follows edges to deployment records, then to configuration changes, then to any resulting incidents. The output is a connected subgraph of relevant context — not a ranked list of maybe-relevant documents.
 
-We chose Neo4j as the foundation. The knowledge base stores pages (decisions, runbooks, analyses), entities (services, teams, technologies), and repositories (ingested codebases). Each page carries a vector embedding for semantic search, and typed relationships connect everything into a navigable graph.
+We chose Neo4j as the foundation. The knowledge base stores pages (decisions, runbooks, analyses), entities (services, teams, technologies), and repositories (ingested codebases). Each page carries a vector embedding for semantic search, and typed relationships connect everything into a navigable graph. This builds on the [knowledge-graph work we shipped in our wiki product update](/blog/wiki-knowledge-graphs-product-update-cyborgenic), and the same graph approach powers our [enterprise ERP knowledge-graph case study](/blog/enterprise-erp-knowledge-graph-case-study).
 
 ## Multi-Tenant by Design
 
@@ -47,7 +47,7 @@ We built 26 MCP (Model Context Protocol) tools that give agents full access:
 
 ## Secure Access with PKCE OAuth
 
-External tools connecting to the knowledge base authenticate via PKCE OAuth 2.0. No API keys to rotate, no secrets in config files. Claude Code, agent pods, and CI pipelines all authenticate securely.
+External tools connecting to the knowledge base authenticate via PKCE OAuth 2.0. No API keys to rotate, no secrets in config files. Claude Code, agent pods, and CI pipelines all authenticate securely — the same posture we detail in our guide to [security for enterprise AI agents](/blog/enterprise-ai-agents-security).
 
 ## What This Means in Practice
 
@@ -55,7 +55,7 @@ External tools connecting to the knowledge base authenticate via PKCE OAuth 2.0.
 
 **Context compounds.** Each agent session adds to the knowledge base. An incident investigation becomes a page that future agents can reference.
 
-**Cross-agent knowledge sharing works.** Your DevOps agent documents a configuration. Your security agent references it during an audit. The knowledge graph connects their work without manual coordination.
+**Cross-agent knowledge sharing works.** Your DevOps agent documents a configuration. Your security agent references it during an audit. The knowledge graph connects their work without manual coordination — the kind of [orchestration layer](/blog/ai-orchestration-missing-layer) that makes a multi-agent org cohere.
 
 ## Try It
 

@@ -60,9 +60,9 @@ Graph-based workflows with conditional routing, cycles, and checkpointing. Excel
 
 ## Agent.ceo
 
-Full operational infrastructure — deployment, identity, persistent memory (Neo4j graph + vector), inter-agent communication (NATS), governance, cost controls, observability. Newer platform with smaller community.
+Full operational infrastructure — deployment, identity, persistent memory (Neo4j graph + vector), inter-agent communication (NATS), governance, cost controls, observability. Newer platform with smaller community. We cover the design in our [agent.ceo architecture deep dive](/blog/architecture-agent-ceo) and the reasoning behind it in [the orchestration layer most platforms miss](/blog/ai-orchestration-missing-layer).
 
-**Best fit**: Teams running multiple AI agents in production who need operational infrastructure.
+**Best fit**: Teams running multiple AI agents in production who need operational infrastructure. (Weighing cost? See our [guide to AI agent pricing](/blog/complete-guide-ai-agent-pricing).)
 
 ## Decision Framework
 
