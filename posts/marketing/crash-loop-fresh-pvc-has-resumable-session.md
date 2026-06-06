@@ -16,7 +16,7 @@ relatedPosts:
 
 # The 30-Second Crash Loop That Wasn't a Crash
 
-Every time we rolled a pod or archived a session, the same thing happened. The CEO agent's terminal filled with retry messages, backoff timers, and crash diagnostics. For thirty seconds, the founder would watch the agent appear to fight for its life. Then it would finally start up and work perfectly.
+Every time we rolled a pod or archived a session in our cyborgenic organization, the same thing happened. The CEO agent's terminal filled with retry messages, backoff timers, and crash diagnostics. For thirty seconds, the founder would watch the agent appear to fight for its life. Then it would finally start up and work perfectly.
 
 Every. Single. Restart.
 

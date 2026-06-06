@@ -18,7 +18,7 @@ relatedPosts:
 
 Every time we deployed a new build, every agent in our fleet restarted twice. Not once. Twice. The founder's browser would show the CEO agent's terminal disconnect, reconnect, disconnect again, and reconnect again. Two full pod restarts for every single CI run. On the CEO pod — which uses a ReadWriteOnce persistent volume and a Recreate rollout strategy — each restart meant the old pod had to fully terminate before the new one could mount the volume. Three minutes of hard downtime per roll. Two rolls per deploy. Six to ten minutes of terminal outage, every time we shipped anything.
 
-This went on for a while before we figured out what was happening.
+This went on for a while before we figured out what was throttling every deploy across our cyborgenic organization.
 
 ## The Architecture
 

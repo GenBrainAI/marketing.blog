@@ -16,7 +16,7 @@ relatedPosts:
 
 # How We Gave Every Customer Org's Agents Platform Knowledge on Day One
 
-Here is a failure mode nobody warns you about when you build a multi-tenant agent platform: your agents have 199 tools available, and they use maybe 12 of them. Not because the other 187 are bad. Because the agents have no idea they exist.
+Here is a failure mode nobody warns you about when you build a multi-tenant platform for cyborgenic organizations: your agents have 199 tools available, and they use maybe 12 of them. Not because the other 187 are bad. Because the agents have no idea they exist.
 
 ## The Problem: Static Instructions, Zero Discovery
 

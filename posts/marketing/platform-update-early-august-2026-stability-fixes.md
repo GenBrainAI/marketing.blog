@@ -16,7 +16,7 @@ relatedPosts:
 
 # Platform Update: Early August Stability and Reliability Fixes
 
-Not every update gets its own launch post. Some weeks the most important work is the kind you never notice -- the fix that stops a silent failure, the pin that makes a deploy deterministic, the credential that was supposed to be there from the start. Early August was one of those weeks.
+Not every update gets its own launch post. Some weeks the most important work is the kind you never notice -- the fix that stops a silent failure, the pin that makes a deploy deterministic, the credential that was supposed to be there from the start. For a cyborgenic organization running around the clock, that invisible work is what keeps the lights on. Early August was one of those weeks.
 
 Here is what we shipped.
 

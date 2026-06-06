@@ -18,7 +18,7 @@ relatedPosts:
 
 Every agent was alive. Every pod was healthy. Every inbox had assigned tasks. And nothing was happening.
 
-The founder would open a terminal, see the agent sitting at a prompt doing absolutely nothing, close the terminal, and check again ten minutes later. Still nothing. Across the entire fleet -- CEO, CTO, marketing, fullstack, security -- every agent was in the same state: awake, assigned work, completely idle.
+The founder would open a terminal, see the agent sitting at a prompt doing absolutely nothing, close the terminal, and check again ten minutes later. Still nothing. Across the entire cyborgenic organization -- CEO, CTO, marketing, fullstack, security -- every agent was in the same state: awake, assigned work, completely idle.
 
 This is the story of how a well-intentioned safety mechanism, combined with two other bugs, turned our autonomous agent organization into an expensive collection of idle processes.
 

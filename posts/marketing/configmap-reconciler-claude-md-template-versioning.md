@@ -16,7 +16,7 @@ relatedPosts:
 
 # Your Agents Run Old Instructions Until You Restart Them: How We Built a CLAUDE.md Reconciler
 
-You ship a critical behavior fix -- "never push to main without approval" -- and feel good about it. New customer orgs pick it up immediately. But every existing org? Their agents keep running without that rule. Silently. Indefinitely. Until someone manually recreates their ConfigMaps.
+You ship a critical behavior fix -- "never push to main without approval" -- and feel good about it. New customer orgs pick it up immediately. But every existing cyborgenic organization? Their agents keep running without that rule. Silently. Indefinitely. Until someone manually recreates their ConfigMaps.
 
 That was our situation. And the longer the platform ran, the worse it got.
 
