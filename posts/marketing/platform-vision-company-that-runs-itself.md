@@ -1,7 +1,7 @@
 ---
 title: "What If a Company Could Run Itself?"
 slug: "platform-vision-company-that-runs-itself"
-date: 2026-06-07
+date: 2026-06-11
 category: marketing
 cluster: "building-in-public"
 tags: [vision, cyborgenic, autonomous-agents, building-in-public, agent-ceo]
