@@ -1,0 +1,31 @@
+# MERGE-READY parameterized replacement for .github/workflows/cicd-trigger.yml (us-east4 bring-up).
+# Cutover: copy this over .github/workflows/cicd-trigger.yml, AND set GitHub Actions
+# variable CICD_PROJECT=<US_EAST4_PROJECT_ID> (repo or org). Optional CICD_TOPIC overrides
+# the default topic name. See docs/ops/us-east4-bringup-marketing.md.
+name: CICD Trigger
+# On a cicd_* tag, publish a BuildRequest event the generic cicd runner catches.
+# Project + topic are now parameterized so a region/project move is config-only.
+on:
+  push:
+    tags: ['cicd_*']
+permissions:
+  contents: read
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.CICD_PUBLISHER_KEY }}
+      - uses: google-github-actions/setup-gcloud@v2
+      - name: Publish BuildRequest → Pub/Sub
+        env:
+          CICD_PROJECT: ${{ vars.CICD_PROJECT }}   # REQUIRED — set to <US_EAST4_PROJECT_ID>
+          CICD_TOPIC: ${{ vars.CICD_TOPIC }}       # optional — defaults to cicd-build-requests
+        run: |
+          : "${CICD_PROJECT:?set GitHub Actions variable CICD_PROJECT to the GCP project id}"
+          TOPIC="${CICD_TOPIC:-cicd-build-requests}"
+          REQ=$(printf '{"request_id":"req-%s","repo":"%s","ref":"%s","sha":"%s","requested_by":"github-action","idempotency_key":"%s:%s"}' \
+            "$(date +%s)" "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME" "$GITHUB_SHA" "$GITHUB_REPOSITORY" "$GITHUB_REF_NAME")
+          echo "publishing to ${TOPIC} in ${CICD_PROJECT}: $REQ"
+          gcloud pubsub topics publish "$TOPIC" --project "$CICD_PROJECT" --message="$REQ"
