@@ -58,8 +58,9 @@ hand it a *reference* of the form `keychain://<org>/<name>`. The composition, an
 everything derived from it, carries only that reference. The actual value is
 **resolved server-side** and injected directly into the operand's environment at
 spawn. It never appears in the composition you author, in the custom resource, in
-the registry, or in any logs. On staging we verified this the blunt way — by
-searching the logs for a known marker value and confirming its **absence**.
+the registry, or in any logs — and that is a property we verify, not merely
+assert: a known marker value is planted as a credential and then confirmed
+**absent** from the logs.
 
 **Tenant-scoped and fail-closed.** A credential reference only resolves for its
 own organization. A cross-tenant reference, or a bad one, does not degrade
