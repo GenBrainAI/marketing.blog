@@ -73,7 +73,15 @@ def main(argv):
     tags = fm_get(s_fm, "tags") or fm_get(d_fm, "tags") or "[]"
     excerpt = fm_get(s_fm, "description") or fm_get(d_fm, "excerpt") or '""'
     # Editorial fields: preserve target's if it exists, else derive.
-    author = fm_get(d_fm, "author") or f'"{DEFAULT_AUTHOR}"'
+    # AUTHOR: target wins (an editor's hand-set author is never regressed), then the
+    # SOURCE's own author, and only then the default. Reading d_fm alone meant every
+    # NEW post was attributed to DEFAULT_AUTHOR no matter who wrote it — a post whose
+    # source said `author: "Marketing Agent"` published as "Moshe Beeri, Founder".
+    # That is a misattribution on a public page, and it also silently violated
+    # CONTENT-STANDARDS ("Named authors only... Technical posts: 'Engineering Team' or
+    # specific agent role"). Every other field here already follows source-then-target;
+    # author was the one that skipped the source entirely.
+    author = fm_get(d_fm, "author") or fm_get(s_fm, "author") or f'"{DEFAULT_AUTHOR}"'
     cat = fm_get(d_fm, "category")
     if not cat:
         sc = (fm_get(s_fm, "category") or "updates").strip().strip('"').strip("'")
