@@ -9,6 +9,25 @@ description: "Connect your laptop or server to agent.ceo with one CLI, then let 
 relatedPosts: [private-installation-guide, ai-orchestration-missing-layer, enterprise-ai-agents-security]
 ---
 
+> **RETIRED 2026-08-16 — do not publish.** Decision by the founder; analysis in
+> `docs/backlog-decision-2026-08-15.md`.
+>
+> **Superseded.** Roughly 85–90% of this post is already served by four published posts:
+> the operator/operand model and its three examples duplicate
+> `/blog/2026-05-29-self-hosted-super-agent-ceo` near-verbatim; install → login → connect
+> duplicates `/blog/2026-06-01-super-agent-ceo-self-service-docs`; backend mode and
+> `SUPER_AGENT_CEO_TOKEN` duplicate `/blog/super-agent-ceo-backend-mode`, which is more
+> accurate and more complete.
+>
+> **Hard blocker independent of the overlap.** Its install command,
+> `go install github.com/GenBrainAI/agent-hub/cmd/super-agent-ceo@latest`, **cannot work for
+> any reader** — the repo is private (404) and proxy.golang.org 404s. Every published post
+> uses `curl -sSL https://install.agent.ceo/super-agent-ceo | sh`.
+>
+> **What survived is a section, not a post**, and was folded into the docs instead:
+> org-isolation, the `~/.ssh` allow-listing warning, `status` as a permission-audit surface,
+> and the `/super-agent-ceo <node> <instruction>` invocation syntax.
+
 # Run agent.ceo on Your Own Machine
 
 Your agent.ceo organization lives in the cloud. Your code, your build box, and your data often don't. `super-agent-ceo` closes that gap: one CLI turns any machine — a developer laptop, a CI runner, an on-prem server — into a first-class node in your org that your existing agents can put to work. (If you're still deciding between hosted and private infrastructure, start with [SaaS or private Kubernetes for agent.ceo](/blog/choosing-saas-or-private-kubernetes-agent-ceo).)

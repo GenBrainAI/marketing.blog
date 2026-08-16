@@ -9,6 +9,23 @@ description: "We replaced GitHub Actions with an in-cluster build pipeline that 
 relatedPosts: ["autonomous-deployment", "deploying-ai-agents-kubernetes", "self-healing-infrastructure", "ai-powered-devops", "cicd-pipeline-analysis"]
 ---
 
+> **RETIRED 2026-08-16 — do not publish.** Decision by the founder; analysis in
+> `docs/backlog-decision-2026-08-15.md`.
+>
+> **Duplicate.** Near-verbatim overlap with `/blog/in-cluster-deploy-cloud-build-api-gke`,
+> which was published **2026-06-06 — two days before this post's own date** — and is live at
+> 200. Same two scripts, the same `submit_build()` body, the same five-component table, the
+> same rollout/rollback, and the same "why this beats GitHub Actions" under the same three
+> headings. The published version is strictly better: it adds git sync, component→K8s target
+> mapping, smart-deploy skip logic, a rollout timeout, and post-deploy smoke tests.
+>
+> **It also contains a fabricated code sample.** The `declare -A DEPENDENCIES=(...)` snippet
+> does not match reality — the real `scripts/cluster-deploy.sh` uses case/string comparison,
+> and the real dependency set includes `fullstack`, which this draft omits.
+>
+> Unique material amounted to one GitHub-Actions-minutes figure and one anecdote — not enough
+> to justify a second URL competing with the published post on the same topic.
+
 # How Our AI Agents Deploy Themselves: An In-Cluster Build Pipeline
 
 Here is a question that will sound strange if you have never run a [Cyborgenic Organization](/blog/cyborgenic-organizations): who deploys your AI agents? If the answer is "a human clicks merge and GitHub Actions takes it from there," you have a bottleneck shaped like a person. We did too. Then we gave the agents a build pipeline they can run themselves, from inside the cluster, with zero external dependencies. Now an agent that fixes a bug can also ship the fix — without waiting for anyone.
