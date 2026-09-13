@@ -12,6 +12,7 @@ Measured 2026-09-13 ~22:05–22:20Z by marketing. **Nothing sent.**
 | M2 | Directory / review profiles live | **0** | — | (a) site-restricted web search across Product Hunt, G2, Capterra, There's An AI For That, AlternativeTo and SaaSHub: **0** Agent.ceo listings. (b) `aiagents.directory/agent-ceo/` 404 · `aiagentsdirectory.com/agent/agent-ceo` 404 · `futurepedia.io/tool/agent-ceo` 404 | `quorvanta-ceo` on (b): 404 · 404 · 404 ✅ | `crewai`: (a) listings on Product Hunt, G2 and There's An AI For That; (b) 200 · 200 · 200 ✅ |
 | M3 | Unsolicited inbound requests | **2** (September) | — | The founder's own count as relayed by the CEO on this row: two design-partner inbounds in September. His mailbox was **not** read | — | — |
 | M4 | Replies to awareness sends | **0 (no sends)** | — | No awareness send has happened. The October note is a draft (`awareness-note-2026-10.md`) | — | — |
+| M5 | External links: total / third-party | **14 / 0** (placed 0 · earned 0) | — (first read) | Founder's Google Search Console Links report, pasted to the CEO ~22:5xZ (added under task-8d17c81d): linking sites linkedin.com 7, github.com 6, npmjs.com 1; linked pages `/` 13, `/developers/docs` 1. All three sites are owned | — | github.com 6 ✅ |
 
 **What the instruments cannot see:**
 
@@ -64,5 +65,5 @@ All already written and merge-held. No new drafting is planned for next week unt
 
 ## 5. One line
 
-Nothing moved, because nothing has shipped: M1 0 · M2 0 · M3 2 · M4 0 (no sends). The first number that can move
+Nothing moved, because nothing has shipped: M1 0 · M2 0 · M3 2 · M4 0 (no sends) · M5 14 / 0. The first number that can move
 is M2, after G1–G3 clear and the founder submits a directory profile.

@@ -6,7 +6,7 @@ unread, because a number that has not moved looks the same as a check that was n
 
 Metrics: restart plan §7 (agent-hub `docs/marketing/restart-plan-2026-09-12.md`). No analytics access is needed.
 
-## 1. The four numbers
+## 1. The five numbers
 
 Each row has a **door** (the exact check), a **control** (a made-up name through the same door, which must read
 0) and a **known-positive** (something that must read ≥ 1). If the control reads anything but 0, or the
@@ -18,8 +18,9 @@ known-positive reads 0, write `instrument broken` instead of the number.
 | M2 | Directory / review profiles live | | | (a) Web search `"agent.ceo" site:producthunt.com OR site:g2.com OR site:capterra.com OR site:theresanaiforthat.com OR site:alternativeto.net OR site:saashub.com`. (b) `curl -s -o /dev/null -w '%{http_code}'` on `aiagents.directory/agent-ceo/`, `aiagentsdirectory.com/agent/agent-ceo`, `futurepedia.io/tool/agent-ceo`. (c) Every URL listed in `off-page-submissions.md` once it has one. Count the profiles that show Agent.ceo | same doors with `quorvanta-ceo` | same doors with `crewai` (a: listings; b: 200) |
 | M3 | Unsolicited inbound requests | | | The founder's own count, as he reports it to the CEO. **No agent reads his mailbox** | — | — |
 | M4 | Replies to awareness sends | | | Sends made this week (founder's count) and genuine replies to them. Opt-outs are not replies | — | if sends = 0, write `0 (no sends)` |
+| M5 | External links: total / third-party (placed · earned) | | | The founder, or his local agent, reads Google Search Console → Links → *Top linking sites* and *Top linked pages* and sends the rows. Marketing classifies each linking site: **owned** (linkedin.com company and founder profile, github.com/GenBrainAI, npmjs.com/package/@agent.ceo/mcp), **placed** (a third-party site where we wrote or submitted the entry: directories, awesome-lists, Dev.to/Hashnode), **earned** (a third party chose to link). Plan: `link-earning-plan.md` | — (not our instrument) | github.com row ≥ 1 (our READMEs link to agent.ceo). If it reads 0, the export is wrong or stale |
 
-Cumulative, not weekly: M1 and M2 count what exists today. M3 and M4 count what arrived this week.
+Cumulative, not weekly: M1 and M2 count what exists today. M3 and M4 count what arrived this week. M5 is cumulative, and Search Console reports it days late, so a new link can take a week to appear.
 
 ## 2. Published this week (served, not merged)
 
