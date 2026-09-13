@@ -76,35 +76,54 @@ PR marketing.blog#11, and they need a hand-port into the website on go (mechanic
 | 10-01 | should-an-ai-agent-verify-its-own-work | 2 | ai agent self verification | Should an AI agent verify its own work? | I | R |
 | 10-02 | how-to-create-watch-and-stop-an-agent-loop | 3 | create ai agent loop api | How do I create, watch and stop a loop in agent.ceo? | L | R |
 
-### Week 4 — planned
+### Week 4 — batch 2 (website#1082)
 
 | Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
 |---|---|---|---|---|---|---|
-| 10-05 | how-much-does-an-ai-agent-team-cost | 3 | ai agent platform pricing | How much does it cost to run a team of AI agents? | P, D | P |
-| 10-06 | who-is-accountable-when-an-ai-agent-makes-a-mistake | 1 | ai agent accountability | Who is accountable when an AI agent makes a mistake? | R, A (no audit-trail claim) | P |
-| 10-07 | human-junction-patterns-for-agent-graphs | 2 | human approval patterns multi agent | What are the patterns for putting a human decision in an agent graph? | A | P |
-| 10-08 | how-to-publish-an-app-from-an-agent | 3 | ai agent publish web app | How does an agent publish an app page in agent.ceo? | Apps PASS (read the journey before drafting) | P |
+| 10-05 | how-much-does-an-ai-agent-team-cost | 3 | ai agent platform pricing | How much does it cost to run a team of AI agents? | P, D | R |
+| 10-06 | who-is-accountable-when-an-ai-agent-makes-a-mistake | 1 | ai agent accountability | Who is accountable when an AI agent makes a mistake? | R, A (no audit-trail claim) | R |
+| 10-07 | human-junction-patterns-for-agent-graphs | 2 | human approval patterns multi agent | What are the patterns for putting a human decision in an agent graph? | A | R |
+| 10-08 | how-to-publish-an-app-from-an-agent | 3 | ai agent publish web app | How does an agent publish an app page in agent.ceo? | Apps PASS (read the journey before drafting) | R |
 
-### Week 5 — planned
-
-| Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
-|---|---|---|---|---|---|---|
-| 10-12 | ai-agent-kill-switch | 1 | ai agent kill switch | Who can shut an AI agent down, and how fast? | L, K | P |
-| 10-13 | solo-loop-the-smallest-agent-building-block | 2 | agent loop patterns | What is the simplest loop pattern for an AI agent? | L | P |
-| 10-14 | how-agent-ceo-runs-its-own-company-on-agent-loops | 2 | company run by ai agents | What does it look like when a company runs on AI agents? | I, L | P |
-| 10-15 | how-to-list-every-agent-in-your-organization | 3 | list ai agents in organization | How do I list every agent my organization runs? | G | P |
-
-### Week 6 — planned
+### Week 5 — batch 2 (website#1082)
 
 | Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
 |---|---|---|---|---|---|---|
-| 10-19 | agent-ceo-design-partners | 3 | agent.ceo design partner | How do I work with agent.ceo as a design partner? | D, P | P |
-| 10-20 | shadow-ai-agents-vs-ghost-agents | 1 | shadow ai agents | What is the difference between shadow AI agents and ghost agents? | R | P |
-| 10-21 | how-to-test-that-an-agent-check-can-fail | 2 | known negative test ai agent | How do you know an AI agent's check can actually fail? | I | P |
-| 10-22 | how-to-read-what-an-agent-loop-produced | 3 | ai agent loop output | How do I see what an agent loop produced? | L (`/output`, `/artifacts`) | P |
+| 10-12 | ai-agent-kill-switch | 1 | ai agent kill switch | Who can shut an AI agent down, and how fast? | L, K | R |
+| 10-13 | solo-loop-the-smallest-agent-building-block | 2 | agent loop patterns | What is the simplest loop pattern for an AI agent? | L | R |
+| 10-14 | how-agent-ceo-runs-its-own-company-on-agent-loops | 2 | company run by ai agents | What does it look like when a company runs on AI agents? | I, L | R |
+| 10-15 | how-to-list-every-agent-in-your-organization | 3 | list ai agents in organization | How do I list every agent my organization runs? | G | R |
 
-**Totals:** 28 entries, 16 publication-ready (6 in #11 + 10 in this batch), 12 planned. Weeks 2–6
-carry 4–5 posts each.
+### Week 6 — batch 2 (10-19, 10-20, #1082) and batch 3 (10-21, 10-22, website#1085)
+
+| Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
+|---|---|---|---|---|---|---|
+| 10-19 | agent-ceo-design-partners | 3 | agent.ceo design partner | How do I work with agent.ceo as a design partner? | D, P | R |
+| 10-20 | shadow-ai-agents-vs-ghost-agents | 1 | shadow ai agents | What is the difference between shadow AI agents and ghost agents? | R | R |
+| 10-21 | how-to-test-that-an-agent-check-can-fail | 2 | known negative test ai agent | How do you know an AI agent's check can actually fail? | I | R |
+| 10-22 | how-to-read-what-an-agent-loop-produced | 3 | ai agent loop output | How do I see what an agent loop produced? | L (`/output`, `/artifacts`) | R |
+
+### Week 7 — batch 3 (website#1085, task-388aca82)
+
+| Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
+|---|---|---|---|---|---|---|
+| 10-26 | what-to-do-when-an-ai-agent-api-key-leaks | 1 | ai agent api key leaked | What should you do when an AI agent's API key leaks? | K | R |
+| 10-27 | predefined-or-custom-ai-agent-roles | 2 | custom ai agent roles | Should an AI agent use a predefined role or a custom role? | R | R |
+| 10-28 | how-to-approve-or-reject-an-agent-proposal | 3 | approve ai agent action api | How do I approve or reject an agent's proposal in agent.ceo? | A | R |
+| 10-29 | how-to-keep-a-record-of-decisions-made-with-ai-agents | 1 | ai agent decision log | How do you keep a record of decisions made with AI agents? | A, M (states the absence of an audit trail) | R |
+
+### Week 8 — batch 3 (website#1085)
+
+| Date | Slug | Pillar | Target query | Answer-engine question | Truth | St |
+|---|---|---|---|---|---|---|
+| 11-02 | ai-agent-governance-checklist | 1 | ai agent governance checklist | What should an AI agent governance checklist include? | R, G, K, A, L, S | R |
+| 11-03 | when-is-an-ai-agent-task-actually-done | 2 | ai agent definition of done | When is an AI agent's task actually done? | I | R |
+| 11-04 | what-does-byok-mean-for-an-ai-agent-platform | 3 | byok ai agent platform | What does BYOK mean for an AI agent platform? | P | R |
+| 11-05 | what-is-bounded-autonomy-for-ai-agents | 2 | bounded autonomy ai agents | What is bounded autonomy for AI agents? | L, A, I | R |
+
+**Totals (updated 2026-09-13, task-388aca82):** 36 entries, all publication-ready in merge-held PRs. That is
+6 in marketing.blog#11, 10 in website#1080, 10 in website#1082 and 10 in website#1085. Weeks 2–8 carry 4–5
+posts each. The next open week is 9 (11-09).
 
 ## The 13 surfaces — which get a how-to, and why the rest wait
 
