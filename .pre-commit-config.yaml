@@ -1,0 +1,51 @@
+# Pre-commit hooks for security scanning — marketing.blog
+#
+# WHY THIS EXISTS (2026-08-24): this repo had NO secret scanning of ANY kind.
+#   * no server-side gate  — GitHub server-side scanning is disabled org-wide and
+#     branch-protection/pre-receive is unavailable on this private repo tier (devops, measured)
+#   * no CI gate           — the Actions check fleet is billing-dead; every job completes in
+#     ~2s with steps:[] ("The job was not started because recent account payments have
+#     failed…"). CEO ruling 2026-07-11: Actions is not the deploy path and billing-red does
+#     not block, so it will not come back on its own.
+#   * no local hook        — there was no config here to install, so `pre-commit install`
+#     would have succeeded and wired up NOTHING.
+# Authored by marketing on CEO ruling; reviewed by qa. Mirrors agent-hub's security stanzas.
+#
+# SCOPE IS DELIBERATELY SECURITY-ONLY. agent-hub also runs trailing-whitespace and
+# end-of-file-fixer; those are NOT copied here. They MUTATE files, and this repo is
+# markdown-heavy — two trailing spaces are a semantic line break in Markdown, so the hook
+# would silently alter published content. Formatting is not what this config is for.
+
+repos:
+  # Secret detection — prevent credential leaks
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: \.secrets\.baseline
+
+  # Gitleaks — comprehensive secret patterns + the GenBrain key rules in .gitleaks.toml
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.30.0
+    hooks:
+      - id: gitleaks
+
+  # Security-relevant standard hooks only
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: detect-private-key
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: check-merge-conflict
+
+# Installation (pre-commit is NOT in the agent image — install it first):
+#   python3 -m pip install --user pre-commit && python3 -m pre_commit install
+#
+# Verify it actually FIRES — listing the hook file only proves it exists:
+#   printf 'k = AKIAIOSFODNN7EXAMPLE\n' > _p.txt && git add _p.txt && git commit -m probe
+#   # MUST be blocked.  cleanup: git reset -q HEAD _p.txt && rm _p.txt
+#
+# Regenerate the baseline (scan TRACKED files only — a bare scan walks node_modules):
+#   git ls-files -z | xargs -0 detect-secrets scan > .secrets.baseline

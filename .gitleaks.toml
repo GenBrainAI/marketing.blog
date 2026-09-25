@@ -1,0 +1,48 @@
+# Gitleaks configuration — GenBrain platform key detection
+#
+# The custom rules below are the org's OWN key formats. The gitleaks default ruleset does
+# not know them, so without these a leaked GenBrain customer or service-account key would
+# pass a "clean" scan. Copied deliberately from agent-hub.
+#
+# agent-hub's ALLOWLIST is deliberately NOT copied. Its entries are specific to that repo
+# (a vendored ttyd bundle, agent-hub Python module names that collide with the mcp_ rule).
+# Carrying them here would install suppressions for paths that do not exist and could mask a
+# real detection. Allowlist entries belong to the repo that needs them, added with evidence.
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "genbrain-mcp-key"
+description = "GenBrain MCP customer API key"
+regex = '''mcp_[A-Za-z0-9-][A-Za-z0-9_-]{9,}'''
+keywords = ["mcp_"]
+
+[[rules]]
+id = "genbrain-ace-live-key"
+description = "GenBrain ACE live customer key"
+regex = '''ace_live_[A-Za-z0-9_-]{10,}'''
+keywords = ["ace_live_"]
+
+[[rules]]
+id = "genbrain-ace-test-key"
+description = "GenBrain ACE test customer key"
+regex = '''ace_test_[A-Za-z0-9_-]{10,}'''
+keywords = ["ace_test_"]
+
+[[rules]]
+id = "genbrain-ahk-key"
+description = "GenBrain admin/host key (legacy)"
+regex = '''ahk_[A-Za-z0-9_-]{10,}'''
+keywords = ["ahk_"]
+
+[[rules]]
+id = "genbrain-sa-live-key"
+description = "GenBrain service account live key"
+regex = '''agceo_sa_live_[A-Za-z0-9_-]{10,}'''
+keywords = ["agceo_sa_live_"]
+
+[allowlist]
+paths = [
+    '''.secrets.baseline''',
+]
